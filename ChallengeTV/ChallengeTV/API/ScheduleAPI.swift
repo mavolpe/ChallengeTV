@@ -26,7 +26,7 @@ class ScheduleAPI {
                         let decoder = JSONDecoder()
                         decoder.dateDecodingStrategy = .formatted(DateFormatter.tvMazeAirStamp)
                         let events = try decoder.decode([TVEvent].self, from: data!)
-                        let schedule = Schedule(events: events)
+                        let schedule = Schedule(scheduleDate: date, events: events)
                         completion(schedule, nil)
                     }
                     catch{

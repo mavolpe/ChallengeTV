@@ -58,7 +58,8 @@ class NetworkCommunication: NSObject, URLSessionDelegate {
     
     public func getRequest(urlString:String, customHeaders:[String:String] = [:], options:NetworkRequestOptions = NetworkRequestOptions.defaultSetting, completion:@escaping ((Data?, Error?)->Void)){
         guard networkSession != nil else{
-            completion(nil, nil)
+            let error = ChallengeTVError.createError(type: ChallengeErrorType.CET_NO_NETWORK_SESSION)
+            completion(nil, error)
             return
         }
         if let url = URL(string: urlString){
@@ -74,14 +75,15 @@ class NetworkCommunication: NSObject, URLSessionDelegate {
             
             task?.resume()
         }else{
-            completion(nil, nil)
+            let error = ChallengeTVError.createError(type: ChallengeErrorType.CET_FAILED_TO_PARSE_URL)
+            completion(nil, error)
         }
     }
     
     public func postRequest(urlString:String, postBody:[String:Any], customHeaders:[String:String] = [:], options:NetworkRequestOptions = NetworkRequestOptions.defaultSetting, completion:@escaping ((Data?, Error?)->Void)){
         guard networkSession != nil else{
-            // TODO - generate a custom error class - then propogate our own errors
-            completion(nil, nil)
+            let error = ChallengeTVError.createError(type: ChallengeErrorType.CET_NO_NETWORK_SESSION)
+            completion(nil, error)
             return
         }
         if let url = URL(string: urlString){
@@ -103,7 +105,8 @@ class NetworkCommunication: NSObject, URLSessionDelegate {
             
             task?.resume()
         }else{
-            completion(nil, nil)
+            let error = ChallengeTVError.createError(type: ChallengeErrorType.CET_FAILED_TO_PARSE_URL)
+            completion(nil, error)
         }
     }
 }

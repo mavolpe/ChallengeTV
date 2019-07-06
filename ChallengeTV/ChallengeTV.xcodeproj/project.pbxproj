@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BEDC311022D0B6D400FD5CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */; };
-		BEDC311222D0B6D400FD5CEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC311122D0B6D400FD5CEE /* ViewController.swift */; };
+		BEDC311222D0B6D400FD5CEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */; };
 		BEDC311522D0B6D400FD5CEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311322D0B6D400FD5CEE /* Main.storyboard */; };
 		BEDC311822D0B6D400FD5CEE /* ChallengeTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEDC311622D0B6D400FD5CEE /* ChallengeTV.xcdatamodeld */; };
 		BEDC311A22D0B6D700FD5CEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311922D0B6D700FD5CEE /* Assets.xcassets */; };
@@ -21,6 +21,8 @@
 		BEDC314A22D0CD6100FD5CEE /* ScheduleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC314922D0CD6100FD5CEE /* ScheduleAPI.swift */; };
 		BEDC314D22D0CEF500FD5CEE /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC314C22D0CEF500FD5CEE /* DateFormatterExtensions.swift */; };
 		BEDC314F22D0DE0E00FD5CEE /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC314E22D0DE0E00FD5CEE /* DateExtensions.swift */; };
+		BEDC315222D105CE00FD5CEE /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC315122D105CE00FD5CEE /* ScheduleService.swift */; };
+		BEDC315522D106AF00FD5CEE /* ChallengeTVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC315422D106AF00FD5CEE /* ChallengeTVError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +45,7 @@
 /* Begin PBXFileReference section */
 		BEDC310C22D0B6D400FD5CEE /* ChallengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BEDC311122D0B6D400FD5CEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BEDC311422D0B6D400FD5CEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEDC311722D0B6D400FD5CEE /* ChallengeTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChallengeTV.xcdatamodel; sourceTree = "<group>"; };
 		BEDC311922D0B6D700FD5CEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -61,6 +63,8 @@
 		BEDC314922D0CD6100FD5CEE /* ScheduleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleAPI.swift; sourceTree = "<group>"; };
 		BEDC314C22D0CEF500FD5CEE /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		BEDC314E22D0DE0E00FD5CEE /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		BEDC315122D105CE00FD5CEE /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
+		BEDC315422D106AF00FD5CEE /* ChallengeTVError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTVError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,12 +115,14 @@
 		BEDC310E22D0B6D400FD5CEE /* ChallengeTV */ = {
 			isa = PBXGroup;
 			children = (
+				BEDC315322D1069100FD5CEE /* Error */,
 				BEDC314B22D0CED900FD5CEE /* Utilities */,
 				BEDC314122D0BFBB00FD5CEE /* NetworkCommunication */,
 				BEDC314022D0BF2900FD5CEE /* Model */,
 				BEDC314822D0CD3C00FD5CEE /* API */,
+				BEDC315022D1059B00FD5CEE /* Service */,
 				BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */,
-				BEDC311122D0B6D400FD5CEE /* ViewController.swift */,
+				BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */,
 				BEDC311322D0B6D400FD5CEE /* Main.storyboard */,
 				BEDC311922D0B6D700FD5CEE /* Assets.xcassets */,
 				BEDC311B22D0B6D700FD5CEE /* LaunchScreen.storyboard */,
@@ -176,6 +182,22 @@
 				BEDC314E22D0DE0E00FD5CEE /* DateExtensions.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BEDC315022D1059B00FD5CEE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC315122D105CE00FD5CEE /* ScheduleService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		BEDC315322D1069100FD5CEE /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC315422D106AF00FD5CEE /* ChallengeTVError.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,13 +331,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEDC311222D0B6D400FD5CEE /* ViewController.swift in Sources */,
+				BEDC311222D0B6D400FD5CEE /* HomeViewController.swift in Sources */,
 				BEDC314322D0C01200FD5CEE /* NetworkCommunication.swift in Sources */,
 				BEDC314D22D0CEF500FD5CEE /* DateFormatterExtensions.swift in Sources */,
 				BEDC311822D0B6D400FD5CEE /* ChallengeTV.xcdatamodeld in Sources */,
 				BEDC314A22D0CD6100FD5CEE /* ScheduleAPI.swift in Sources */,
 				BEDC314F22D0DE0E00FD5CEE /* DateExtensions.swift in Sources */,
+				BEDC315222D105CE00FD5CEE /* ScheduleService.swift in Sources */,
 				BEDC314522D0C90700FD5CEE /* Schedule.swift in Sources */,
+				BEDC315522D106AF00FD5CEE /* ChallengeTVError.swift in Sources */,
 				BEDC314722D0C96300FD5CEE /* TVEvent.swift in Sources */,
 				BEDC311022D0B6D400FD5CEE /* AppDelegate.swift in Sources */,
 			);

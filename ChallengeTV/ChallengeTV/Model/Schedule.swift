@@ -9,5 +9,6 @@
 import UIKit
 
 struct Schedule {
+    let scheduleDate:Date?
     let events:[TVEvent]?
 }
