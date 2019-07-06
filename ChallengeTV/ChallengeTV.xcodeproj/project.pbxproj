@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEDC311022D0B6D400FD5CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */; };
+		BEDC311222D0B6D400FD5CEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC311122D0B6D400FD5CEE /* ViewController.swift */; };
+		BEDC311522D0B6D400FD5CEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311322D0B6D400FD5CEE /* Main.storyboard */; };
+		BEDC311822D0B6D400FD5CEE /* ChallengeTV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEDC311622D0B6D400FD5CEE /* ChallengeTV.xcdatamodeld */; };
+		BEDC311A22D0B6D700FD5CEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311922D0B6D700FD5CEE /* Assets.xcassets */; };
+		BEDC311D22D0B6D700FD5CEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311B22D0B6D700FD5CEE /* LaunchScreen.storyboard */; };
+		BEDC312822D0B6D800FD5CEE /* ChallengeTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC312722D0B6D800FD5CEE /* ChallengeTVTests.swift */; };
+		BEDC313322D0B6D800FD5CEE /* ChallengeTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC313222D0B6D800FD5CEE /* ChallengeTVUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEDC312422D0B6D800FD5CEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEDC310422D0B6D300FD5CEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEDC310B22D0B6D400FD5CEE;
+			remoteInfo = ChallengeTV;
+		};
+		BEDC312F22D0B6D800FD5CEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEDC310422D0B6D300FD5CEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEDC310B22D0B6D400FD5CEE;
+			remoteInfo = ChallengeTV;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEDC310C22D0B6D400FD5CEE /* ChallengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BEDC311122D0B6D400FD5CEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEDC311422D0B6D400FD5CEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEDC311722D0B6D400FD5CEE /* ChallengeTV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChallengeTV.xcdatamodel; sourceTree = "<group>"; };
+		BEDC311922D0B6D700FD5CEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BEDC311C22D0B6D700FD5CEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BEDC311E22D0B6D700FD5CEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDC312322D0B6D800FD5CEE /* ChallengeTVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeTVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDC312722D0B6D800FD5CEE /* ChallengeTVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTVTests.swift; sourceTree = "<group>"; };
+		BEDC312922D0B6D800FD5CEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDC312E22D0B6D800FD5CEE /* ChallengeTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEDC313222D0B6D800FD5CEE /* ChallengeTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTVUITests.swift; sourceTree = "<group>"; };
+		BEDC313422D0B6D800FD5CEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEDC310922D0B6D400FD5CEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDC312022D0B6D800FD5CEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDC312B22D0B6D800FD5CEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEDC310322D0B6D300FD5CEE = {
+			isa = PBXGroup;
+			children = (
+				BEDC310E22D0B6D400FD5CEE /* ChallengeTV */,
+				BEDC312622D0B6D800FD5CEE /* ChallengeTVTests */,
+				BEDC313122D0B6D800FD5CEE /* ChallengeTVUITests */,
+				BEDC310D22D0B6D400FD5CEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEDC310D22D0B6D400FD5CEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC310C22D0B6D400FD5CEE /* ChallengeTV.app */,
+				BEDC312322D0B6D800FD5CEE /* ChallengeTVTests.xctest */,
+				BEDC312E22D0B6D800FD5CEE /* ChallengeTVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEDC310E22D0B6D400FD5CEE /* ChallengeTV */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */,
+				BEDC311122D0B6D400FD5CEE /* ViewController.swift */,
+				BEDC311322D0B6D400FD5CEE /* Main.storyboard */,
+				BEDC311922D0B6D700FD5CEE /* Assets.xcassets */,
+				BEDC311B22D0B6D700FD5CEE /* LaunchScreen.storyboard */,
+				BEDC311E22D0B6D700FD5CEE /* Info.plist */,
+				BEDC311622D0B6D400FD5CEE /* ChallengeTV.xcdatamodeld */,
+			);
+			path = ChallengeTV;
+			sourceTree = "<group>";
+		};
+		BEDC312622D0B6D800FD5CEE /* ChallengeTVTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC312722D0B6D800FD5CEE /* ChallengeTVTests.swift */,
+				BEDC312922D0B6D800FD5CEE /* Info.plist */,
+			);
+			path = ChallengeTVTests;
+			sourceTree = "<group>";
+		};
+		BEDC313122D0B6D800FD5CEE /* ChallengeTVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC313222D0B6D800FD5CEE /* ChallengeTVUITests.swift */,
+				BEDC313422D0B6D800FD5CEE /* Info.plist */,
+			);
+			path = ChallengeTVUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEDC310B22D0B6D400FD5CEE /* ChallengeTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDC313722D0B6D800FD5CEE /* Build configuration list for PBXNativeTarget "ChallengeTV" */;
+			buildPhases = (
+				BEDC310822D0B6D400FD5CEE /* Sources */,
+				BEDC310922D0B6D400FD5CEE /* Frameworks */,
+				BEDC310A22D0B6D400FD5CEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChallengeTV;
+			productName = ChallengeTV;
+			productReference = BEDC310C22D0B6D400FD5CEE /* ChallengeTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEDC312222D0B6D800FD5CEE /* ChallengeTVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDC313A22D0B6D800FD5CEE /* Build configuration list for PBXNativeTarget "ChallengeTVTests" */;
+			buildPhases = (
+				BEDC311F22D0B6D800FD5CEE /* Sources */,
+				BEDC312022D0B6D800FD5CEE /* Frameworks */,
+				BEDC312122D0B6D800FD5CEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEDC312522D0B6D800FD5CEE /* PBXTargetDependency */,
+			);
+			name = ChallengeTVTests;
+			productName = ChallengeTVTests;
+			productReference = BEDC312322D0B6D800FD5CEE /* ChallengeTVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BEDC312D22D0B6D800FD5CEE /* ChallengeTVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEDC313D22D0B6D800FD5CEE /* Build configuration list for PBXNativeTarget "ChallengeTVUITests" */;
+			buildPhases = (
+				BEDC312A22D0B6D800FD5CEE /* Sources */,
+				BEDC312B22D0B6D800FD5CEE /* Frameworks */,
+				BEDC312C22D0B6D800FD5CEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEDC313022D0B6D800FD5CEE /* PBXTargetDependency */,
+			);
+			name = ChallengeTVUITests;
+			productName = ChallengeTVUITests;
+			productReference = BEDC312E22D0B6D800FD5CEE /* ChallengeTVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEDC310422D0B6D300FD5CEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Mark Volpe";
+				TargetAttributes = {
+					BEDC310B22D0B6D400FD5CEE = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					BEDC312222D0B6D800FD5CEE = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BEDC310B22D0B6D400FD5CEE;
+					};
+					BEDC312D22D0B6D800FD5CEE = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BEDC310B22D0B6D400FD5CEE;
+					};
+				};
+			};
+			buildConfigurationList = BEDC310722D0B6D300FD5CEE /* Build configuration list for PBXProject "ChallengeTV" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEDC310322D0B6D300FD5CEE;
+			productRefGroup = BEDC310D22D0B6D400FD5CEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEDC310B22D0B6D400FD5CEE /* ChallengeTV */,
+				BEDC312222D0B6D800FD5CEE /* ChallengeTVTests */,
+				BEDC312D22D0B6D800FD5CEE /* ChallengeTVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEDC310A22D0B6D400FD5CEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDC311D22D0B6D700FD5CEE /* LaunchScreen.storyboard in Resources */,
+				BEDC311A22D0B6D700FD5CEE /* Assets.xcassets in Resources */,
+				BEDC311522D0B6D400FD5CEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDC312122D0B6D800FD5CEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDC312C22D0B6D800FD5CEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEDC310822D0B6D400FD5CEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDC311222D0B6D400FD5CEE /* ViewController.swift in Sources */,
+				BEDC311822D0B6D400FD5CEE /* ChallengeTV.xcdatamodeld in Sources */,
+				BEDC311022D0B6D400FD5CEE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDC311F22D0B6D800FD5CEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDC312822D0B6D800FD5CEE /* ChallengeTVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEDC312A22D0B6D800FD5CEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEDC313322D0B6D800FD5CEE /* ChallengeTVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEDC312522D0B6D800FD5CEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEDC310B22D0B6D400FD5CEE /* ChallengeTV */;
+			targetProxy = BEDC312422D0B6D800FD5CEE /* PBXContainerItemProxy */;
+		};
+		BEDC313022D0B6D800FD5CEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEDC310B22D0B6D400FD5CEE /* ChallengeTV */;
+			targetProxy = BEDC312F22D0B6D800FD5CEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEDC311322D0B6D400FD5CEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEDC311422D0B6D400FD5CEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEDC311B22D0B6D700FD5CEE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEDC311C22D0B6D700FD5CEE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEDC313522D0B6D800FD5CEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEDC313622D0B6D800FD5CEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEDC313822D0B6D800FD5CEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC3PM5L5W4;
+				INFOPLIST_FILE = ChallengeTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VolpeSoftware.ChallengeTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BEDC313922D0B6D800FD5CEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC3PM5L5W4;
+				INFOPLIST_FILE = ChallengeTV/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VolpeSoftware.ChallengeTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BEDC313B22D0B6D800FD5CEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC3PM5L5W4;
+				INFOPLIST_FILE = ChallengeTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VolpeSoftware.ChallengeTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChallengeTV.app/ChallengeTV";
+			};
+			name = Debug;
+		};
+		BEDC313C22D0B6D800FD5CEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC3PM5L5W4;
+				INFOPLIST_FILE = ChallengeTVTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VolpeSoftware.ChallengeTVTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChallengeTV.app/ChallengeTV";
+			};
+			name = Release;
+		};
+		BEDC313E22D0B6D800FD5CEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC3PM5L5W4;
+				INFOPLIST_FILE = ChallengeTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VolpeSoftware.ChallengeTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChallengeTV;
+			};
+			name = Debug;
+		};
+		BEDC313F22D0B6D800FD5CEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PC3PM5L5W4;
+				INFOPLIST_FILE = ChallengeTVUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = VolpeSoftware.ChallengeTVUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ChallengeTV;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEDC310722D0B6D300FD5CEE /* Build configuration list for PBXProject "ChallengeTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDC313522D0B6D800FD5CEE /* Debug */,
+				BEDC313622D0B6D800FD5CEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEDC313722D0B6D800FD5CEE /* Build configuration list for PBXNativeTarget "ChallengeTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDC313822D0B6D800FD5CEE /* Debug */,
+				BEDC313922D0B6D800FD5CEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEDC313A22D0B6D800FD5CEE /* Build configuration list for PBXNativeTarget "ChallengeTVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDC313B22D0B6D800FD5CEE /* Debug */,
+				BEDC313C22D0B6D800FD5CEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEDC313D22D0B6D800FD5CEE /* Build configuration list for PBXNativeTarget "ChallengeTVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEDC313E22D0B6D800FD5CEE /* Debug */,
+				BEDC313F22D0B6D800FD5CEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEDC311622D0B6D400FD5CEE /* ChallengeTV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BEDC311722D0B6D400FD5CEE /* ChallengeTV.xcdatamodel */,
+			);
+			currentVersion = BEDC311722D0B6D400FD5CEE /* ChallengeTV.xcdatamodel */;
+			path = ChallengeTV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BEDC310422D0B6D300FD5CEE /* Project object */;
+}
