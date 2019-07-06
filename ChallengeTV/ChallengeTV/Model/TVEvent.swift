@@ -14,32 +14,74 @@ struct TVEvent: Decodable {
     let startDate:Date
     
     
-//    let url:String?
-//        season: 1,
-//        number: 26,
-//        airdate: "2014-12-01",
-//        airtime: "07:30",
-//        runtime: 11,
-//        image: null,
-//        summary: "",
+    let url:String?
+    let season:Int?
+    let number:Int?
+    let airdate:String?
+    let airtime:String?
+    let runtime:Int?
+    //let image:String?
+    let summary:String?
+    let show:Show?
     
     private enum CodingKeys: String, CodingKey {
         case eventId = "id"
         case name
         case startDate = "airstamp"
+        case url
+        case season
+        case number
+        case airdate
+        case airtime
+        case runtime
+        //let image:String?
+        case summary
+        case show
     }
-    
-    
-    
-//    id: 339141,
-//    url: "http://www.tvmaze.com/episodes/339141/clarence-1x26-rough-riders-elementary",
-//    name: "Rough Riders Elementary",
-//    season: 1,
-//    number: 26,
-//    airdate: "2014-12-01",
-//    airtime: "07:30",
-//    airstamp: "2014-12-01T12:30:00+00:00",
-//    runtime: 11,
-//    image: null,
-//    summary: "",
 }
+
+struct Show: Decodable {
+    let id:Int
+    let url:String?
+    let name:String?
+    let type:String?
+    let language:String?
+    let genres: [String]?
+    let status:String?
+    let runtime:Int?
+    let premiered:String?
+    let officialSite:String?
+    let schedule:ShowSchedule?
+    let rating: Rating?
+    let weight: Int?
+    let network:Network?
+    let image: Image?
+    let summary: String?
+}
+
+struct ShowSchedule :Decodable {
+    let time:String?
+    let days: [String]?
+}
+
+struct Rating: Decodable{
+    let average: Double?
+}
+
+struct Network: Decodable{
+    let id:Int
+    let name:String?
+    let country:Country?
+}
+
+struct Country: Decodable{
+    let name:String?
+    let code:String?
+    let timezone:String?
+}
+
+struct Image: Decodable {
+    let medium: String?
+    let original: String?
+}
+
