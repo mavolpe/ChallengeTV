@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="ChallengeTV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ils-kD-4n8" userLabel="ScheduleCollectionView">
+                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7hW-Po-ZHy">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="ShowShelfSectionHeaderView" id="Gzp-9J-5HG" customClass="ShowShelfSectionHeaderView" customModule="ChallengeTV" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXV-nf-Np5" userLabel="SectionLabel">
+                                            <rect key="frame" x="10" y="14.5" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.54437981820000003" green="1" blue="0.34087670710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstItem="HXV-nf-Np5" firstAttribute="leading" secondItem="Gzp-9J-5HG" secondAttribute="leading" constant="10" id="NWl-0s-ETz"/>
+                                        <constraint firstItem="HXV-nf-Np5" firstAttribute="centerY" secondItem="Gzp-9J-5HG" secondAttribute="centerY" id="Pvu-Ry-vjP"/>
+                                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HXV-nf-Np5" secondAttribute="trailing" constant="20" symbolic="YES" id="grb-LL-jo5"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="sectionLabel" destination="HXV-nf-Np5" id="9OF-TH-7CM"/>
+                                    </connections>
+                                </collectionReusableView>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="fxl-Qg-642"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Eq4-ma-IVK"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ils-kD-4n8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="8ej-yj-bUH"/>
+                            <constraint firstItem="Ils-kD-4n8" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Q6z-5r-5KD"/>
+                            <constraint firstItem="Ils-kD-4n8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="cqs-Z8-Zjm"/>
+                            <constraint firstItem="Ils-kD-4n8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pmd-n8-P6n"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scheduleCollectionView" destination="Ils-kD-4n8" id="lE2-UB-mhY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -23,6 +23,9 @@
 		BEDC314F22D0DE0E00FD5CEE /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC314E22D0DE0E00FD5CEE /* DateExtensions.swift */; };
 		BEDC315222D105CE00FD5CEE /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC315122D105CE00FD5CEE /* ScheduleService.swift */; };
 		BEDC315522D106AF00FD5CEE /* ChallengeTVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC315422D106AF00FD5CEE /* ChallengeTVError.swift */; };
+		BEDC315B22D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC315922D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift */; };
+		BEDC315C22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEDC315A22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib */; };
+		BEDC315E22D1352200FD5CEE /* ShowShelfSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC315D22D1352200FD5CEE /* ShowShelfSectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		BEDC314E22D0DE0E00FD5CEE /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		BEDC315122D105CE00FD5CEE /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
 		BEDC315422D106AF00FD5CEE /* ChallengeTVError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTVError.swift; sourceTree = "<group>"; };
+		BEDC315922D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowShelfCollectionViewCell.swift; sourceTree = "<group>"; };
+		BEDC315A22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowShelfCollectionViewCell.xib; sourceTree = "<group>"; };
+		BEDC315D22D1352200FD5CEE /* ShowShelfSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowShelfSectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,9 +127,8 @@
 				BEDC314022D0BF2900FD5CEE /* Model */,
 				BEDC314822D0CD3C00FD5CEE /* API */,
 				BEDC315022D1059B00FD5CEE /* Service */,
+				BEDC315622D12E7C00FD5CEE /* UI */,
 				BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */,
-				BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */,
-				BEDC311322D0B6D400FD5CEE /* Main.storyboard */,
 				BEDC311922D0B6D700FD5CEE /* Assets.xcassets */,
 				BEDC311B22D0B6D700FD5CEE /* LaunchScreen.storyboard */,
 				BEDC311E22D0B6D700FD5CEE /* Info.plist */,
@@ -198,6 +203,34 @@
 				BEDC315422D106AF00FD5CEE /* ChallengeTVError.swift */,
 			);
 			path = Error;
+			sourceTree = "<group>";
+		};
+		BEDC315622D12E7C00FD5CEE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC315822D12EEB00FD5CEE /* Views */,
+				BEDC315722D12EB800FD5CEE /* HomeViewController */,
+				BEDC311322D0B6D400FD5CEE /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BEDC315722D12EB800FD5CEE /* HomeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */,
+			);
+			path = HomeViewController;
+			sourceTree = "<group>";
+		};
+		BEDC315822D12EEB00FD5CEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC315922D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift */,
+				BEDC315A22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib */,
+				BEDC315D22D1352200FD5CEE /* ShowShelfSectionHeaderView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +339,7 @@
 			files = (
 				BEDC311D22D0B6D700FD5CEE /* LaunchScreen.storyboard in Resources */,
 				BEDC311A22D0B6D700FD5CEE /* Assets.xcassets in Resources */,
+				BEDC315C22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib in Resources */,
 				BEDC311522D0B6D400FD5CEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,11 +366,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEDC311222D0B6D400FD5CEE /* HomeViewController.swift in Sources */,
+				BEDC315E22D1352200FD5CEE /* ShowShelfSectionHeaderView.swift in Sources */,
 				BEDC314322D0C01200FD5CEE /* NetworkCommunication.swift in Sources */,
 				BEDC314D22D0CEF500FD5CEE /* DateFormatterExtensions.swift in Sources */,
 				BEDC311822D0B6D400FD5CEE /* ChallengeTV.xcdatamodeld in Sources */,
 				BEDC314A22D0CD6100FD5CEE /* ScheduleAPI.swift in Sources */,
 				BEDC314F22D0DE0E00FD5CEE /* DateExtensions.swift in Sources */,
+				BEDC315B22D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift in Sources */,
 				BEDC315222D105CE00FD5CEE /* ScheduleService.swift in Sources */,
 				BEDC314522D0C90700FD5CEE /* Schedule.swift in Sources */,
 				BEDC315522D106AF00FD5CEE /* ChallengeTVError.swift in Sources */,
