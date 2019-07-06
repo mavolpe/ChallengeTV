@@ -15,6 +15,12 @@
 		BEDC311D22D0B6D700FD5CEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311B22D0B6D700FD5CEE /* LaunchScreen.storyboard */; };
 		BEDC312822D0B6D800FD5CEE /* ChallengeTVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC312722D0B6D800FD5CEE /* ChallengeTVTests.swift */; };
 		BEDC313322D0B6D800FD5CEE /* ChallengeTVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC313222D0B6D800FD5CEE /* ChallengeTVUITests.swift */; };
+		BEDC314322D0C01200FD5CEE /* NetworkCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC314222D0C01200FD5CEE /* NetworkCommunication.swift */; };
+		BEDC314522D0C90700FD5CEE /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC314422D0C90700FD5CEE /* Schedule.swift */; };
+		BEDC314722D0C96300FD5CEE /* TVEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC314622D0C96300FD5CEE /* TVEvent.swift */; };
+		BEDC314A22D0CD6100FD5CEE /* ScheduleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC314922D0CD6100FD5CEE /* ScheduleAPI.swift */; };
+		BEDC314D22D0CEF500FD5CEE /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC314C22D0CEF500FD5CEE /* DateFormatterExtensions.swift */; };
+		BEDC314F22D0DE0E00FD5CEE /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC314E22D0DE0E00FD5CEE /* DateExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		BEDC312E22D0B6D800FD5CEE /* ChallengeTVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeTVUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDC313222D0B6D800FD5CEE /* ChallengeTVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTVUITests.swift; sourceTree = "<group>"; };
 		BEDC313422D0B6D800FD5CEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEDC314222D0C01200FD5CEE /* NetworkCommunication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCommunication.swift; sourceTree = "<group>"; };
+		BEDC314422D0C90700FD5CEE /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		BEDC314622D0C96300FD5CEE /* TVEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVEvent.swift; sourceTree = "<group>"; };
+		BEDC314922D0CD6100FD5CEE /* ScheduleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleAPI.swift; sourceTree = "<group>"; };
+		BEDC314C22D0CEF500FD5CEE /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
+		BEDC314E22D0DE0E00FD5CEE /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +111,10 @@
 		BEDC310E22D0B6D400FD5CEE /* ChallengeTV */ = {
 			isa = PBXGroup;
 			children = (
+				BEDC314B22D0CED900FD5CEE /* Utilities */,
+				BEDC314122D0BFBB00FD5CEE /* NetworkCommunication */,
+				BEDC314022D0BF2900FD5CEE /* Model */,
+				BEDC314822D0CD3C00FD5CEE /* API */,
 				BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */,
 				BEDC311122D0B6D400FD5CEE /* ViewController.swift */,
 				BEDC311322D0B6D400FD5CEE /* Main.storyboard */,
@@ -126,6 +142,40 @@
 				BEDC313422D0B6D800FD5CEE /* Info.plist */,
 			);
 			path = ChallengeTVUITests;
+			sourceTree = "<group>";
+		};
+		BEDC314022D0BF2900FD5CEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC314422D0C90700FD5CEE /* Schedule.swift */,
+				BEDC314622D0C96300FD5CEE /* TVEvent.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEDC314122D0BFBB00FD5CEE /* NetworkCommunication */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC314222D0C01200FD5CEE /* NetworkCommunication.swift */,
+			);
+			path = NetworkCommunication;
+			sourceTree = "<group>";
+		};
+		BEDC314822D0CD3C00FD5CEE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC314922D0CD6100FD5CEE /* ScheduleAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		BEDC314B22D0CED900FD5CEE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BEDC314C22D0CEF500FD5CEE /* DateFormatterExtensions.swift */,
+				BEDC314E22D0DE0E00FD5CEE /* DateExtensions.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +310,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEDC311222D0B6D400FD5CEE /* ViewController.swift in Sources */,
+				BEDC314322D0C01200FD5CEE /* NetworkCommunication.swift in Sources */,
+				BEDC314D22D0CEF500FD5CEE /* DateFormatterExtensions.swift in Sources */,
 				BEDC311822D0B6D400FD5CEE /* ChallengeTV.xcdatamodeld in Sources */,
+				BEDC314A22D0CD6100FD5CEE /* ScheduleAPI.swift in Sources */,
+				BEDC314F22D0DE0E00FD5CEE /* DateExtensions.swift in Sources */,
+				BEDC314522D0C90700FD5CEE /* Schedule.swift in Sources */,
+				BEDC314722D0C96300FD5CEE /* TVEvent.swift in Sources */,
 				BEDC311022D0B6D400FD5CEE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
