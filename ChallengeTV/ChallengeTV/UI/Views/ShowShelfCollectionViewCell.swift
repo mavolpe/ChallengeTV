@@ -8,17 +8,48 @@
 
 import UIKit
 
+protocol ShowShelfCollectionViewCellDelegate : AnyObject {
+    func getFilter()->String
+}
+
 class ShowShelfCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet var showCollectionView: UICollectionView!
     
+    weak var delegate:ShowShelfCollectionViewCellDelegate? = nil
+    
+    private var eventList:[TVEvent] = []
+    
+    private var eventListFiltered:[TVEvent]{
+        get{
+            if let filter = delegate?.getFilter(){
+                if filter.isEmpty == false{
+                    return eventList.filter({ (event) -> Bool in
+                        
+                        let containsName = event.name.lowercased().contains(filter)
+                        var containsNetwork = false
+                        if let network = event.show?.network?.name{
+                            containsNetwork = network.lowercased().contains(filter)
+                        }
+                        
+                        return containsName || containsNetwork
+                    })
+                }
+            }
+            return eventList
+        }
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         showCollectionView.register(UINib(nibName: "ShowCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: String(describing: ShowCollectionViewCell.self))
-
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(filterChanged(_:)), name: HomeViewController.searchChangedNotificationName, object: nil)
     }
     
-    private var eventList:[TVEvent] = []
+    @objc func filterChanged(_ notification:Notification){
+        showCollectionView.reloadData()
+    }
     
     public var schedule:Schedule!{
         didSet{
@@ -33,7 +64,8 @@ class ShowShelfCollectionViewCell: UICollectionViewCell {
 extension ShowShelfCollectionViewCell : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return eventList.count
+        
+        return eventListFiltered.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -43,7 +75,7 @@ extension ShowShelfCollectionViewCell : UICollectionViewDelegate, UICollectionVi
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         if let showCollectionViewCell = showCollectionView.dequeueReusableCell(withReuseIdentifier: "ShowCollectionViewCell", for: indexPath) as? ShowCollectionViewCell{
-            let event = eventList[indexPath.item]
+            let event = eventListFiltered[indexPath.item]
             showCollectionViewCell.event = event
             return showCollectionViewCell
         }

@@ -20,6 +20,10 @@ class HomeViewController: UIViewController{
     var lastScrollY:CGFloat = 0.0
     
     var isDecelerating = false
+    
+    var filter:String = ""
+    
+    public static let searchChangedNotificationName = Notification.Name("searchChangedNotificationName")
 
     @IBOutlet var topBarView: UIView!
     override func viewDidLoad() {
@@ -80,6 +84,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
             if let schedule = schedule[indexPath.section]?.schedule{
                 showShelfCollectionViewCell.schedule = schedule
             }
+            showShelfCollectionViewCell.delegate = self
             return showShelfCollectionViewCell
         }
             
@@ -127,21 +132,21 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
 }
 
-// MARK: TableView delegates and search functionality
-extension HomeViewController : UISearchBarDelegate, UISearchControllerDelegate, UIScrollViewDelegate{
+// MARK: Search bar and top bar handling...
+extension HomeViewController : UISearchBarDelegate, UISearchControllerDelegate, UIScrollViewDelegate, ShowShelfCollectionViewCellDelegate{
+    func getFilter() -> String {
+        return filter
+    }
+    
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
-        let searchLower = searchText.lowercased()
+        filter = searchText.lowercased()
         
-//        searchedAirports = airports.filter({$0.city.lowercased().contains(searchLower) ||
-//            $0.IATA.lowercased().contains(searchLower) ||
-//            $0.country.lowercased().contains(searchLower) ||
-//            $0.name.lowercased().contains(searchLower)
-//        })
-//        
-//        searchResults.reloadData()
-//        searchResults.isHidden = false
+        if filter.isEmpty == false{
+            NotificationCenter.default.post(name: HomeViewController.searchChangedNotificationName, object: filter)
+        }
+
         searchBar.showsCancelButton = true
     }
     
@@ -155,7 +160,7 @@ extension HomeViewController : UISearchBarDelegate, UISearchControllerDelegate, 
     
     func clearSearch(){
         searchBar.showsCancelButton = false
-        searchBar.text = ""
+        //searchBar.text = ""
         searchBar.resignFirstResponder()
     }
     
