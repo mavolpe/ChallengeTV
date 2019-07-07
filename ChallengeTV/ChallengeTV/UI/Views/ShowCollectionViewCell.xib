@@ -33,13 +33,13 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLR-Qa-04G" userLabel="StartTime">
-                        <rect key="frame" x="4" y="132" width="35.5" height="17"/>
+                        <rect key="frame" x="4" y="132" width="42" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnX-nb-qD7" userLabel="Network">
-                        <rect key="frame" x="4" y="149" width="36" height="17"/>
+                        <rect key="frame" x="4" y="149" width="42" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -48,10 +48,12 @@
             </view>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="vLR-Qa-04G" secondAttribute="trailing" constant="4" id="Eq3-gJ-KzB"/>
                 <constraint firstItem="WnX-nb-qD7" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="4" id="Hxq-tf-PPX"/>
                 <constraint firstItem="4bR-Np-l7t" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="MhF-jo-Xrg"/>
-                <constraint firstItem="BN2-Gi-MGi" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="SWg-k8-jhy"/>
                 <constraint firstItem="BN2-Gi-MGi" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="4" id="a00-B8-Vw8"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="WnX-nb-qD7" secondAttribute="trailing" constant="4" id="aN0-Rw-ypJ"/>
+                <constraint firstItem="BN2-Gi-MGi" firstAttribute="trailing" secondItem="ZTg-uK-7eu" secondAttribute="trailing" constant="4" id="oa7-xB-cBv"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="4bR-Np-l7t" secondAttribute="top" id="ptR-qe-4vH"/>
                 <constraint firstItem="WnX-nb-qD7" firstAttribute="top" secondItem="vLR-Qa-04G" secondAttribute="bottom" id="u7D-hv-KL0"/>
                 <constraint firstItem="vLR-Qa-04G" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="4" id="vN3-gs-IwE"/>

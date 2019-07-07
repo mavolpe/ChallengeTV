@@ -9,6 +9,9 @@
 import UIKit
 
 class CellSizeUtil {
+    static let sectionInsetTopBottom:CGFloat = 10.0
+    static let ipadCellWidth:CGFloat = 200.0
+    static let iphoneCellWidth:CGFloat = 100.0
     
     static func getBottomSpaceRatio()->CGFloat{
         let ipad = UIDevice.current.userInterfaceIdiom == .pad
@@ -21,7 +24,7 @@ class CellSizeUtil {
     static func getCellWidth()->CGFloat{
         let ipad = UIDevice.current.userInterfaceIdiom == .pad
         
-        let cellWidth:CGFloat = ipad ? 200 : 100
+        let cellWidth:CGFloat = ipad ? ipadCellWidth : iphoneCellWidth
         
         return cellWidth
     }
@@ -33,7 +36,7 @@ class CellSizeUtil {
 
         let showCellSize = CellSizeUtil.getShowCellSize(bounds: bounds)
         
-        return CGSize(width: bounds.width, height: showCellSize.height)
+        return CGSize(width: bounds.width, height: showCellSize.height+CellSizeUtil.sectionInsetTopBottom)
     }
     
     static func getShowCellSize(bounds:CGRect)->CGSize{
