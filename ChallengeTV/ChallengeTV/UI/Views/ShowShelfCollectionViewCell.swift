@@ -61,4 +61,7 @@ extension ShowShelfCollectionViewCell : UICollectionViewDelegate, UICollectionVi
         return 0.5
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        NSLog("")
+    }
 }

@@ -11,10 +11,15 @@ import UIKit
 class HomeViewController: UIViewController{
     @IBOutlet var scheduleCollectionView: UICollectionView!
     
+    @IBOutlet var searchBar: UISearchBar!
     let leftSectionInset:CGFloat = 10.0
     
+    @IBOutlet var topBarTopConstraint: NSLayoutConstraint!
     var schedule:ScheduleCache = [:]
+    
+    var lastScrollY:CGFloat = 0.0
 
+    @IBOutlet var topBarView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,8 +34,10 @@ class HomeViewController: UIViewController{
                 this.schedule = schedule
                 this.scheduleCollectionView.reloadData()
             })
-            
         }
+        
+        let searchTapDismiss:UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(HomeViewController.dismissSearch(recognizer:)))
+        self.view.addGestureRecognizer(searchTapDismiss)
     }
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -95,7 +102,7 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         
         let width = collectionView.bounds.width
-        let height:CGFloat = 50.0
+        let height:CGFloat = section > 0 ? 50.0 : 100
         let cellWidth = width 
         return CGSize(width: cellWidth, height: height)
     }
@@ -113,7 +120,76 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        
         return UIEdgeInsets(top: 0, left: leftSectionInset, bottom: 0, right: 0)
+    }
+}
+
+// MARK: TableView delegates and search functionality
+extension HomeViewController : UISearchBarDelegate, UISearchControllerDelegate, UIScrollViewDelegate{
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        let searchLower = searchText.lowercased()
+        
+//        searchedAirports = airports.filter({$0.city.lowercased().contains(searchLower) ||
+//            $0.IATA.lowercased().contains(searchLower) ||
+//            $0.country.lowercased().contains(searchLower) ||
+//            $0.name.lowercased().contains(searchLower)
+//        })
+//        
+//        searchResults.reloadData()
+//        searchResults.isHidden = false
+        searchBar.showsCancelButton = true
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        clearSearch()
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        clearSearch()
+    }
+    
+    func clearSearch(){
+        searchBar.showsCancelButton = false
+        searchBar.text = ""
+        searchBar.resignFirstResponder()
+    }
+    
+    @objc func dismissSearch(recognizer:UIGestureRecognizer){
+        clearSearch()
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if searchBar.isFirstResponder{
+            clearSearch()
+        }
+        
+        handleShowHideTopBar()
+    }
+    
+    func handleShowHideTopBar(){
+        let contentOffset = scheduleCollectionView.contentOffset
+        if contentOffset.y > lastScrollY && contentOffset.y >= 0{
+            // we're moving up...
+            let hiddenHeight = topBarView.frame.size.height * -1.0
+            if topBarTopConstraint.constant > hiddenHeight{
+                var newTopBarY = topBarTopConstraint.constant - (contentOffset.y - lastScrollY)
+                newTopBarY = max(newTopBarY, hiddenHeight)
+                topBarTopConstraint.constant = newTopBarY
+            }
+        }else{
+            // we're moving down... 
+            if topBarTopConstraint.constant < 0{
+                var newTopBarY = topBarTopConstraint.constant + (lastScrollY - contentOffset.y)
+                newTopBarY = min(newTopBarY, 0)
+                topBarTopConstraint.constant = newTopBarY
+            }
+        }
+        if contentOffset.y >= 0{
+            lastScrollY = contentOffset.y
+        }
     }
 }
 

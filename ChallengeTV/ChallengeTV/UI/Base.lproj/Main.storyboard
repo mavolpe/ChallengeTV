@@ -54,18 +54,41 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Eq4-ma-IVK"/>
                                 </connections>
                             </collectionView>
+                            <view alpha="0.90000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikm-7B-Gz4" userLabel="TopBar">
+                                <rect key="frame" x="0.0" y="44" width="414" height="65"/>
+                                <subviews>
+                                    <searchBar contentMode="redraw" fixedFrame="YES" barStyle="black" searchBarStyle="minimal" placeholder="Enter title or network name to filter" translatesAutoresizingMaskIntoConstraints="NO" id="SPE-9j-vRw">
+                                        <rect key="frame" x="0.0" y="10" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="fcR-3O-M00"/>
+                                        </connections>
+                                    </searchBar>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="man-sI-BQ9"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.071503187287343686" green="0.078218726670905334" blue="0.060399805438028621" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Ils-kD-4n8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2Tr-yp-Up3"/>
+                            <constraint firstItem="ikm-7B-Gz4" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="2nF-HM-AKF"/>
                             <constraint firstItem="Ils-kD-4n8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="33F-Ke-TDJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="Ils-kD-4n8" secondAttribute="top" id="7R4-B1-5Sa"/>
+                            <constraint firstItem="ikm-7B-Gz4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="RKO-jm-nas"/>
+                            <constraint firstItem="ikm-7B-Gz4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Sxa-r9-gp4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ils-kD-4n8" secondAttribute="trailing" id="fjb-HY-hhK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="scheduleCollectionView" destination="Ils-kD-4n8" id="lE2-UB-mhY"/>
+                        <outlet property="searchBar" destination="SPE-9j-vRw" id="QCP-ZN-bC2"/>
+                        <outlet property="topBarTopConstraint" destination="RKO-jm-nas" id="gGU-rE-UX8"/>
+                        <outlet property="topBarView" destination="ikm-7B-Gz4" id="8oX-KW-FMB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

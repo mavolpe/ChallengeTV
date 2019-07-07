@@ -58,5 +58,4 @@ class CellSizeUtil {
         
         return CGSize(width: cellWidth, height: height)
     }
-    
 }
