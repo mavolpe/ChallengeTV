@@ -106,7 +106,32 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         return UICollectionReusableView()
     }
     
+    func sectionHasDataWithFilter(section:Int)->Bool{
+        if  let eventList = schedule[section]?.schedule.events{
+            if eventList.filter({ (event) -> Bool in
+                
+                let containsName = event.name.lowercased().contains(filter)
+                var containsNetwork = false
+                if let network = event.show?.network?.name{
+                    containsNetwork = network.lowercased().contains(filter)
+                }
+                
+                return containsName || containsNetwork
+            }).count == 0{
+                return false
+            }
+        }
+        
+        return true
+    }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        
+        if filter.isEmpty == false{
+            if sectionHasDataWithFilter(section: section) == false{
+                return CGSize(width: collectionView.bounds.width, height: 1)
+            }
+        }
         
         let width = collectionView.bounds.width
         let height:CGFloat = section > 0 ? 50.0 : 100
@@ -116,6 +141,12 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        if filter.isEmpty == false{
+            if sectionHasDataWithFilter(section: indexPath.section) == false{
+                return CGSize(width: collectionView.bounds.width, height: 1)
+            }
+        }
 
         // the inner collectionview has to have the section insets - a bit off the size or we will get
         // a warning from the system at runtime
@@ -143,9 +174,11 @@ extension HomeViewController : UISearchBarDelegate, UISearchControllerDelegate, 
         
         filter = searchText.lowercased()
         
-        if filter.isEmpty == false{
-            NotificationCenter.default.post(name: HomeViewController.searchChangedNotificationName, object: filter)
+        if let flowLayout = scheduleCollectionView.collectionViewLayout as? UICollectionViewFlowLayout{
+            flowLayout.invalidateLayout()
         }
+        
+        NotificationCenter.default.post(name: HomeViewController.searchChangedNotificationName, object: filter)
 
         searchBar.showsCancelButton = true
     }

@@ -48,6 +48,7 @@ class ShowShelfCollectionViewCell: UICollectionViewCell {
     }
     
     @objc func filterChanged(_ notification:Notification){
+        showCollectionView.contentOffset = CGPoint.zero
         showCollectionView.reloadData()
     }
     
