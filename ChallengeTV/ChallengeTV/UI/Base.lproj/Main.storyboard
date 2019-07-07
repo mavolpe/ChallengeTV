@@ -33,7 +33,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXV-nf-Np5" userLabel="SectionLabel">
-                                            <rect key="frame" x="8" y="23.5" width="47" height="21.5"/>
+                                            <rect key="frame" x="15" y="23.5" width="47" height="21.5"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -41,7 +41,7 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="HXV-nf-Np5" firstAttribute="leading" secondItem="Gzp-9J-5HG" secondAttribute="leading" constant="8" id="NWl-0s-ETz"/>
+                                        <constraint firstItem="HXV-nf-Np5" firstAttribute="leading" secondItem="Gzp-9J-5HG" secondAttribute="leading" constant="15" id="NWl-0s-ETz"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HXV-nf-Np5" secondAttribute="trailing" constant="20" symbolic="YES" id="grb-LL-jo5"/>
                                         <constraint firstAttribute="bottom" secondItem="HXV-nf-Np5" secondAttribute="bottom" constant="5" id="uUM-X4-9Fd"/>
                                     </constraints>

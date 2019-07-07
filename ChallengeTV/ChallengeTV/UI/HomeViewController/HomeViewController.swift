@@ -11,6 +11,7 @@ import UIKit
 class HomeViewController: UIViewController{
     @IBOutlet var scheduleCollectionView: UICollectionView!
     
+    let leftSectionInset:CGFloat = 10.0
     
     var schedule:ScheduleCache = [:]
 
@@ -41,8 +42,9 @@ class HomeViewController: UIViewController{
         guard let flowLayout = scheduleCollectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
             return
         }
+
         flowLayout.invalidateLayout()
-        
+
         for cell in scheduleCollectionView.visibleCells{
             if let showShelf = cell as? ShowShelfCollectionViewCell{
                 guard let flowLayout = showShelf.showCollectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
@@ -56,7 +58,6 @@ class HomeViewController: UIViewController{
 
 extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         return 1
     }
     
@@ -95,22 +96,24 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         
         let width = collectionView.bounds.width
         let height:CGFloat = 50.0
-        let cellWidth = width // compute your cell width
+        let cellWidth = width 
         return CGSize(width: cellWidth, height: height)
     }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let width = collectionView.bounds.width
-        let height = collectionView.bounds.height / 3
-        let cellWidth = width // compute your cell width
-        return CGSize(width: cellWidth, height: height)
+
+        // the inner collectionview has to have the section insets - a bit off the size or we will get
+        // a warning from the system at runtime
+        var boundsMinusInsets = collectionView.bounds
+        var width = boundsMinusInsets.size.width
+        width = width - leftSectionInset - 5
+        boundsMinusInsets.size.width = width
+        return CellSizeUtil.getShelfCellSize(bounds: boundsMinusInsets)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
+        return UIEdgeInsets(top: 0, left: leftSectionInset, bottom: 0, right: 0)
     }
-    
 }
 

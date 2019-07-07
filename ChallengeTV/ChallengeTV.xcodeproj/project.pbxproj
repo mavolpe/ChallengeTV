@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		162014F9F67585546AAA8B2C /* Pods_ChallengeTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADF644F09299C8700BCFDD5 /* Pods_ChallengeTVUITests.framework */; };
 		84BE1D2FC8E33D1C8360C3E2 /* Pods_ChallengeTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E696F5D64CE42D34BC48B2A /* Pods_ChallengeTVTests.framework */; };
+		BE0A057922D22A71006CB7F9 /* CellSizeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A057822D22A71006CB7F9 /* CellSizeUtil.swift */; };
 		BEDC311022D0B6D400FD5CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */; };
 		BEDC311222D0B6D400FD5CEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */; };
 		BEDC311522D0B6D400FD5CEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311322D0B6D400FD5CEE /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		8698E9208A926884D5240133 /* Pods-ChallengeTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeTVTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeTVTests/Pods-ChallengeTVTests.release.xcconfig"; sourceTree = "<group>"; };
 		9ADF644F09299C8700BCFDD5 /* Pods_ChallengeTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E696F5D64CE42D34BC48B2A /* Pods_ChallengeTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE0A057822D22A71006CB7F9 /* CellSizeUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSizeUtil.swift; sourceTree = "<group>"; };
 		BEDC310C22D0B6D400FD5CEE /* ChallengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -127,7 +129,6 @@
 				7A1EBD0B7C38E303879F3FA5 /* Pods-ChallengeTVUITests.debug.xcconfig */,
 				FA459D2395AA11EF28B2C259 /* Pods-ChallengeTVUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -253,6 +254,7 @@
 		BEDC315622D12E7C00FD5CEE /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				BEFEEEE722D22A0000668C22 /* SizingUtils */,
 				BEDC315822D12EEB00FD5CEE /* Views */,
 				BEDC315722D12EB800FD5CEE /* HomeViewController */,
 				BEDC311322D0B6D400FD5CEE /* Main.storyboard */,
@@ -278,6 +280,14 @@
 				BEDC316022D16F8700FD5CEE /* ShowCollectionViewCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		BEFEEEE722D22A0000668C22 /* SizingUtils */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A057822D22A71006CB7F9 /* CellSizeUtil.swift */,
+			);
+			path = SizingUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,6 +522,7 @@
 				BEDC314A22D0CD6100FD5CEE /* ScheduleAPI.swift in Sources */,
 				BEDC314F22D0DE0E00FD5CEE /* DateExtensions.swift in Sources */,
 				BEDC315B22D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift in Sources */,
+				BE0A057922D22A71006CB7F9 /* CellSizeUtil.swift in Sources */,
 				BEDC315222D105CE00FD5CEE /* ScheduleService.swift in Sources */,
 				BEDC314522D0C90700FD5CEE /* Schedule.swift in Sources */,
 				BEDC315522D106AF00FD5CEE /* ChallengeTVError.swift in Sources */,

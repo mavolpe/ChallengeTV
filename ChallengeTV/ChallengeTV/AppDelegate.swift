@@ -89,14 +89,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    var enableAllOrientation = false
-    
-    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-        if (enableAllOrientation == true){
-            return UIInterfaceOrientationMask.allButUpsideDown
-        }
-        return UIInterfaceOrientationMask.portrait
-    }
+//    var enableAllOrientation = false
+//    
+//    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+//        if (enableAllOrientation == true){
+//            return UIInterfaceOrientationMask.allButUpsideDown
+//        }
+//        return UIInterfaceOrientationMask.portrait
+//    }
 
 }
 

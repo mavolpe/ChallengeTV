@@ -53,10 +53,7 @@ extension ShowShelfCollectionViewCell : UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width = collectionView.bounds.width / 3.5
-        let height = collectionView.bounds.height
-        let cellWidth = width // compute your cell width
-        return CGSize(width: cellWidth, height: height)
+        return CellSizeUtil.getShowCellSize(bounds: collectionView.bounds)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
