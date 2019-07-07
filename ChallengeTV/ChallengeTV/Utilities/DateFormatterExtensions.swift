@@ -35,4 +35,23 @@ extension DateFormatter {
         formatter.locale = Locale(identifier: "en_US_POSIX")
         return formatter
     }()
+    
+    static let startTimeDisplayFormat: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEE MMM dd h:mm a"
+        formatter.calendar = Calendar(identifier: .iso8601)
+        formatter.timeZone = TimeZone.current
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        return formatter
+    }()
+    
+    static let shelfDisplayFormatt: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEE MMM dd"
+        formatter.calendar = Calendar(identifier: .iso8601)
+        formatter.timeZone = TimeZone.current
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        return formatter
+    }()
+
 }

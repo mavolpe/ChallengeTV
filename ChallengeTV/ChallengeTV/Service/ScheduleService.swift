@@ -13,7 +13,7 @@ typealias ScheduleCache = [Int:(date:Date,schedule:Schedule)]
 class ScheduleService {
     private let cacheSizeDays = 7 // TODO - configurable??
     private let countryCode = "US" // TODO - configurable??
-    private let scheduleQueue = DispatchQueue(label: "ScheduleServiceQueue", attributes: .concurrent)
+    private let scheduleQueue = DispatchQueue(label: "scheduleSyncQueu")
     private let scheduleFetchGroup = DispatchGroup()
     private let scheduleAPI = ScheduleAPI()
     
@@ -24,12 +24,17 @@ class ScheduleService {
     
     private var scheduleCache:ScheduleCache = [:]
     
-    public func getScheduleCount()->Int{
-        return scheduleCache.count
-    }
-    
-    public func getScheduleCache()->ScheduleCache{
-        return scheduleCache
+    public func getScheduleCache(completion:@escaping (ScheduleCache)->Void){
+        var schedule:ScheduleCache = [:]
+        scheduleQueue.async { [weak self] in
+            guard let this = self else{
+                return
+            }
+            schedule = this.scheduleCache
+            DispatchQueue.main.async {
+                completion(schedule)
+            }
+        }
     }
     
     public func fetchSchedule(completion:@escaping ()->Void){
@@ -43,29 +48,16 @@ class ScheduleService {
                     return
                 }
                 if let schedule = schedule{
-                    this.scheduleCache[index] = (day, schedule)
+                    this.scheduleQueue.sync {
+                        this.scheduleCache[index] = (day, schedule)
+                    }
                 }
                 this.scheduleFetchGroup.leave()
             }
             
         }
-        scheduleFetchGroup.notify(queue: DispatchQueue.main) { [weak self] in
-            guard let this = self else{
-                return
-            }
+        scheduleFetchGroup.notify(queue: DispatchQueue.main) {
             completion()
-            for key in 0..<this.scheduleCache.count{
-                if let value = this.scheduleCache[key]{
-                    if let scheduleDate = value.schedule.scheduleDate{
-                        NSLog("#### SCHEDULE FOR \(scheduleDate)")
-                        if let events = value.1.events{
-                            for event in events{
-                                NSLog("#### event \(event.name) \(event.startDate)")
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
     

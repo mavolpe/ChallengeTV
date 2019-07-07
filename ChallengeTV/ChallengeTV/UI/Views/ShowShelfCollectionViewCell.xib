@@ -18,9 +18,34 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qDn-0j-Vl0">
+                        <rect key="frame" x="0.0" y="5" width="50" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="z49-NJ-ITM">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <connections>
+                            <outlet property="dataSource" destination="gTV-IL-0wX" id="TfK-tY-cQG"/>
+                            <outlet property="delegate" destination="gTV-IL-0wX" id="HvS-lL-YTW"/>
+                        </connections>
+                    </collectionView>
+                </subviews>
             </view>
-            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qDn-0j-Vl0" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="W9N-Xk-1Qy"/>
+                <constraint firstItem="qDn-0j-Vl0" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="YeR-CK-QHt"/>
+                <constraint firstItem="qDn-0j-Vl0" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="YoN-VS-WiL"/>
+                <constraint firstItem="qDn-0j-Vl0" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="dxV-26-TeD"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="showCollectionView" destination="qDn-0j-Vl0" id="MR2-5S-YUd"/>
+            </connections>
         </collectionViewCell>
     </objects>
 </document>

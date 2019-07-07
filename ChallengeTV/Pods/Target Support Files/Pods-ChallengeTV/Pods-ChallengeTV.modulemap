@@ -1,0 +1,6 @@
+framework module Pods_ChallengeTV {
+  umbrella header "Pods-ChallengeTV-umbrella.h"
+
+  export *
+  module * { export * }
+}

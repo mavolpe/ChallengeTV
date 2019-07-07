@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162014F9F67585546AAA8B2C /* Pods_ChallengeTVUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9ADF644F09299C8700BCFDD5 /* Pods_ChallengeTVUITests.framework */; };
+		84BE1D2FC8E33D1C8360C3E2 /* Pods_ChallengeTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E696F5D64CE42D34BC48B2A /* Pods_ChallengeTVTests.framework */; };
 		BEDC311022D0B6D400FD5CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */; };
 		BEDC311222D0B6D400FD5CEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */; };
 		BEDC311522D0B6D400FD5CEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311322D0B6D400FD5CEE /* Main.storyboard */; };
@@ -26,6 +28,9 @@
 		BEDC315B22D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC315922D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift */; };
 		BEDC315C22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEDC315A22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib */; };
 		BEDC315E22D1352200FD5CEE /* ShowShelfSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC315D22D1352200FD5CEE /* ShowShelfSectionHeaderView.swift */; };
+		BEDC316122D16F8700FD5CEE /* ShowCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC315F22D16F8700FD5CEE /* ShowCollectionViewCell.swift */; };
+		BEDC316222D16F8700FD5CEE /* ShowCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEDC316022D16F8700FD5CEE /* ShowCollectionViewCell.xib */; };
+		EF2236CD0FB8E3ACF7B3A822 /* Pods_ChallengeTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C9E53EFF357FE95B352BF9 /* Pods_ChallengeTV.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08C9E53EFF357FE95B352BF9 /* Pods_ChallengeTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B4A02A335D7AA4B4D1626BB /* Pods-ChallengeTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeTV.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeTV/Pods-ChallengeTV.debug.xcconfig"; sourceTree = "<group>"; };
+		7A1EBD0B7C38E303879F3FA5 /* Pods-ChallengeTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeTVUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeTVUITests/Pods-ChallengeTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		828BDA7A97B754F15C827A06 /* Pods-ChallengeTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeTV.release.xcconfig"; path = "Target Support Files/Pods-ChallengeTV/Pods-ChallengeTV.release.xcconfig"; sourceTree = "<group>"; };
+		8698E9208A926884D5240133 /* Pods-ChallengeTVTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeTVTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeTVTests/Pods-ChallengeTVTests.release.xcconfig"; sourceTree = "<group>"; };
+		9ADF644F09299C8700BCFDD5 /* Pods_ChallengeTVUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeTVUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E696F5D64CE42D34BC48B2A /* Pods_ChallengeTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDC310C22D0B6D400FD5CEE /* ChallengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +83,10 @@
 		BEDC315922D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowShelfCollectionViewCell.swift; sourceTree = "<group>"; };
 		BEDC315A22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowShelfCollectionViewCell.xib; sourceTree = "<group>"; };
 		BEDC315D22D1352200FD5CEE /* ShowShelfSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowShelfSectionHeaderView.swift; sourceTree = "<group>"; };
+		BEDC315F22D16F8700FD5CEE /* ShowCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowCollectionViewCell.swift; sourceTree = "<group>"; };
+		BEDC316022D16F8700FD5CEE /* ShowCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowCollectionViewCell.xib; sourceTree = "<group>"; };
+		CCB1986033AB159C403E5E6E /* Pods-ChallengeTVTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeTVTests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeTVTests/Pods-ChallengeTVTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA459D2395AA11EF28B2C259 /* Pods-ChallengeTVUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeTVUITests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeTVUITests/Pods-ChallengeTVUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF2236CD0FB8E3ACF7B3A822 /* Pods_ChallengeTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84BE1D2FC8E33D1C8360C3E2 /* Pods_ChallengeTVTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,12 +110,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162014F9F67585546AAA8B2C /* Pods_ChallengeTVUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1749C840EDE2540A2F0E6A4E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4B4A02A335D7AA4B4D1626BB /* Pods-ChallengeTV.debug.xcconfig */,
+				828BDA7A97B754F15C827A06 /* Pods-ChallengeTV.release.xcconfig */,
+				CCB1986033AB159C403E5E6E /* Pods-ChallengeTVTests.debug.xcconfig */,
+				8698E9208A926884D5240133 /* Pods-ChallengeTVTests.release.xcconfig */,
+				7A1EBD0B7C38E303879F3FA5 /* Pods-ChallengeTVUITests.debug.xcconfig */,
+				FA459D2395AA11EF28B2C259 /* Pods-ChallengeTVUITests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1BAF2FB4F3F2411840949EED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08C9E53EFF357FE95B352BF9 /* Pods_ChallengeTV.framework */,
+				9E696F5D64CE42D34BC48B2A /* Pods_ChallengeTVTests.framework */,
+				9ADF644F09299C8700BCFDD5 /* Pods_ChallengeTVUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BEDC310322D0B6D300FD5CEE = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +148,8 @@
 				BEDC312622D0B6D800FD5CEE /* ChallengeTVTests */,
 				BEDC313122D0B6D800FD5CEE /* ChallengeTVUITests */,
 				BEDC310D22D0B6D400FD5CEE /* Products */,
+				1749C840EDE2540A2F0E6A4E /* Pods */,
+				1BAF2FB4F3F2411840949EED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -229,6 +274,8 @@
 				BEDC315922D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift */,
 				BEDC315A22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib */,
 				BEDC315D22D1352200FD5CEE /* ShowShelfSectionHeaderView.swift */,
+				BEDC315F22D16F8700FD5CEE /* ShowCollectionViewCell.swift */,
+				BEDC316022D16F8700FD5CEE /* ShowCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -240,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEDC313722D0B6D800FD5CEE /* Build configuration list for PBXNativeTarget "ChallengeTV" */;
 			buildPhases = (
+				AFFBC32C80DE6447CC09CA61 /* [CP] Check Pods Manifest.lock */,
 				BEDC310822D0B6D400FD5CEE /* Sources */,
 				BEDC310922D0B6D400FD5CEE /* Frameworks */,
 				BEDC310A22D0B6D400FD5CEE /* Resources */,
+				2F5270F209CC64FB84713DA8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +306,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEDC313A22D0B6D800FD5CEE /* Build configuration list for PBXNativeTarget "ChallengeTVTests" */;
 			buildPhases = (
+				83FB9C25A0F190B740AB2E94 /* [CP] Check Pods Manifest.lock */,
 				BEDC311F22D0B6D800FD5CEE /* Sources */,
 				BEDC312022D0B6D800FD5CEE /* Frameworks */,
 				BEDC312122D0B6D800FD5CEE /* Resources */,
@@ -275,6 +325,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BEDC313D22D0B6D800FD5CEE /* Build configuration list for PBXNativeTarget "ChallengeTVUITests" */;
 			buildPhases = (
+				357D5617BE986C6DCF117FC4 /* [CP] Check Pods Manifest.lock */,
 				BEDC312A22D0B6D800FD5CEE /* Sources */,
 				BEDC312B22D0B6D800FD5CEE /* Frameworks */,
 				BEDC312C22D0B6D800FD5CEE /* Resources */,
@@ -339,6 +390,7 @@
 			files = (
 				BEDC311D22D0B6D700FD5CEE /* LaunchScreen.storyboard in Resources */,
 				BEDC311A22D0B6D700FD5CEE /* Assets.xcassets in Resources */,
+				BEDC316222D16F8700FD5CEE /* ShowCollectionViewCell.xib in Resources */,
 				BEDC315C22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib in Resources */,
 				BEDC311522D0B6D400FD5CEE /* Main.storyboard in Resources */,
 			);
@@ -360,12 +412,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2F5270F209CC64FB84713DA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeTV/Pods-ChallengeTV-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeTV/Pods-ChallengeTV-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengeTV/Pods-ChallengeTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		357D5617BE986C6DCF117FC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeTVUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83FB9C25A0F190B740AB2E94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeTVTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFFBC32C80DE6447CC09CA61 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeTV-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BEDC310822D0B6D400FD5CEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BEDC311222D0B6D400FD5CEE /* HomeViewController.swift in Sources */,
+				BEDC316122D16F8700FD5CEE /* ShowCollectionViewCell.swift in Sources */,
 				BEDC315E22D1352200FD5CEE /* ShowShelfSectionHeaderView.swift in Sources */,
 				BEDC314322D0C01200FD5CEE /* NetworkCommunication.swift in Sources */,
 				BEDC314D22D0CEF500FD5CEE /* DateFormatterExtensions.swift in Sources */,
@@ -550,6 +689,7 @@
 		};
 		BEDC313822D0B6D800FD5CEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B4A02A335D7AA4B4D1626BB /* Pods-ChallengeTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -568,6 +708,7 @@
 		};
 		BEDC313922D0B6D800FD5CEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 828BDA7A97B754F15C827A06 /* Pods-ChallengeTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +727,7 @@
 		};
 		BEDC313B22D0B6D800FD5CEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCB1986033AB159C403E5E6E /* Pods-ChallengeTVTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -607,6 +749,7 @@
 		};
 		BEDC313C22D0B6D800FD5CEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8698E9208A926884D5240133 /* Pods-ChallengeTVTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -628,6 +771,7 @@
 		};
 		BEDC313E22D0B6D800FD5CEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A1EBD0B7C38E303879F3FA5 /* Pods-ChallengeTVUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -648,6 +792,7 @@
 		};
 		BEDC313F22D0B6D800FD5CEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA459D2395AA11EF28B2C259 /* Pods-ChallengeTVUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

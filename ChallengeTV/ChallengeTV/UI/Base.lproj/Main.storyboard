@@ -19,8 +19,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ils-kD-4n8" userLabel="ScheduleCollectionView">
-                                <rect key="frame" x="0.0" y="5" width="414" height="896"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7hW-Po-ZHy">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="50" height="50"/>
@@ -33,17 +33,17 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXV-nf-Np5" userLabel="SectionLabel">
-                                            <rect key="frame" x="10" y="14.5" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
+                                            <rect key="frame" x="8" y="23.5" width="47" height="21.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" red="0.54437981820000003" green="1" blue="0.34087670710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstItem="HXV-nf-Np5" firstAttribute="leading" secondItem="Gzp-9J-5HG" secondAttribute="leading" constant="10" id="NWl-0s-ETz"/>
-                                        <constraint firstItem="HXV-nf-Np5" firstAttribute="centerY" secondItem="Gzp-9J-5HG" secondAttribute="centerY" id="Pvu-Ry-vjP"/>
+                                        <constraint firstItem="HXV-nf-Np5" firstAttribute="leading" secondItem="Gzp-9J-5HG" secondAttribute="leading" constant="8" id="NWl-0s-ETz"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HXV-nf-Np5" secondAttribute="trailing" constant="20" symbolic="YES" id="grb-LL-jo5"/>
+                                        <constraint firstAttribute="bottom" secondItem="HXV-nf-Np5" secondAttribute="bottom" constant="5" id="uUM-X4-9Fd"/>
                                     </constraints>
                                     <connections>
                                         <outlet property="sectionLabel" destination="HXV-nf-Np5" id="9OF-TH-7CM"/>
@@ -55,12 +55,12 @@
                                 </connections>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.071503187287343686" green="0.078218726670905334" blue="0.060399805438028621" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Ils-kD-4n8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="8ej-yj-bUH"/>
-                            <constraint firstItem="Ils-kD-4n8" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Q6z-5r-5KD"/>
-                            <constraint firstItem="Ils-kD-4n8" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="cqs-Z8-Zjm"/>
-                            <constraint firstItem="Ils-kD-4n8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="pmd-n8-P6n"/>
+                            <constraint firstItem="Ils-kD-4n8" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2Tr-yp-Up3"/>
+                            <constraint firstItem="Ils-kD-4n8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="33F-Ke-TDJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="Ils-kD-4n8" secondAttribute="top" id="7R4-B1-5Sa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ils-kD-4n8" secondAttribute="trailing" id="fjb-HY-hhK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

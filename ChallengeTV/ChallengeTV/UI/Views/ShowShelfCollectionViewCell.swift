@@ -10,9 +10,58 @@ import UIKit
 
 class ShowShelfCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet var showCollectionView: UICollectionView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
+        showCollectionView.register(UINib(nibName: "ShowCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: String(describing: ShowCollectionViewCell.self))
 
+    }
+    
+    private var eventList:[TVEvent] = []
+    
+    public var schedule:Schedule!{
+        didSet{
+            if let events = schedule.events{
+                eventList = events
+                showCollectionView.reloadData()
+            }
+        }
+    }
+}
+
+extension ShowShelfCollectionViewCell : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return eventList.count
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        if let showCollectionViewCell = showCollectionView.dequeueReusableCell(withReuseIdentifier: "ShowCollectionViewCell", for: indexPath) as? ShowCollectionViewCell{
+            let event = eventList[indexPath.item]
+            showCollectionViewCell.event = event
+            return showCollectionViewCell
+        }
+        
+        return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let width = collectionView.bounds.width / 3.5
+        let height = collectionView.bounds.height
+        let cellWidth = width // compute your cell width
+        return CGSize(width: cellWidth, height: height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return 0.5
+    }
+    
 }

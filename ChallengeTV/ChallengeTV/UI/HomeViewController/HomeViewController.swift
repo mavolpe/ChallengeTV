@@ -20,16 +20,38 @@ class HomeViewController: UIViewController{
         // register our cell
         scheduleCollectionView.register(UINib(nibName: "ShowShelfCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: String(describing: ShowShelfCollectionViewCell.self))
         
-        ScheduleService.sharedInstance.fetchSchedule { [weak self] in
-            guard let this = self else{
-                return
-            }
-            this.schedule = ScheduleService.sharedInstance.getScheduleCache()
-            this.scheduleCollectionView.reloadData()
+        ScheduleService.sharedInstance.fetchSchedule { 
+            ScheduleService.sharedInstance.getScheduleCache(completion: { [weak self] (schedule) in
+                guard let this = self else{
+                    return
+                }
+                this.schedule = schedule
+                this.scheduleCollectionView.reloadData()
+            })
+            
         }
     }
 
-
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        guard let flowLayout = scheduleCollectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
+            return
+        }
+        flowLayout.invalidateLayout()
+        
+        for cell in scheduleCollectionView.visibleCells{
+            if let showShelf = cell as? ShowShelfCollectionViewCell{
+                guard let flowLayout = showShelf.showCollectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
+                    return
+                }
+                flowLayout.invalidateLayout()
+            }
+        }
+    }
 }
 
 extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -43,9 +65,15 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let showShelfCollectionViewCell = scheduleCollectionView.dequeueReusableCell(withReuseIdentifier: "ShowShelfCollectionViewCell", for: indexPath)
+        if let showShelfCollectionViewCell = scheduleCollectionView.dequeueReusableCell(withReuseIdentifier: "ShowShelfCollectionViewCell", for: indexPath) as? ShowShelfCollectionViewCell{
             
-        return showShelfCollectionViewCell
+            if let schedule = schedule[indexPath.section]?.schedule{
+                showShelfCollectionViewCell.schedule = schedule
+            }
+            return showShelfCollectionViewCell
+        }
+            
+        return UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplaySupplementaryView view: UICollectionReusableView, forElementKind elementKind: String, at indexPath: IndexPath) {
@@ -56,16 +84,20 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         
         if let showShelfSectionHeaderView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "ShowShelfSectionHeaderView", for: indexPath) as? ShowShelfSectionHeaderView{
             if let sectionDate = schedule[indexPath.section]?.date{
-                showShelfSectionHeaderView.sectionLabel.text = DateFormatter.tvMazeDayFormat.string(from: sectionDate)
+                showShelfSectionHeaderView.sectionLabel.text = DateFormatter.shelfDisplayFormatt.string(from: sectionDate)
             }
             return showShelfSectionHeaderView
         }
         return UICollectionReusableView()
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-//        
-//    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        
+        let width = collectionView.bounds.width
+        let height:CGFloat = 50.0
+        let cellWidth = width // compute your cell width
+        return CGSize(width: cellWidth, height: height)
+    }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -74,6 +106,10 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         let height = collectionView.bounds.height / 3
         let cellWidth = width // compute your cell width
         return CGSize(width: cellWidth, height: height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
     }
     
 }
