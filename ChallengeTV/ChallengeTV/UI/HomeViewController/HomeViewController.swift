@@ -18,6 +18,8 @@ class HomeViewController: UIViewController{
     var schedule:ScheduleCache = [:]
     
     var lastScrollY:CGFloat = 0.0
+    
+    var isDecelerating = false
 
     @IBOutlet var topBarView: UIView!
     override func viewDidLoad() {
@@ -162,11 +164,19 @@ extension HomeViewController : UISearchBarDelegate, UISearchControllerDelegate, 
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if searchBar.isFirstResponder{
+        if searchBar.isFirstResponder && !isDecelerating{
             clearSearch()
         }
         
         handleShowHideTopBar()
+    }
+    
+    func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
+        isDecelerating = true
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        isDecelerating = false
     }
     
     func handleShowHideTopBar(){
@@ -180,7 +190,7 @@ extension HomeViewController : UISearchBarDelegate, UISearchControllerDelegate, 
                 topBarTopConstraint.constant = newTopBarY
             }
         }else{
-            // we're moving down... 
+            // we're moving down...
             if topBarTopConstraint.constant < 0{
                 var newTopBarY = topBarTopConstraint.constant + (lastScrollY - contentOffset.y)
                 newTopBarY = min(newTopBarY, 0)
