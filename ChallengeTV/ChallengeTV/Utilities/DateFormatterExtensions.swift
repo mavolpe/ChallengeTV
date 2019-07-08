@@ -53,5 +53,14 @@ extension DateFormatter {
         formatter.locale = Locale(identifier: "en_US_POSIX")
         return formatter
     }()
+    
+    static let airingTime: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH:mm"
+        formatter.calendar = Calendar(identifier: .iso8601)
+        formatter.timeZone = TimeZone.current
+        formatter.locale = Locale(identifier: "en_US_POSIX")
+        return formatter
+    }()
 
 }

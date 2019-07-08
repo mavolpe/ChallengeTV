@@ -13,7 +13,6 @@ struct TVEvent: Decodable {
     let name:String
     let startDate:Date
     
-    
     let url:String?
     let season:Int?
     let number:Int?
@@ -83,5 +82,43 @@ struct Country: Decodable{
 struct Image: Decodable {
     let medium: String?
     let original: String?
+}
+
+// MARK: some helpers 
+extension TVEvent{
+    
+    // this will only be available if we have a runtime
+    public var endDate:Date?{
+        get{
+            guard let runtime = runtime else{
+                return nil
+            }
+            return startDate.addingTimeInterval(Double(runtime*60))
+        }
+    }
+    
+    public var airingString:String{
+        get{
+            if let startTime = airtime{
+                var airingTime = startTime
+                if let endDate = self.endDate{
+                    airingTime += String("-\(DateFormatter.airingTime.string(from: endDate))")
+                }
+                return airingTime
+            }
+            return ""
+        }
+    }
+    
+    public var thumbnailUrl:URL?{
+        get{
+            if let url = show?.image?.medium{
+                return URL(string: url)
+            }else if let url = show?.image?.original{
+                return URL(string: url)
+            }
+            return nil
+        }
+    }
 }
 

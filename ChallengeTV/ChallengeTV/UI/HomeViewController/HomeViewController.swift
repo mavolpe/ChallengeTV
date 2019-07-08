@@ -43,6 +43,7 @@ class HomeViewController: UIViewController{
         }
         
         let searchTapDismiss:UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(HomeViewController.dismissSearch(recognizer:)))
+        searchTapDismiss.cancelsTouchesInView = false
         self.view.addGestureRecognizer(searchTapDismiss)
     }
 
@@ -64,6 +65,21 @@ class HomeViewController: UIViewController{
                     return
                 }
                 flowLayout.invalidateLayout()
+            }
+        }
+    }
+    
+    @IBAction func unwindToHomeView(sender: UIStoryboardSegue)
+    {
+        NSLog("")
+        //let sourceViewController = sender.source
+        // Pull any data from the view controller which initiated the unwind segue.
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailVC = segue.destination as? DetailViewController{
+            if let event = sender as? TVEvent{
+                detailVC.event = event
             }
         }
     }
@@ -165,6 +181,10 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
 
 // MARK: Search bar and top bar handling...
 extension HomeViewController : UISearchBarDelegate, UISearchControllerDelegate, UIScrollViewDelegate, ShowShelfCollectionViewCellDelegate{
+    func showDetails(event: TVEvent) {
+        performSegue(withIdentifier: "presentShowDetails", sender: event)
+    }
+    
     func getFilter() -> String {
         return filter
     }

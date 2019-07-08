@@ -10,6 +10,7 @@ import UIKit
 
 protocol ShowShelfCollectionViewCellDelegate : AnyObject {
     func getFilter()->String
+    func showDetails(event:TVEvent)
 }
 
 class ShowShelfCollectionViewCell: UICollectionViewCell {
@@ -95,6 +96,7 @@ extension ShowShelfCollectionViewCell : UICollectionViewDelegate, UICollectionVi
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        NSLog("")
+        let event = eventListFiltered[indexPath.item]
+        delegate?.showDetails(event: event)
     }
 }
