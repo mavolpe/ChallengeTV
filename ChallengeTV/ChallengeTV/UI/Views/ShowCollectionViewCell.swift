@@ -12,6 +12,7 @@ import SDWebImage
 class ShowCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var episodeInfo: UILabel!
     @IBOutlet var startTimeLabel: UILabel!
     @IBOutlet var thumbNail: UIImageView!
     @IBOutlet var networkLabel: UILabel!
@@ -52,9 +53,10 @@ class ShowCollectionViewCell: UICollectionViewCell {
     
     var event : TVEvent!{
         didSet{
-            titleLabel.text = event.name
+            titleLabel.text = event.showTitle
+            episodeInfo.text = event.episodeInfo
             startTimeLabel.text = event.airingString
-            networkLabel.text = event.show?.network?.name
+            networkLabel.text = event.networkInfo
             
             if let url = event.thumbnailUrl{
                 thumbNail.sd_setImage(with: url) { (image, error, cacheType, url) in
@@ -63,7 +65,10 @@ class ShowCollectionViewCell: UICollectionViewCell {
             }
         }
     }
-
+    
+    override func prepareForReuse() {
+        thumbNail.image = nil
+    }
 }
 
 extension ShowCollectionViewCell : UIGestureRecognizerDelegate{

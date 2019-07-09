@@ -11,7 +11,7 @@ import UIKit
 class CellSizeUtil {
     static let sectionInsetTopBottom:CGFloat = 10.0
     static let ipadCellWidth:CGFloat = 200.0
-    static let iphoneCellWidth:CGFloat = 100.0
+    static let iphoneCellWidth:CGFloat = 125.0
     
     static func getBottomSpaceRatio()->CGFloat{
         let ipad = UIDevice.current.userInterfaceIdiom == .pad

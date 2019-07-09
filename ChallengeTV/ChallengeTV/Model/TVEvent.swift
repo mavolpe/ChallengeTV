@@ -208,5 +208,35 @@ extension TVEvent{
         }
         return ""
     }
+    
+    public var episodeInfo:String{
+        get{
+            var info = ""
+            if let eNumber = number{
+                if let season = season{
+                    info = String("S\(season):E\(eNumber)")
+                }
+            }
+            return info
+        }
+    }
+    
+    public var showTitle:String{
+        get{
+            if let name = show?.name{
+                return name
+            }
+            return ""
+        }
+    }
+    
+    public var networkInfo:String{
+        get{
+            if let network = show?.network?.name{
+                return network
+            }
+            return ""
+        }
+    }
 }
 

@@ -61,22 +61,20 @@ class DetailViewController: UIViewController {
         }
         
         var heading = ""
-        var episodeInfo = ""
 
-        if let eNumber = event.number{
-            if let season = event.season{
-                episodeInfo = String("S\(season):E\(eNumber)")
-            }
-        }
-        if let name = event.show?.name{
-            detailsSecondHeading.text = name
+        
+        if event.networkInfo.isEmpty == false{
+            detailsSecondHeading.text = String("\(event.showTitle) - \(event.networkInfo)")
+        }else{
+            detailsSecondHeading.text = event.showTitle
         }
 
-        if episodeInfo.isEmpty == false{
-            heading = episodeInfo
+        if event.episodeInfo.isEmpty == false{
+            heading = event.episodeInfo
+            heading += " " + event.name
+        }else{
+            heading = event.name
         }
-
-        heading += " " + event.name
 
         detailsHeading.text = heading
         

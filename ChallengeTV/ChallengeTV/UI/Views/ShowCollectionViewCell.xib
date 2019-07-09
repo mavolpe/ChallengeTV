@@ -36,14 +36,20 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyX-3W-wH2" userLabel="Episode">
+                        <rect key="frame" x="4" y="132" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLR-Qa-04G" userLabel="StartTime">
-                        <rect key="frame" x="4" y="132" width="42" height="17"/>
+                        <rect key="frame" x="4" y="150" width="42" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WnX-nb-qD7" userLabel="Network">
-                        <rect key="frame" x="4" y="149" width="42" height="17"/>
+                        <rect key="frame" x="4" y="167" width="42" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -52,8 +58,10 @@
             </view>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="FyX-3W-wH2" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="4" id="DMh-lt-MUm"/>
                 <constraint firstItem="wQN-kt-fW2" firstAttribute="centerX" secondItem="4bR-Np-l7t" secondAttribute="centerX" id="EHq-9D-fff"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="vLR-Qa-04G" secondAttribute="trailing" constant="4" id="Eq3-gJ-KzB"/>
+                <constraint firstItem="FyX-3W-wH2" firstAttribute="top" secondItem="BN2-Gi-MGi" secondAttribute="bottom" id="F1Z-Tm-T94"/>
                 <constraint firstItem="WnX-nb-qD7" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="4" id="Hxq-tf-PPX"/>
                 <constraint firstItem="wQN-kt-fW2" firstAttribute="width" secondItem="4bR-Np-l7t" secondAttribute="width" id="Jvj-fy-NbL"/>
                 <constraint firstItem="4bR-Np-l7t" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="MhF-jo-Xrg"/>
@@ -61,16 +69,17 @@
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="WnX-nb-qD7" secondAttribute="trailing" constant="4" id="aN0-Rw-ypJ"/>
                 <constraint firstItem="wQN-kt-fW2" firstAttribute="centerY" secondItem="4bR-Np-l7t" secondAttribute="centerY" id="bcc-RI-Ezp"/>
                 <constraint firstItem="wQN-kt-fW2" firstAttribute="height" secondItem="4bR-Np-l7t" secondAttribute="height" id="mzc-3j-ebe"/>
+                <constraint firstItem="vLR-Qa-04G" firstAttribute="top" secondItem="FyX-3W-wH2" secondAttribute="bottom" id="oXK-wA-wQe"/>
                 <constraint firstItem="BN2-Gi-MGi" firstAttribute="trailing" secondItem="ZTg-uK-7eu" secondAttribute="trailing" constant="4" id="oa7-xB-cBv"/>
                 <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="4bR-Np-l7t" secondAttribute="top" id="ptR-qe-4vH"/>
                 <constraint firstItem="WnX-nb-qD7" firstAttribute="top" secondItem="vLR-Qa-04G" secondAttribute="bottom" id="u7D-hv-KL0"/>
                 <constraint firstItem="vLR-Qa-04G" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="4" id="vN3-gs-IwE"/>
-                <constraint firstItem="vLR-Qa-04G" firstAttribute="top" secondItem="BN2-Gi-MGi" secondAttribute="bottom" id="vaT-Xy-yWQ"/>
                 <constraint firstItem="BN2-Gi-MGi" firstAttribute="top" secondItem="4bR-Np-l7t" secondAttribute="bottom" id="wS1-8o-IVt"/>
                 <constraint firstItem="4bR-Np-l7t" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="xHp-vg-GrU"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
+                <outlet property="episodeInfo" destination="FyX-3W-wH2" id="Dba-93-jFm"/>
                 <outlet property="highlightView" destination="wQN-kt-fW2" id="BY4-LX-fBF"/>
                 <outlet property="networkLabel" destination="WnX-nb-qD7" id="eL2-e0-Tw8"/>
                 <outlet property="startTimeLabel" destination="vLR-Qa-04G" id="wKl-No-vEX"/>
