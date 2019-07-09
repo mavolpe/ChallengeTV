@@ -79,10 +79,7 @@ struct Country: Decodable{
     let timezone:String?
 }
 
-struct Image: Decodable {
-    let medium: String?
-    let original: String?
-}
+
 
 // MARK: some helpers 
 extension TVEvent{

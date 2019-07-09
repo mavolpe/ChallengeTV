@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ScheduleAPI {
+class TVAPI {
     private let baseAPIPath:String = "http://api.tvmaze.com/"
     
     func getSchedule(date:Date, countryCode:String, completion:@escaping ((Schedule?, Error?)->Void)){
@@ -34,6 +34,34 @@ class ScheduleAPI {
                         NSLog(error.localizedDescription)
                         completion(nil, nil)
                     }
+            }else{
+                // TODO: we need a custom error here - no data received...
+                completion(nil, nil)
+            }
+        }
+    }
+    
+    func getCast(showId:Int, completion:@escaping ((Cast?, Error?)->Void)){
+        
+        let endPoint = String("\(baseAPIPath)shows/\(showId)/cast")
+        NetworkCommunication.sharedInstance.getRequest(urlString: endPoint) { (data, error) in
+            guard error == nil else{
+                completion(nil, error)
+                return
+            }
+            
+            if data != nil{
+                do {
+                    let decoder = JSONDecoder()
+                    let castMembers = try decoder.decode([CastMember].self, from: data!)
+                    let cast = Cast(castMembers: castMembers)
+                    completion(cast, nil)
+                }
+                catch{
+                    // TODO: we need a custom error message here...
+                    NSLog(error.localizedDescription)
+                    completion(nil, nil)
+                }
             }else{
                 // TODO: we need a custom error here - no data received...
                 completion(nil, nil)

@@ -15,7 +15,7 @@ class ScheduleService {
     private let countryCode = "US" // TODO - configurable??
     private let scheduleQueue = DispatchQueue(label: "scheduleSyncQueu")
     private let scheduleFetchGroup = DispatchGroup()
-    private let scheduleAPI = ScheduleAPI()
+    private let scheduleAPI = TVAPI()
     
     private init(){
         

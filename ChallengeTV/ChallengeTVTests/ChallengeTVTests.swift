@@ -56,12 +56,12 @@ class ChallengeTVTests: XCTestCase {
     }
     
     func testScheduleApi(){
-        let scheduleAPI = ScheduleAPI()
+        let tvAPI = TVAPI()
         let testGroup = DispatchGroup()
         testGroup.enter()
         var passed = false
         let startDate = Date.init().midnight
-        scheduleAPI.getSchedule(date: startDate, countryCode: "US") { (schedule, error) in
+        tvAPI.getSchedule(date: startDate, countryCode: "US") { (schedule, error) in
             if let schedule = schedule{
                 if let events = schedule.events{
                     if events.count > 0{
@@ -82,5 +82,25 @@ class ChallengeTVTests: XCTestCase {
         testGroup.wait()
         XCTAssert(passed)
     }
-
+    
+    func testCastAPI(){
+        let showId = 689
+        
+        let tvAPI = TVAPI()
+        let testGroup = DispatchGroup()
+        testGroup.enter()
+        var passed = false
+        tvAPI.getCast(showId:showId) { (cast, error) in
+            if let cast = cast{
+                if let castMembers = cast.castMembers{
+                    if castMembers.count > 0{
+                        passed = true
+                    }
+                }
+            }
+            testGroup.leave()
+        }
+        testGroup.wait()
+        XCTAssert(passed)
+    }
 }
