@@ -10,6 +10,7 @@
 import UIKit
 
 enum ChallengeErrorType : Int{
+    case CET_UNKNOWN = 10000
     case CET_NO_NETWORK_SESSION = 10001
     case CET_FAILED_TO_PARSE_URL = 10002
 }
@@ -45,6 +46,8 @@ extension ChallengeTVError{
             message = NSLocalizedString("No network session available", comment:"No network session available")
         case .CET_FAILED_TO_PARSE_URL:
             message = NSLocalizedString("Failed to parse url", comment:"Failed to parse url")
+        case .CET_UNKNOWN:
+            message = NSLocalizedString("An unknown error occurred", comment:"An unknown error occured")
         }
         return ChallengeTVError.init(title: message, description: message, code: type.rawValue)
     }

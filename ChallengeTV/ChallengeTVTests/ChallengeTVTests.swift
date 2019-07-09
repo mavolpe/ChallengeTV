@@ -103,4 +103,59 @@ class ChallengeTVTests: XCTestCase {
         testGroup.wait()
         XCTAssert(passed)
     }
+    
+    func testServiceCastFetch(){
+        let showId = 689
+        
+        let tvService = TVService.sharedInstance
+        let testGroup = DispatchGroup()
+        testGroup.enter()
+        var passed = false
+        tvService.fetchCast(showId: showId) { (cast, error) in
+            if let cast = cast{
+                if let castMembers = cast.castMembers{
+                    if castMembers.count > 0{
+                        passed = true
+                    }
+                }
+            }
+            testGroup.leave()
+        }
+        testGroup.wait()
+        for i in 10000...10100{
+            testGroup.enter()
+            passed = false
+            tvService.fetchCast(showId: i) { (cast, error) in
+                if let cast = cast{
+                    if let castMembers = cast.castMembers{
+                        if castMembers.count > 0{
+                            passed = true
+                        }
+                        for castMember in castMembers{
+                            NSLog("#### \(castMember.person?.name ?? "UNKNOWN")")
+                        }
+                    }
+                }
+                testGroup.leave()
+            }
+            testGroup.enter()
+            passed = false
+            tvService.fetchCast(showId: i) { (cast, error) in
+                if let cast = cast{
+                    if let castMembers = cast.castMembers{
+                        if castMembers.count > 0{
+                            passed = true
+                        }
+                        for castMember in castMembers{
+                            NSLog("#### \(castMember.person?.name ?? "UNKNOWN")")
+                        }
+                    }
+                }
+                testGroup.leave()
+            }
+        }
+        testGroup.wait()
+        XCTAssert(passed)
+    }
+
 }

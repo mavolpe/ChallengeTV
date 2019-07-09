@@ -32,8 +32,8 @@ class HomeViewController: UIViewController{
         // register our cell
         scheduleCollectionView.register(UINib(nibName: "ShowShelfCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: String(describing: ShowShelfCollectionViewCell.self))
         
-        ScheduleService.sharedInstance.fetchSchedule { 
-            ScheduleService.sharedInstance.getScheduleCache(completion: { [weak self] (schedule) in
+        TVService.sharedInstance.fetchSchedule { 
+            TVService.sharedInstance.getScheduleCache(completion: { [weak self] (schedule) in
                 guard let this = self else{
                     return
                 }

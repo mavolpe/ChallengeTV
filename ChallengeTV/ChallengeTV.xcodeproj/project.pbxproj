@@ -28,7 +28,7 @@
 		BEDC314A22D0CD6100FD5CEE /* TVAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC314922D0CD6100FD5CEE /* TVAPI.swift */; };
 		BEDC314D22D0CEF500FD5CEE /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC314C22D0CEF500FD5CEE /* DateFormatterExtensions.swift */; };
 		BEDC314F22D0DE0E00FD5CEE /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC314E22D0DE0E00FD5CEE /* DateExtensions.swift */; };
-		BEDC315222D105CE00FD5CEE /* ScheduleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC315122D105CE00FD5CEE /* ScheduleService.swift */; };
+		BEDC315222D105CE00FD5CEE /* TVService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC315122D105CE00FD5CEE /* TVService.swift */; };
 		BEDC315522D106AF00FD5CEE /* ChallengeTVError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC315422D106AF00FD5CEE /* ChallengeTVError.swift */; };
 		BEDC315B22D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC315922D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift */; };
 		BEDC315C22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEDC315A22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib */; };
@@ -88,7 +88,7 @@
 		BEDC314922D0CD6100FD5CEE /* TVAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVAPI.swift; sourceTree = "<group>"; };
 		BEDC314C22D0CEF500FD5CEE /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
 		BEDC314E22D0DE0E00FD5CEE /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
-		BEDC315122D105CE00FD5CEE /* ScheduleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleService.swift; sourceTree = "<group>"; };
+		BEDC315122D105CE00FD5CEE /* TVService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVService.swift; sourceTree = "<group>"; };
 		BEDC315422D106AF00FD5CEE /* ChallengeTVError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTVError.swift; sourceTree = "<group>"; };
 		BEDC315922D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowShelfCollectionViewCell.swift; sourceTree = "<group>"; };
 		BEDC315A22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowShelfCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 		BEDC315022D1059B00FD5CEE /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				BEDC315122D105CE00FD5CEE /* ScheduleService.swift */,
+				BEDC315122D105CE00FD5CEE /* TVService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -545,7 +545,7 @@
 				BEDC315B22D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift in Sources */,
 				BE3B3B9222D4E4F800480810 /* Cast.swift in Sources */,
 				BE0A057922D22A71006CB7F9 /* CellSizeUtil.swift in Sources */,
-				BEDC315222D105CE00FD5CEE /* ScheduleService.swift in Sources */,
+				BEDC315222D105CE00FD5CEE /* TVService.swift in Sources */,
 				BE3B3B9422D4E5EC00480810 /* Image.swift in Sources */,
 				BEDC314522D0C90700FD5CEE /* Schedule.swift in Sources */,
 				BEDC315522D106AF00FD5CEE /* ChallengeTVError.swift in Sources */,
