@@ -12,11 +12,20 @@ class CellSizeUtil {
     static let sectionInsetTopBottom:CGFloat = 10.0
     static let ipadCellWidth:CGFloat = 200.0
     static let iphoneCellWidth:CGFloat = 125.0
+    static let insetForCastMember:CGFloat = 20.0
     
     static func getBottomSpaceRatio()->CGFloat{
         let ipad = UIDevice.current.userInterfaceIdiom == .pad
         
         let spaceRatio:CGFloat = ipad ? 3.5 : 1.8
+        
+        return spaceRatio
+    }
+    
+    static func getBottomSpaceRatioForCastMember()->CGFloat{
+        let ipad = UIDevice.current.userInterfaceIdiom == .pad
+        
+        let spaceRatio:CGFloat = ipad ? 3.5 : 4.0
         
         return spaceRatio
     }
@@ -57,5 +66,20 @@ class CellSizeUtil {
         let height:CGFloat = infoArea + posterHeight
         
         return CGSize(width: cellWidth, height: height)
+    }
+    
+    static func getCastMemberCellSize(bounds:CGRect)->CGSize{
+        guard bounds.width > 0 && bounds.height > 0 else{
+            return CGSize.zero
+        }
+        
+        let adjustedHeight = bounds.height - insetForCastMember
+        
+        // get the height left for post
+        let posterHeight = adjustedHeight - (adjustedHeight / getBottomSpaceRatioForCastMember())
+        
+        let cellWidth:CGFloat = posterHeight / 1.403
+        
+        return CGSize(width: cellWidth, height: adjustedHeight)
     }
 }

@@ -29,45 +29,32 @@ struct Character : Decodable {
     let image:Image?
 }
 
-/*
-{
-    person: {
-        id: 11024,
-        url: "http://www.tvmaze.com/people/11024/stephanie-lemelin",
-        name: "Stephanie Lemelin",
-        country: {
-            name: "United States",
-            code: "US",
-            timezone: "America/New_York"
-        },
-        birthday: "1979-06-29",
-        deathday: null,
-        gender: "Female",
-        image: {
-            medium: "http://static.tvmaze.com/uploads/images/medium_portrait/184/460999.jpg",
-            original: "http://static.tvmaze.com/uploads/images/original_untouched/184/460999.jpg"
-        },
-        _links: {
-            self: {
-                href: "http://api.tvmaze.com/people/11024"
+extension CastMember{
+    public var personThumbnailUrl:URL?{
+        get{
+            if let url = person?.image?.medium{
+                return URL(string: url)
+            }else if let url = person?.image?.original{
+                return URL(string: url)
             }
+            return nil
         }
-    },
-    character: {
-        id: 87274,
-        url: "http://www.tvmaze.com/characters/87274/young-justice-tigress-artemis-crock",
-        name: "Tigress / Artemis Crock",
-        image: {
-            medium: "http://static.tvmaze.com/uploads/images/medium_portrait/83/209811.jpg",
-            original: "http://static.tvmaze.com/uploads/images/original_untouched/83/209811.jpg"
-        },
-        _links: {
-            self: {
-                href: "http://api.tvmaze.com/characters/87274"
+    }
+    
+    public var personName:String{
+        get{
+            if let name = person?.name{
+                return name
             }
+            return ""
         }
-    },
-    self: false,
-    voice: true
-},
- */
+    }
+    public var characterName:String{
+        get{
+            if let name = character?.name{
+                return name
+            }
+            return ""
+        }
+    }
+}

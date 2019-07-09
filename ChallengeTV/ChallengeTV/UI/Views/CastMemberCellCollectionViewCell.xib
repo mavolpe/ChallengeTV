@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CastMemberCellCollectionViewCell" id="gTV-IL-0wX" customClass="CastMemberCellCollectionViewCell" customModule="ChallengeTV" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BgE-hI-kpQ">
+                        <rect key="frame" x="0.0" y="44" width="50" height="70"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" secondItem="BgE-hI-kpQ" secondAttribute="width" multiplier="4:2.85" id="aNj-Tg-66Q"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6Z-E3-HT4" userLabel="PersonName">
+                        <rect key="frame" x="0.0" y="114" width="50" height="0.0"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2H-rr-1Fd" userLabel="Character">
+                        <rect key="frame" x="0.0" y="114" width="50" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="f6Z-E3-HT4" firstAttribute="width" secondItem="BgE-hI-kpQ" secondAttribute="width" id="0nE-B0-ocf"/>
+                <constraint firstItem="BgE-hI-kpQ" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="3lc-9z-jtG"/>
+                <constraint firstItem="BgE-hI-kpQ" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="8SK-g2-0Ac"/>
+                <constraint firstItem="f6Z-E3-HT4" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="9aL-bG-Hxr"/>
+                <constraint firstItem="y2H-rr-1Fd" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="CJw-Ot-FJ2"/>
+                <constraint firstItem="BgE-hI-kpQ" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Dg3-Ta-QTU"/>
+                <constraint firstItem="y2H-rr-1Fd" firstAttribute="top" secondItem="f6Z-E3-HT4" secondAttribute="bottom" id="Oaq-17-GQQ"/>
+                <constraint firstItem="f6Z-E3-HT4" firstAttribute="top" secondItem="BgE-hI-kpQ" secondAttribute="bottom" id="RLm-8a-sv6"/>
+                <constraint firstItem="f6Z-E3-HT4" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="TL5-xt-Cr0"/>
+                <constraint firstItem="y2H-rr-1Fd" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="TTf-5Z-cY5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="character" destination="y2H-rr-1Fd" id="zhD-OI-YT3"/>
+                <outlet property="thumbNail" destination="BgE-hI-kpQ" id="CbF-vs-9wd"/>
+                <outlet property="titleLabel" destination="f6Z-E3-HT4" id="4y5-PE-s3A"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

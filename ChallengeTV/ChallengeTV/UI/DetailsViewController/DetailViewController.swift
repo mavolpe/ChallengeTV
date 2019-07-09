@@ -10,6 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
+    private var cast:Cast? = nil
     public var event:TVEvent? = nil
     // image constraints
     @IBOutlet var centeredImageConstraint: NSLayoutConstraint!
@@ -40,11 +41,29 @@ class DetailViewController: UIViewController {
     @IBOutlet var fourthHeading: UILabel!
     @IBOutlet var fithHeading: UILabel!
     @IBOutlet var sixthHeading: UILabel!
-    //@IBOutlet var summary: UITextView!
     @IBOutlet var summary:UILabel!
+    @IBOutlet var castCollectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        castCollectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        self.castCollectionView.contentInsetAdjustmentBehavior = UIScrollView.ContentInsetAdjustmentBehavior.never
+        castCollectionView.register(UINib(nibName: "CastMemberCellCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: String(describing: CastMemberCellCollectionViewCell.self))
+        
+        // try to load cast...
+        if let showId = event?.show?.id{
+            TVService.sharedInstance.fetchCast(showId: showId) { [weak self] (cast, error) in
+                guard let this = self else{
+                    return
+                }
+                // don't show an error if there is one, just don't load the cast...
+                // it's possibel for a show to not have the cast available...
+                DispatchQueue.main.async {
+                    this.cast = cast
+                    this.castCollectionView.reloadData()
+                }
+            }
+        }
         
         createRuntimeLandscapeConstraints()
 
@@ -61,7 +80,6 @@ class DetailViewController: UIViewController {
         }
         
         var heading = ""
-
         
         if event.networkInfo.isEmpty == false{
             detailsSecondHeading.text = String("\(event.showTitle) - \(event.networkInfo)")
@@ -95,9 +113,11 @@ class DetailViewController: UIViewController {
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-        
+        super.viewWillTransition(to: size, with: coordinator)
         view.setNeedsUpdateConstraints()
+        castCollectionView.collectionViewLayout.invalidateLayout()
     }
+
 }
 
 // MARK: Constraint management
@@ -162,6 +182,7 @@ extension DetailViewController{
     }
     
     func handleRotation(){
+        
         if UIDevice.current.orientation == UIDeviceOrientation.landscapeLeft || UIDevice.current.orientation == UIDeviceOrientation.landscapeRight{
             // if we're in landscape mode...
             // move the thumbnail to the top - save the original location
@@ -173,8 +194,48 @@ extension DetailViewController{
             set(landscapeMode: false)
 
         }
+
         self.view.updateConstraints()
         self.view.setNeedsLayout()
         self.view.layoutIfNeeded()
+        
+        castCollectionView.collectionViewLayout.invalidateLayout()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+    }
+}
+
+extension DetailViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        guard let castMembers = cast?.castMembers else{
+            return 0
+        }
+        return castMembers.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CastMemberCellCollectionViewCell", for: indexPath) as? CastMemberCellCollectionViewCell{
+            
+            guard let castMembers = cast?.castMembers else{
+                return cell
+            }
+            
+            let castMember = castMembers[indexPath.item]
+            cell.castMember = castMember
+            
+            return cell
+        }
+        return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        return CellSizeUtil.getCastMemberCellSize(bounds: collectionView.bounds)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
 }

@@ -67,6 +67,7 @@ class ShowCollectionViewCell: UICollectionViewCell {
     }
     
     override func prepareForReuse() {
+        super.prepareForReuse()
         thumbNail.image = nil
     }
 }

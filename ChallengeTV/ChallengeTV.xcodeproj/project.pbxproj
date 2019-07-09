@@ -14,6 +14,8 @@
 		BE3B3B9022D4B98600480810 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B3B8F22D4B98500480810 /* StringExtensions.swift */; };
 		BE3B3B9222D4E4F800480810 /* Cast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B3B9122D4E4F700480810 /* Cast.swift */; };
 		BE3B3B9422D4E5EC00480810 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B3B9322D4E5EC00480810 /* Image.swift */; };
+		BE447BB122D4F846009F0417 /* CastMemberCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE447BAF22D4F846009F0417 /* CastMemberCellCollectionViewCell.swift */; };
+		BE447BB222D4F846009F0417 /* CastMemberCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE447BB022D4F846009F0417 /* CastMemberCellCollectionViewCell.xib */; };
 		BEDC311022D0B6D400FD5CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */; };
 		BEDC311222D0B6D400FD5CEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */; };
 		BEDC311522D0B6D400FD5CEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311322D0B6D400FD5CEE /* Main.storyboard */; };
@@ -68,6 +70,8 @@
 		BE3B3B8F22D4B98500480810 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		BE3B3B9122D4E4F700480810 /* Cast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cast.swift; sourceTree = "<group>"; };
 		BE3B3B9322D4E5EC00480810 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		BE447BAF22D4F846009F0417 /* CastMemberCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastMemberCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		BE447BB022D4F846009F0417 /* CastMemberCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastMemberCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		BEDC310C22D0B6D400FD5CEE /* ChallengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -298,6 +302,8 @@
 				BEDC315D22D1352200FD5CEE /* ShowShelfSectionHeaderView.swift */,
 				BEDC315F22D16F8700FD5CEE /* ShowCollectionViewCell.swift */,
 				BEDC316022D16F8700FD5CEE /* ShowCollectionViewCell.xib */,
+				BE447BAF22D4F846009F0417 /* CastMemberCellCollectionViewCell.swift */,
+				BE447BB022D4F846009F0417 /* CastMemberCellCollectionViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -421,6 +427,7 @@
 				BEDC311D22D0B6D700FD5CEE /* LaunchScreen.storyboard in Resources */,
 				BEDC311A22D0B6D700FD5CEE /* Assets.xcassets in Resources */,
 				BEDC316222D16F8700FD5CEE /* ShowCollectionViewCell.xib in Resources */,
+				BE447BB222D4F846009F0417 /* CastMemberCellCollectionViewCell.xib in Resources */,
 				BEDC315C22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib in Resources */,
 				BEDC311522D0B6D400FD5CEE /* Main.storyboard in Resources */,
 			);
@@ -544,6 +551,7 @@
 				BEDC314F22D0DE0E00FD5CEE /* DateExtensions.swift in Sources */,
 				BEDC315B22D12F2900FD5CEE /* ShowShelfCollectionViewCell.swift in Sources */,
 				BE3B3B9222D4E4F800480810 /* Cast.swift in Sources */,
+				BE447BB122D4F846009F0417 /* CastMemberCellCollectionViewCell.swift in Sources */,
 				BE0A057922D22A71006CB7F9 /* CellSizeUtil.swift in Sources */,
 				BEDC315222D105CE00FD5CEE /* TVService.swift in Sources */,
 				BE3B3B9422D4E5EC00480810 /* Image.swift in Sources */,
