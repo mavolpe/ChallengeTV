@@ -125,21 +125,53 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gem-Nt-B52" userLabel="Details">
-                                <rect key="frame" x="0.0" y="251.5" width="414" height="298.5"/>
+                                <rect key="frame" x="0.0" y="261.5" width="414" height="298.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jD9-hB-gfF" userLabel="Heading">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.29788593429999999" green="1" blue="0.79387501199999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="y8E-R4-kWn">
+                                        <rect key="frame" x="10" y="0.0" width="414" height="528"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jD9-hB-gfF" userLabel="Heading">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="278"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wlx-u9-x5i" userLabel="SecondHeading">
+                                                <rect key="frame" x="0.0" y="278" width="414" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSa-yp-pU9" userLabel="ThirdHeading">
+                                                <rect key="frame" x="0.0" y="328" width="414" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m3l-T3-yL9" userLabel="FourthHeading">
+                                                <rect key="frame" x="0.0" y="378" width="414" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v36-ag-8uQ">
+                                                <rect key="frame" x="0.0" y="428" width="414" height="100"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="4ZZ-hE-gBw"/>
+                                                </constraints>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="jD9-hB-gfF" firstAttribute="leading" secondItem="gem-Nt-B52" secondAttribute="leading" id="8k4-Ea-4E4"/>
-                                    <constraint firstItem="jD9-hB-gfF" firstAttribute="top" secondItem="gem-Nt-B52" secondAttribute="top" id="TkP-Mz-dAC"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jD9-hB-gfF" secondAttribute="trailing" id="Wdj-5h-pah"/>
-                                    <constraint firstItem="jD9-hB-gfF" firstAttribute="width" secondItem="gem-Nt-B52" secondAttribute="width" id="iyk-KQ-iUX"/>
+                                    <constraint firstItem="y8E-R4-kWn" firstAttribute="leading" secondItem="gem-Nt-B52" secondAttribute="leading" constant="10" id="9RP-h0-W1B"/>
+                                    <constraint firstItem="y8E-R4-kWn" firstAttribute="top" secondItem="gem-Nt-B52" secondAttribute="top" id="jIy-Bu-krh"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -152,7 +184,7 @@
                             <constraint firstItem="gem-Nt-B52" firstAttribute="width" secondItem="way-Ix-b0d" secondAttribute="width" id="hLp-aR-8J1"/>
                             <constraint firstItem="rhe-Uf-oV6" firstAttribute="trailing" secondItem="eV9-EI-qvv" secondAttribute="trailing" constant="12" id="sSv-P5-MJC"/>
                             <constraint firstItem="d7L-Zs-tvJ" firstAttribute="top" secondItem="rhe-Uf-oV6" secondAttribute="top" constant="25" id="vrg-0f-nDF" userLabel="ImageViewSpaceToTop"/>
-                            <constraint firstItem="gem-Nt-B52" firstAttribute="top" secondItem="d7L-Zs-tvJ" secondAttribute="bottom" id="xE9-Qa-omK"/>
+                            <constraint firstItem="gem-Nt-B52" firstAttribute="top" secondItem="d7L-Zs-tvJ" secondAttribute="bottom" constant="10" id="xE9-Qa-omK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rhe-Uf-oV6"/>
                     </view>
@@ -162,10 +194,14 @@
                         <outlet property="detailsCentered" destination="Ne9-vi-TiQ" id="gyD-68-yau"/>
                         <outlet property="detailsHeading" destination="jD9-hB-gfF" id="hvC-3d-XEx"/>
                         <outlet property="detailsHeightRatio" destination="OyN-CY-VdO" id="ZNH-UR-tD3"/>
+                        <outlet property="detailsSecondHeading" destination="Wlx-u9-x5i" id="KGL-8U-fKW"/>
                         <outlet property="detailsTopToThumbnail" destination="xE9-Qa-omK" id="qGo-Og-KQJ"/>
                         <outlet property="detailsView" destination="gem-Nt-B52" id="t0C-sU-bNM"/>
                         <outlet property="detailsWidthEqualToSuper" destination="hLp-aR-8J1" id="xj6-eh-EfP"/>
+                        <outlet property="fourthHeading" destination="m3l-T3-yL9" id="APk-eJ-dyn"/>
                         <outlet property="imageViewSpaceToTop" destination="vrg-0f-nDF" id="bee-uX-kjd"/>
+                        <outlet property="summary" destination="v36-ag-8uQ" id="Y6q-Eo-msj"/>
+                        <outlet property="thirdHeading" destination="hSa-yp-pU9" id="3xK-CQ-PQK"/>
                         <outlet property="thumbNail" destination="d7L-Zs-tvJ" id="jvn-Ly-UQ5"/>
                     </connections>
                 </viewController>

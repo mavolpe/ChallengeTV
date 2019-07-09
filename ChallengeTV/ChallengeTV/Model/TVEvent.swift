@@ -120,5 +120,42 @@ extension TVEvent{
             return nil
         }
     }
+    
+    public var genreDisplay:String{
+        if let genreArray = show?.genres{
+            return genreArray.joined(separator: ",")
+        }
+        return ""
+    }
+    
+    public var detailSummary:String{
+        // if we have the episodes summary
+        // return that... if not return
+        // the show's summary...
+        if let episodeSummary = summary{
+            return episodeSummary
+        }else if let showSummary = show?.summary{
+            return showSummary
+        }
+        return ""
+    }
+    
+    public var airingInfo:String{
+        let onAt = NSLocalizedString("Airing:", comment:"Word should mean airing - or being showed at")
+        let premiered = NSLocalizedString("Premiered:", comment:"Original airdate, or date originally shown")
+        
+        var airing = ""
+        if airingString.isEmpty == false{
+            airing = String("\(onAt) \(airingString)")
+            if let airdate = airdate{
+                airing = airing + " " + airdate
+            }
+        }
+        if let premiered = show?.premiered{
+            airing = String("\(airing) - \(premiered)")
+        }
+        
+        return airing
+    }
 }
 

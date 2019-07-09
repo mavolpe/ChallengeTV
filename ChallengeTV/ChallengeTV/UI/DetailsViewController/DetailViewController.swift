@@ -35,6 +35,16 @@ class DetailViewController: UIViewController {
     
     @IBOutlet var detailsHeading: UILabel!
     
+    @IBOutlet var detailsSecondHeading: UILabel!
+    @IBOutlet var thirdHeading: UILabel!
+    @IBOutlet var fourthHeading: UILabel!
+    @IBOutlet var summary: UITextView!
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -51,6 +61,44 @@ class DetailViewController: UIViewController {
         thumbNail.sd_setImage(with: event.thumbnailUrl) { (image, error, type, url) in
             
         }
+        
+        
+        var heading = ""
+        var episodeInfo = ""
+        //var showName = ""
+        var premiered = ""
+        if let eNumber = event.number{
+            if let season = event.season{
+                episodeInfo = String("S\(season):E\(eNumber)")
+            }
+        }
+        if let name = event.show?.name{
+            //showName = name
+            detailsSecondHeading.text = name
+        }
+        if let premierDate = event.show?.premiered{
+            premiered = premierDate
+        }
+        if episodeInfo.isEmpty == false{
+            heading = episodeInfo
+        }
+//        if showName.isEmpty == false{
+//            heading += " " + showName
+//        }
+//        if premiered.isEmpty == false{
+//            heading += " " + premiered
+//        }
+        heading += " " + event.name
+
+        
+        detailsHeading.text = heading
+        
+        thirdHeading.text = event.genreDisplay
+        
+        fourthHeading.text = event.airingInfo
+        
+        summary.text = event.detailSummary
+        
     }
     
     override func updateViewConstraints() {

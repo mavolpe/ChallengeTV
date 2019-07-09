@@ -20,10 +20,10 @@ class ShowCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        let tapGesture:UILongPressGestureRecognizer = UILongPressGestureRecognizer.init(target: self, action: #selector(ShowCollectionViewCell.thumbnailTapped(tapGesture:)))
-        tapGesture.cancelsTouchesInView = false
-        tapGesture.minimumPressDuration = 0.001
-        self.addGestureRecognizer(tapGesture)
+//        let tapGesture:UILongPressGestureRecognizer = UILongPressGestureRecognizer.init(target: self, action: #selector(ShowCollectionViewCell.thumbnailTapped(tapGesture:)))
+//        tapGesture.cancelsTouchesInView = false
+//        tapGesture.minimumPressDuration = 0.001
+//        self.addGestureRecognizer(tapGesture)
     }
     
     private func highlightCell(highlight:Bool){
@@ -64,3 +64,9 @@ class ShowCollectionViewCell: UICollectionViewCell {
     }
 
 }
+
+//extension ShowCollectionViewCell : UIGestureRecognizerDelegate{
+//    override func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+//        return true
+//    }
+//}
