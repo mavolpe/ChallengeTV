@@ -117,7 +117,10 @@ class DetailViewController: UIViewController {
         view.setNeedsUpdateConstraints()
         castCollectionView.collectionViewLayout.invalidateLayout()
     }
-
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
 
 // MARK: Constraint management
@@ -145,7 +148,7 @@ extension DetailViewController{
         
         if detailsTopToSuperTop == nil{
             detailsTopToSuperTop = detailsView.topAnchor.constraint(
-                equalTo: view.topAnchor
+                equalTo: thumbNail.topAnchor
             )
         }
         
