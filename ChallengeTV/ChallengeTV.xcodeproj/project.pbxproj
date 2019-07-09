@@ -11,6 +11,7 @@
 		84BE1D2FC8E33D1C8360C3E2 /* Pods_ChallengeTVTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E696F5D64CE42D34BC48B2A /* Pods_ChallengeTVTests.framework */; };
 		BE0A057922D22A71006CB7F9 /* CellSizeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A057822D22A71006CB7F9 /* CellSizeUtil.swift */; };
 		BE0A057B22D38436006CB7F9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A057A22D38436006CB7F9 /* DetailViewController.swift */; };
+		BE3B3B9022D4B98600480810 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B3B8F22D4B98500480810 /* StringExtensions.swift */; };
 		BEDC311022D0B6D400FD5CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */; };
 		BEDC311222D0B6D400FD5CEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */; };
 		BEDC311522D0B6D400FD5CEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311322D0B6D400FD5CEE /* Main.storyboard */; };
@@ -62,6 +63,7 @@
 		9E696F5D64CE42D34BC48B2A /* Pods_ChallengeTVTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeTVTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE0A057822D22A71006CB7F9 /* CellSizeUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSizeUtil.swift; sourceTree = "<group>"; };
 		BE0A057A22D38436006CB7F9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BE3B3B8F22D4B98500480810 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		BEDC310C22D0B6D400FD5CEE /* ChallengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +243,7 @@
 			children = (
 				BEDC314C22D0CEF500FD5CEE /* DateFormatterExtensions.swift */,
 				BEDC314E22D0DE0E00FD5CEE /* DateExtensions.swift */,
+				BE3B3B8F22D4B98500480810 /* StringExtensions.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -540,6 +543,7 @@
 				BEDC315522D106AF00FD5CEE /* ChallengeTVError.swift in Sources */,
 				BEDC314722D0C96300FD5CEE /* TVEvent.swift in Sources */,
 				BEDC311022D0B6D400FD5CEE /* AppDelegate.swift in Sources */,
+				BE3B3B9022D4B98600480810 /* StringExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

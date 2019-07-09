@@ -122,40 +122,91 @@ extension TVEvent{
     }
     
     public var genreDisplay:String{
-        if let genreArray = show?.genres{
-            return genreArray.joined(separator: ",")
+        get{
+            if let genreArray = show?.genres{
+                return genreArray.joined(separator: ",")
+            }
+            return ""
         }
-        return ""
+    }
+    
+    public func detailSummary(with color:UIColor = UIColor.white, with font:UIFont = UIFont.systemFont(ofSize: 17))->(text:String, attributedText:NSMutableAttributedString?){
+        // if we have the episodes summary
+        // return that... if not return
+        // the show's summary...
+        var summaryText = ""
+        if let episodeSummary = summary{
+            summaryText = episodeSummary
+        }else if let showSummary = show?.summary{
+            summaryText = showSummary
+        }
+        
+        if summaryText.isEmpty == false{
+            if let attributedText = summaryText.attributedStringFromHtmlString(){
+                
+                attributedText.setFontFace(font: font, color: color)
+                
+                if let summaryStripped = summaryText.stripOutHtml(){
+                    return (text:summaryStripped, attributedText:attributedText)
+                }
+            }
+        }
+        
+        return (text:summaryText, attributedText:nil)
     }
     
     public var detailSummary:String{
         // if we have the episodes summary
         // return that... if not return
         // the show's summary...
+        var summaryText = ""
         if let episodeSummary = summary{
-            return episodeSummary
+            summaryText = episodeSummary
         }else if let showSummary = show?.summary{
-            return showSummary
+            summaryText = showSummary
         }
-        return ""
+        
+        if summaryText.isEmpty == false{
+            if let stripped = summaryText.stripOutHtml(){
+                return stripped
+            }
+        }
+        
+        return summaryText
     }
     
     public var airingInfo:String{
-        let onAt = NSLocalizedString("Airing:", comment:"Word should mean airing - or being showed at")
-        let premiered = NSLocalizedString("Premiered:", comment:"Original airdate, or date originally shown")
-        
-        var airing = ""
-        if airingString.isEmpty == false{
-            airing = String("\(onAt) \(airingString)")
-            if let airdate = airdate{
-                airing = airing + " " + airdate
+        get{
+
+            var airing = ""
+            if airingString.isEmpty == false{
+                airing = airingString
+                if let airdate = airdate{
+                    airing = airing + " " + airdate
+                }
             }
+            
+            return airing
         }
-        if let premiered = show?.premiered{
-            airing = String("\(airing) - \(premiered)")
+    }
+    
+    public var originalAirDate:String{
+        get{
+            let airdateLabel = NSLocalizedString("Premiered:", comment:"Original airdate, or date originally shown")
+            var airDateText = ""
+            if let premiered = show?.premiered{
+                airDateText = String("\(airdateLabel) \(premiered)")
+            }
+            return airDateText
         }
-        
-        return airing
+    }
+    
+    public var durationString:String{
+        if let duration = self.runtime{
+            let label = NSLocalizedString("mins", comment: "Minutes short form")
+            return String("\(duration) \(label)")
+        }
+        return ""
     }
 }
 

@@ -38,12 +38,10 @@ class DetailViewController: UIViewController {
     @IBOutlet var detailsSecondHeading: UILabel!
     @IBOutlet var thirdHeading: UILabel!
     @IBOutlet var fourthHeading: UILabel!
-    @IBOutlet var summary: UITextView!
-    
-    
-    
-    
-    
+    @IBOutlet var fithHeading: UILabel!
+    @IBOutlet var sixthHeading: UILabel!
+    //@IBOutlet var summary: UITextView!
+    @IBOutlet var summary:UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,43 +60,35 @@ class DetailViewController: UIViewController {
             
         }
         
-        
         var heading = ""
         var episodeInfo = ""
-        //var showName = ""
-        var premiered = ""
+
         if let eNumber = event.number{
             if let season = event.season{
                 episodeInfo = String("S\(season):E\(eNumber)")
             }
         }
         if let name = event.show?.name{
-            //showName = name
             detailsSecondHeading.text = name
         }
-        if let premierDate = event.show?.premiered{
-            premiered = premierDate
-        }
+
         if episodeInfo.isEmpty == false{
             heading = episodeInfo
         }
-//        if showName.isEmpty == false{
-//            heading += " " + showName
-//        }
-//        if premiered.isEmpty == false{
-//            heading += " " + premiered
-//        }
+
         heading += " " + event.name
 
-        
         detailsHeading.text = heading
         
-        thirdHeading.text = event.genreDisplay
+        thirdHeading.text = event.airingInfo
         
-        fourthHeading.text = event.airingInfo
+        fourthHeading.text = event.durationString
+        
+        fithHeading.text = event.genreDisplay
+        
+        sixthHeading.text = event.originalAirDate
         
         summary.text = event.detailSummary
-        
     }
     
     override func updateViewConstraints() {
