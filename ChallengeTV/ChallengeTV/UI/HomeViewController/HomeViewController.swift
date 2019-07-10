@@ -17,11 +17,45 @@ class HomeViewController: UIViewController{
     @IBOutlet var topBarTopConstraint: NSLayoutConstraint!
     var schedule:ScheduleCache = [:]
     
+    private func checkFilterCache(filter:String, section:Int)->[TVEvent]{
+        if let sectionFilters = filterCache[section]{
+            if let eventsForFilterAndSection = sectionFilters[filter]{
+                return eventsForFilterAndSection
+            }
+        }
+        return []
+    }
+    
+    private func eventListFiltered(section:Int)->[TVEvent]{
+        if let events = schedule[section]?.schedule.events{
+            NSLog("####FILTERING for \(section) \(filter)")
+            if filter.isEmpty == false{
+                
+                //if checkFilterCache(filter: filter, section: section)
+                
+                return events.filter({ (event) -> Bool in
+                    
+                    let containsName = event.name.lowercased().contains(filter)
+                    let containsShowName = event.showTitle.lowercased().contains(filter)
+                    var containsNetwork = false
+                    if let network = event.show?.network?.name{
+                        containsNetwork = network.lowercased().contains(filter)
+                    }
+                    
+                    return containsName || containsNetwork || containsShowName
+                })
+            }
+            return events
+        }
+        return [] // we don't have anything for this section yet... return nothing...
+    }
+    
     var lastScrollY:CGFloat = 0.0
     
     var isDecelerating = false
     
     var filter:String = ""
+    var filterCache:[Int:[String:[TVEvent]]] = [:]
     
     public static let searchChangedNotificationName = Notification.Name("searchChangedNotificationName")
 
@@ -86,24 +120,51 @@ class HomeViewController: UIViewController{
 }
 
 extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        
+        return 0.5
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        if collectionView == self.scheduleCollectionView{
+            return 1
+        }
+        
+        // the tag contains our section
+        return eventListFiltered(section: collectionView.tag).count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return schedule.count
+        if collectionView == self.scheduleCollectionView{
+            return schedule.count
+        }
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if let showShelfCollectionViewCell = scheduleCollectionView.dequeueReusableCell(withReuseIdentifier: "ShowShelfCollectionViewCell", for: indexPath) as? ShowShelfCollectionViewCell{
-            
-            if let schedule = schedule[indexPath.section]?.schedule{
-                showShelfCollectionViewCell.schedule = schedule
+        if collectionView == self.scheduleCollectionView{
+            if let showShelfCollectionViewCell = scheduleCollectionView.dequeueReusableCell(withReuseIdentifier: "ShowShelfCollectionViewCell", for: indexPath) as? ShowShelfCollectionViewCell{
+                
+//                if let schedule = schedule[indexPath.section]?.schedule{
+//                    showShelfCollectionViewCell.schedule = schedule
+//                }
+                showShelfCollectionViewCell.delegate = self
+                showShelfCollectionViewCell.showCollectionView.tag = indexPath.section
+                showShelfCollectionViewCell.showCollectionView.delegate = self
+                showShelfCollectionViewCell.showCollectionView.dataSource = self
+                showShelfCollectionViewCell.showCollectionView.reloadData()
+                return showShelfCollectionViewCell
             }
-            showShelfCollectionViewCell.delegate = self
-            return showShelfCollectionViewCell
         }
-            
+        
+        if let showCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "ShowCollectionViewCell", for: indexPath) as? ShowCollectionViewCell{
+            // the tag contains our section
+            let event = eventListFiltered(section: collectionView.tag)[indexPath.item]
+            showCollectionViewCell.event = event
+            return showCollectionViewCell
+        }
+        
         return UICollectionViewCell()
     }
     
@@ -119,63 +180,99 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
             }
             return showShelfSectionHeaderView
         }
+        
         return UICollectionReusableView()
     }
     
     func sectionHasDataWithFilter(section:Int)->Bool{
-        if  let eventList = schedule[section]?.schedule.events{
-            if eventList.filter({ (event) -> Bool in
-                
-                let containsName = event.name.lowercased().contains(filter)
-                var containsNetwork = false
-                if let network = event.show?.network?.name{
-                    containsNetwork = network.lowercased().contains(filter)
-                }
-                
-                return containsName || containsNetwork
-            }).count == 0{
-                return false
-            }
-        }
-        
-        return true
+        return eventListFiltered(section: section).count > 0
     }
+    
+//    func sectionHasDataWithFilter(section:Int)->Bool{
+//        //return true
+//        if  let eventList = schedule[section]?.schedule.events{
+//            if eventList.filter({ (event) -> Bool in
+//
+//                let containsName = event.name.lowercased().contains(filter)
+//                let containsShowName = event.showTitle.lowercased().contains(filter)
+//                var containsNetwork = false
+//                if let network = event.show?.network?.name{
+//                    containsNetwork = network.lowercased().contains(filter)
+//                }
+//
+//                return containsName || containsNetwork || containsShowName
+//            }).count == 0{
+//                return false
+//            }
+//        }
+//
+//        return true
+//    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         
-        if filter.isEmpty == false{
-            if sectionHasDataWithFilter(section: section) == false{
-                return CGSize(width: collectionView.bounds.width, height: 1)
+        if collectionView == self.scheduleCollectionView{
+            if filter.isEmpty == false{
+                if sectionHasDataWithFilter(section: section) == false{
+                    return CGSize(width: collectionView.bounds.width, height: 1)
+                }
             }
+            
+            let width = collectionView.bounds.width
+            let height:CGFloat = section > 0 ? 50.0 : 100
+            let cellWidth = width
+            return CGSize(width: cellWidth, height: height)
         }
         
-        let width = collectionView.bounds.width
-        let height:CGFloat = section > 0 ? 50.0 : 100
-        let cellWidth = width 
-        return CGSize(width: cellWidth, height: height)
+        // else we are detail with a shelf's collection view...
+        return CGSize.zero
     }
     
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        if filter.isEmpty == false{
-            if sectionHasDataWithFilter(section: indexPath.section) == false{
-                return CGSize(width: collectionView.bounds.width, height: 1)
+        if collectionView == self.scheduleCollectionView{
+            if filter.isEmpty == false{
+                if sectionHasDataWithFilter(section: indexPath.section) == false{
+                    return CGSize(width: collectionView.bounds.width, height: 1)
+                }
             }
-        }
 
-        // the inner collectionview has to have the section insets - a bit off the size or we will get
-        // a warning from the system at runtime
-        var boundsMinusInsets = collectionView.bounds
-        var width = boundsMinusInsets.size.width
-        width = width - leftSectionInset - 5
-        boundsMinusInsets.size.width = width
-        return CellSizeUtil.getShelfCellSize(bounds: boundsMinusInsets)
+            // the inner collectionview has to have the section insets - a bit off the size or we will get
+            // a warning from the system at runtime
+            var boundsMinusInsets = collectionView.bounds
+            var width = boundsMinusInsets.size.width
+            width = width - leftSectionInset - 5
+            boundsMinusInsets.size.width = width
+            return CellSizeUtil.getShelfCellSize(bounds: boundsMinusInsets)
+        }
+        
+//        if filter.isEmpty == false{
+//            var smallBounds = collectionView.bounds
+//            smallBounds.size.height = 1
+//            if sectionHasDataWithFilter(section: collectionView.tag) == false{
+//                return CellSizeUtil.getShowCellSize(bounds: collectionView.bounds)
+//            }
+//        }
+        
+        // else we are detail with a shelf's collection view...
+        return CellSizeUtil.getShowCellSize(bounds: collectionView.bounds)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         
-        return UIEdgeInsets(top: 0, left: leftSectionInset, bottom: 0, right: 0)
+        if collectionView == scheduleCollectionView{
+            return UIEdgeInsets(top: 0, left: leftSectionInset, bottom: 0, right: 0)
+        }
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView != scheduleCollectionView{
+            // the tag contains our section
+            let event = eventListFiltered(section: collectionView.tag)[indexPath.item]
+            showDetails(event: event)
+        }
     }
 }
 
@@ -199,6 +296,8 @@ extension HomeViewController : UISearchBarDelegate, UISearchControllerDelegate, 
         }
         
         NotificationCenter.default.post(name: HomeViewController.searchChangedNotificationName, object: filter)
+        
+        scheduleCollectionView.reloadData()
 
         searchBar.showsCancelButton = true
     }
@@ -222,19 +321,25 @@ extension HomeViewController : UISearchBarDelegate, UISearchControllerDelegate, 
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if searchBar.isFirstResponder && !isDecelerating{
-            clearSearch()
+        if scrollView == self.scheduleCollectionView{
+            if searchBar.isFirstResponder && !isDecelerating{
+                clearSearch()
+            }
+            
+            handleShowHideTopBar()
         }
-        
-        handleShowHideTopBar()
     }
     
     func scrollViewWillBeginDecelerating(_ scrollView: UIScrollView) {
-        isDecelerating = true
+        if scrollView == self.scheduleCollectionView{
+            isDecelerating = true
+        }
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        isDecelerating = false
+        if scrollView == self.scheduleCollectionView{
+            isDecelerating = false
+        }
     }
     
     func handleShowHideTopBar(){
