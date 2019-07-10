@@ -49,14 +49,14 @@ Persisting data in between launches etc…
 <b>Controller Layer</b>
 There will be two view controllers in this application:
 
-	<b>HomeViewController</b>
+	HomeViewController
 		- HomeViewController will be the main view controller for the application.
 		- It will be responsible for initiating requests to the TVService portion of the model and receiving models that will be used to populate the various views. More on this in the view section.
 		- The HomeViewController will also be responsible for controlling any filtering of the data seen in it's screen which includes showing, hiding and communicating with the search bar also seen on this screen.
 		- It will also take care of pushing the details view controller onto the screen as well as passing it any model data it may require to show details.
 		- It will act as the datasource and delegate to all collection views contained within it.
 
-	<b>DetailViewController</b>
+	DetailViewController
 		- The DetailViewController will be responsible for rendering TVEvent data onto the screen. It will also be responsible for communicating with the model layer's TVService to fetch cast data which is not contained in the event data returned by the schedule api.
 
 <b> View Layer </b>
