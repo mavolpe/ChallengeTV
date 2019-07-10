@@ -96,6 +96,7 @@ Contains AppDelegate and launch story board... info.plist etc...
 	- Views - contains our cell classes and XIBs (I like using XIBs for cells rather than embedding them in story boards, it makes it easier to use cells in multiple screens later on)
 
 <b> PODS <b>
+
 SDWebImage is the only pod used in this project so far...
 
 <b> Future Considerations <b>
