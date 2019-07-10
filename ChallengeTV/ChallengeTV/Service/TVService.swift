@@ -5,6 +5,7 @@
 //  Created by Mark Volpe on 2019-07-06.
 //  Copyright © 2019 Mark Volpe. All rights reserved.
 //
+// inspiration for observer/observable - https://medium.com/@samstone/design-patterns-in-swift-observer-pattern-51274d34f9e3
 
 import UIKit
 
@@ -156,19 +157,30 @@ class TVService : TVServiceObservable{
                 guard let this = self else {return}
                 if this.hasError() == false{
                     this.scheduleUpdated()
+                    let secondsUntilMidnightTomorrow = Date.init().secondsUntilMidnightTomorrow
+                    this.scheduleReFetch(seconds: secondsUntilMidnightTomorrow)
+                    NSLog("#### schedule will refresh in \(secondsUntilMidnightTomorrow) seconds - which is \(Date.init(timeIntervalSinceNow: secondsUntilMidnightTomorrow))")
                 }else{
-                    // allow only one automatic retry at a time...
-                    guard this.refetchScheduled == false else{
-                        return
-                    }
-                    this.refetchScheduled = true
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 10, execute: {
-                        this.fetchSchedule()
-                        this.refetchScheduled = false
-                    })
+                    // if we fail to fetch the schedule for some reason, schedule a retry...
+                    this.scheduleReFetch(seconds: 30)
                 }
             }
         }
+    }
+    
+    private func scheduleReFetch(seconds:Double){
+        // allow only one automatic retry at a time...
+        guard refetchScheduled == false else{
+            return
+        }
+        refetchScheduled = true
+        DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: { [weak self] in
+            guard let this = self else{
+                return
+            }
+            this.fetchSchedule()
+            this.refetchScheduled = false
+        })
     }
     
     public func getCurrentCacheDays()->[Date]{
@@ -201,20 +213,6 @@ class TVService : TVServiceObservable{
                 syncGroup.leave()
             })
             syncGroup.wait()
-            NSLog("")
         }
     }
-    
-//    override func attachObserver(observer: TVServiceObserver) {
-//        super.attachObserver(observer: observer)
-//        // if we have data... let's notify our observer...
-//        scheduleQueue.async { [weak self] in
-//            guard let this = self else{
-//                return
-//            }
-//            if this.scheduleCache.count > 0{
-//                this.scheduleUpdated()
-//            }
-//        }
-//    }
 }

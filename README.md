@@ -38,13 +38,19 @@ CastMember - will contain specific information about that person - image, name, 
 
 <b>TVAPI</b> - this module will be responsible for using the NetworkCommunication module to communicate with the TVMAZE api. It will receive appropriate filtering parameters (eg. country, date) and parse resulting JSON data into our Schedule model. It will operate asynchronously using a completion block to either return an error or our populated model. It will also support retrieving cast members for a show.
 
-<b>TVService</b>  - this module will be responsible for determining the time window that schedules need to be fetched for. It will also be responsible for managing any caches. It will also allowing fetching of cast members for shows and caching if necessary.
+<b>TVService</b>  - Since a TV Schedule is a living model which can change at any time this part of the model layer will be called a "Service". Since it will stay alive and perform functions periodically on behalf of the rest of the application.
+
+This module will be responsible for determining the time window that schedules need to be fetched for (Current week Monday to Sunday for example). It will also be responsible for managing any caches. It will also allowing fetching of cast members for shows and caching if necessary.
 
 It will be responsible for notifying any observers of updates to the data in the cache… if the time window changes for instance.
 
-In the future - it could handle things like…
-Notifying interested parties of shows ending.
-Persisting data in between launches etc…
+It is an observable singleton - if an entity wishes to be updated when the schedule changes that entity can subscribe to the TVService. At the moment, the TVService updates its schedule every night at midnight. It will also schedule retries if there is no network connectivity. Observers are notified of changes to the current schedule as well as any errors that may occur.
+
+This Architecture will allow for more sophisticated features to be implemented in the future, like...
+
+Notifying interested parties of shows ending so a realtime schedule or "ON NOW" section could be added.
+If the TV API backend has a ping it could send via a web socket when updates occur the schedule could refresh based on that.
+Persisting data in between launches etc… right now iOS' on board caching seems to work well with the TVMAZE api - it caches for 60 minutes.
 
 <b>Controller Layer</b>
 There will be two view controllers in this application:
@@ -71,4 +77,26 @@ That view container contains...
 	- Each of the shelf row cells will hold 1 horizontal collection View
 	- The horizontal collection view will be made up of cells that will represent tv shows
 
+<b>Error Management<b>
+To propgate errors throughout the application - we have ChallengeTVError which implements the LocalizedError protocol
+
 <b>Project Structure<b>
+ChallengeTV - root folder...
+Contains AppDelegate and launch story board... info.plist etc...
+- Error folder contains our error management
+- Utilities - contains for the most part useful extensions for String, Date, DateFormatter etc..
+- NetworkCommunication - contains our low level network management calls
+- Model - contains our actual data model structs/classes
+- API - contains our TVAPI class which provides access to the TVMAZE api in this case...
+- Service - contains our TVService classes
+- UI contains anything related to the UI
+  - DetailViewController
+	- HomeViewController
+	- SizingUtils - contains a utility class for providing sizes for cells etc..
+	- Views - contains our cell classes and XIBs (I like using XIBs for cells rather than embedding them in story boards, it makes it easier to use cells in multiple screens later on)
+
+<b> PODS <b>
+SDWebImage is the only pod used in this project so far...
+
+<b> Future Considerations <b>
+It would be nice to implement this same app as MVVM - the HomeViewModel could take some of the work away from the view controller - and could be an observable... using the new Combine framework from apple, or RxSwift... would be interesting to compare.
