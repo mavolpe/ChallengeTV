@@ -28,6 +28,13 @@ extension Date {
         let plusDays = Date(timeInterval: TimeInterval(days*86400), since: self)
         return plusDays
     }
+    
+    var secondsUntilMidnightTomorrow:TimeInterval{
+        let tomorrow = self.addDays(days: 1)
+        let midnightTomorrow = tomorrow.midnight
+        let secondsUntil = midnightTomorrow.timeIntervalSince(self)
+        return secondsUntil
+    }
 }
 
 extension Calendar {
