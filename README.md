@@ -100,4 +100,6 @@ Contains AppDelegate and launch story board... info.plist etc...
 SDWebImage is the only pod used in this project so far...
 
 <b> Future Considerations <b>
+
+
 It would be nice to implement this same app as MVVM - the HomeViewModel could take some of the work away from the view controller - and could be an observable... using the new Combine framework from apple, or RxSwift... would be interesting to compare.
