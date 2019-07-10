@@ -70,3 +70,5 @@ That view container contains...
 	- Each day of the week will have it's own section.
 	- Each of the shelf row cells will hold 1 horizontal collection View
 	- The horizontal collection view will be made up of cells that will represent tv shows
+
+<b>Project Structure<b>

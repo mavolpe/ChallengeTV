@@ -14,10 +14,9 @@ typealias ScheduleList = [ScheduleDay]
 typealias CastMemberCache = [Int:Cast]
 
 class TVService {
-    private let cacheSizeDays = 7 // TODO - configurable??
-    private let countryCode = "US" // TODO - configurable??
+    private let cacheSizeDays = 7 // For the scope of this project we will limit the schdule to one week
+    private let countryCode = "US" // for the scope of this project we will hard code for US
     private let scheduleQueue = DispatchQueue(label: "scheduleSyncQueu")
-    private let castCashQueue = DispatchQueue(label: "castCashQueue")
     private let castProcessingQueue = DispatchQueue(label: "castProcessingQueue")
     private let scheduleFetchGroup = DispatchGroup()
     private let scheduleAPI = TVAPI()
@@ -66,6 +65,7 @@ class TVService {
                 guard let this = self else{
                     return
                 }
+
                 if let schedule = schedule{
                     this.scheduleQueue.sync {
                         this.scheduleCache[index] = (day, schedule)

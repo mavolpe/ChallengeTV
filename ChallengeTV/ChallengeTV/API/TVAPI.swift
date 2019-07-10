@@ -11,13 +11,13 @@ import UIKit
 class TVAPI {
     private let baseAPIPath:String = "http://api.tvmaze.com/"
     
-    func getSchedule(date:Date, countryCode:String, completion:@escaping ((Schedule?, Error?)->Void)){
+    func getSchedule(date:Date, countryCode:String, completion:@escaping ((Schedule?, ChallengeTVErrorProtocol?)->Void)){
         let dateStr = DateFormatter.tvMazeDayFormat.string(from: date)
         
        let endPoint = String("\(baseAPIPath)schedule?country=\(countryCode)&date=\(dateStr)")
         NetworkCommunication.sharedInstance.getRequest(urlString: endPoint) { (data, error) in
             guard error == nil else{
-                completion(nil, error)
+                completion(nil, ChallengeTVError.createError(type: ChallengeErrorType.CET_FAILED_TO_FETCH_SCHEDULE, innerError: error))
                 return
             }
             
@@ -30,23 +30,21 @@ class TVAPI {
                         completion(schedule, nil)
                     }
                     catch{
-                        // TODO: we need a custom error message here...
                         NSLog(error.localizedDescription)
-                        completion(nil, nil)
+                        completion(nil, ChallengeTVError.createError(type: ChallengeErrorType.CET_FAILED_TO_FETCH_SCHEDULE))
                     }
             }else{
-                // TODO: we need a custom error here - no data received...
-                completion(nil, nil)
+                completion(nil, ChallengeTVError.createError(type: ChallengeErrorType.CET_FAILED_TO_FETCH_SCHEDULE))
             }
         }
     }
     
-    func getCast(showId:Int, completion:@escaping ((Cast?, Error?)->Void)){
+    func getCast(showId:Int, completion:@escaping ((Cast?, ChallengeTVErrorProtocol?)->Void)){
         
         let endPoint = String("\(baseAPIPath)shows/\(showId)/cast")
         NetworkCommunication.sharedInstance.getRequest(urlString: endPoint) { (data, error) in
             guard error == nil else{
-                completion(nil, error)
+                completion(nil, ChallengeTVError.createError(type: ChallengeErrorType.CET_FAILED_TO_FETCH_CAST))
                 return
             }
             
@@ -58,13 +56,10 @@ class TVAPI {
                     completion(cast, nil)
                 }
                 catch{
-                    // TODO: we need a custom error message here...
-                    NSLog(error.localizedDescription)
-                    completion(nil, nil)
+                    completion(nil, ChallengeTVError.createError(type: ChallengeErrorType.CET_FAILED_TO_FETCH_CAST, innerError: error))
                 }
             }else{
-                // TODO: we need a custom error here - no data received...
-                completion(nil, nil)
+                completion(nil, ChallengeTVError.createError(type: ChallengeErrorType.CET_FAILED_TO_FETCH_CAST))
             }
         }
     }
