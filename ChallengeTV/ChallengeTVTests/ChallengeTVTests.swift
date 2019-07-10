@@ -157,5 +157,36 @@ class ChallengeTVTests: XCTestCase {
         testGroup.wait()
         XCTAssert(passed)
     }
+    
+    static var serviceResponded = false
+
+    func testTVService() {
+        let expectation = XCTestExpectation(description: "Download apple.com home page")
+        class MyTVServiceObserver : TVServiceObserver{
+            var expectation:XCTestExpectation? = nil
+            static let sharedInstance = MyTVServiceObserver()
+            func errorEncountered(error: ChallengeTVErrorProtocol?) {
+                
+            }
+            
+            func scheduleUpdated() {
+                ChallengeTVTests.serviceResponded = true
+                TVService.sharedInstance.getScheduleList { [weak self] (schedule) in
+                    XCTAssert(schedule.count>0)
+                    self?.expectation?.fulfill()
+                }
+                
+            }
+        }
+        ChallengeTVTests.serviceResponded = false
+        MyTVServiceObserver.sharedInstance.expectation = expectation
+        TVService.sharedInstance.attachObserver(observer: MyTVServiceObserver.sharedInstance)
+        
+        TVService.sharedInstance.fetchSchedule()
+        
+        wait(for: [expectation], timeout: 10.0)
+    }
 
 }
+
+

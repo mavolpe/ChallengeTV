@@ -23,15 +23,26 @@ class TVServiceObservable{
 
     private var observerArray = [TVServiceObserver]()
     private var observerableDispatchQueue:DispatchQueue = DispatchQueue(label: "observerableDispatchQueue")
+    
+    fileprivate func shouldNotify()->Bool{
+        return false
+    }
 
-    func attachObserver(observer : TVServiceObserver){
+    public func attachObserver(observer : TVServiceObserver){
         observerableDispatchQueue.async { [weak self] in
             guard let this = self else{
                 return
             }
             this.observerArray.append(observer)
             // as soon as we attach - check the schedule...
-            observer.scheduleUpdated()
+            DispatchQueue.global().async {
+                // do a quick check and notify this observer right away if we already have data...
+                if this.shouldNotify(){
+                    DispatchQueue.main.async {
+                        observer.scheduleUpdated()
+                    }
+                }
+            }
         }
     }
 
@@ -214,5 +225,14 @@ class TVService : TVServiceObservable{
             })
             syncGroup.wait()
         }
+    }
+    
+    override func shouldNotify() -> Bool {
+        var hasData = false
+        scheduleQueue.sync { [weak self] in
+            guard let this = self else {return}
+            hasData = this.scheduleCache.count > 0
+        }
+        return hasData
     }
 }
