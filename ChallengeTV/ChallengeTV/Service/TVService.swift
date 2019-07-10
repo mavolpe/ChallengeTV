@@ -8,7 +8,9 @@
 
 import UIKit
 
-typealias ScheduleCache = [Int:(date:Date,schedule:Schedule)]
+typealias ScheduleDay = (date:Date,schedule:Schedule)
+typealias ScheduleCache = [Int:ScheduleDay]
+typealias ScheduleList = [ScheduleDay]
 typealias CastMemberCache = [Int:Cast]
 
 class TVService {
@@ -27,6 +29,19 @@ class TVService {
     
     private var scheduleCache:ScheduleCache = [:]
     private var castCache:CastMemberCache = [:]
+    
+    public func getScheduleList(completion:@escaping (ScheduleList)->Void){
+        var schedule:ScheduleList = []
+        scheduleQueue.async { [weak self] in
+            guard let this = self else{
+                return
+            }
+            schedule = this.scheduleCache.compactMap({$1}).sorted(by: { $0.date < $1.date})
+            DispatchQueue.main.async {
+                completion(schedule)
+            }
+        }
+    }
     
     public func getScheduleCache(completion:@escaping (ScheduleCache)->Void){
         var schedule:ScheduleCache = [:]
@@ -80,16 +95,11 @@ class TVService {
                 completion(nil, ChallengeTVError.createError(type: .CET_UNKNOWN))
                 return
             }
-            //this.castCashQueue.sync {
-            // IMPORTANT - we only ever access castCache from inside the castProcessingQueue
-            // which is a serial queue... so it can only be accessed by one thread
-            // at a time...
+
             if let cast = this.castCache[showId]{
-                NSLog("#### cache hit for \(showId)")
                 completion(cast, nil)
                 return
             }
-            //}
             
             // we didn't have the cast cached yet - let's fetch them from the API
             let syncGroup = DispatchGroup()
