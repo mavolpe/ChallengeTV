@@ -16,6 +16,8 @@
 		BE3B3B9422D4E5EC00480810 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B3B9322D4E5EC00480810 /* Image.swift */; };
 		BE447BB122D4F846009F0417 /* CastMemberCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE447BAF22D4F846009F0417 /* CastMemberCellCollectionViewCell.swift */; };
 		BE447BB222D4F846009F0417 /* CastMemberCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE447BB022D4F846009F0417 /* CastMemberCellCollectionViewCell.xib */; };
+		BE88E85A22D69D950076B068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311922D0B6D700FD5CEE /* Assets.xcassets */; };
+		BE88E85B22D69D980076B068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311922D0B6D700FD5CEE /* Assets.xcassets */; };
 		BEDC311022D0B6D400FD5CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */; };
 		BEDC311222D0B6D400FD5CEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */; };
 		BEDC311522D0B6D400FD5CEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311322D0B6D400FD5CEE /* Main.storyboard */; };
@@ -437,6 +439,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE88E85B22D69D980076B068 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +447,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE88E85A22D69D950076B068 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

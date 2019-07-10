@@ -31,7 +31,13 @@ class ChallengeTVUITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
-    func testMainScreenScroll(){
-        
+    
+
+    func testDetailsOpenClose(){
+        let app = XCUIApplication()
+        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .collectionView).element.children(matching: .cell).element(boundBy: 0).collectionViews.cells.otherElements.containing(.staticText, identifier:"The Young and the Restless").element.tap()
+        XCUIDevice.shared.orientation = .faceUp
+        XCUIDevice.shared.orientation = .portrait
+        app.buttons["close button"].tap()
     }
 }

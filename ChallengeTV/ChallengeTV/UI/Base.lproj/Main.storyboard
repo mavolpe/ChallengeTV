@@ -104,10 +104,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV9-EI-qvv">
-                                <rect key="frame" x="726" y="32" width="30" height="30"/>
+                                <rect key="frame" x="718" y="35" width="35" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Osf-3W-dlS"/>
-                                    <constraint firstAttribute="width" constant="30" id="PIC-nK-0sa"/>
+                                    <constraint firstAttribute="height" constant="35" id="Osf-3W-dlS"/>
+                                    <constraint firstAttribute="width" constant="35" id="PIC-nK-0sa"/>
                                 </constraints>
                                 <state key="normal" image="close_button"/>
                                 <connections>
@@ -218,7 +218,7 @@
                         <color key="backgroundColor" red="0.070588235294117646" green="0.078431372549019607" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6Cj-IK-N0d" firstAttribute="leading" secondItem="rhe-Uf-oV6" secondAttribute="leading" id="Ccb-nm-lTa"/>
-                            <constraint firstItem="eV9-EI-qvv" firstAttribute="top" secondItem="rhe-Uf-oV6" secondAttribute="top" constant="12" id="E5Q-u3-4RL"/>
+                            <constraint firstItem="eV9-EI-qvv" firstAttribute="top" secondItem="rhe-Uf-oV6" secondAttribute="top" constant="15" id="E5Q-u3-4RL"/>
                             <constraint firstItem="d7L-Zs-tvJ" firstAttribute="centerX" secondItem="rhe-Uf-oV6" secondAttribute="centerX" id="Kf8-m8-XZP" userLabel="CenteredImageConstraint"/>
                             <constraint firstItem="rhe-Uf-oV6" firstAttribute="trailing" secondItem="6Cj-IK-N0d" secondAttribute="trailing" id="Lwq-zf-OKe"/>
                             <constraint firstItem="gem-Nt-B52" firstAttribute="centerX" secondItem="rhe-Uf-oV6" secondAttribute="centerX" id="Ne9-vi-TiQ"/>
@@ -226,7 +226,7 @@
                             <constraint firstItem="rhe-Uf-oV6" firstAttribute="bottom" secondItem="6Cj-IK-N0d" secondAttribute="bottom" id="aqS-9R-BkG"/>
                             <constraint firstItem="6Cj-IK-N0d" firstAttribute="top" secondItem="gem-Nt-B52" secondAttribute="bottom" constant="10" id="bdQ-8x-4bt"/>
                             <constraint firstItem="gem-Nt-B52" firstAttribute="width" secondItem="way-Ix-b0d" secondAttribute="width" id="hLp-aR-8J1"/>
-                            <constraint firstItem="rhe-Uf-oV6" firstAttribute="trailing" secondItem="eV9-EI-qvv" secondAttribute="trailing" constant="12" id="sSv-P5-MJC"/>
+                            <constraint firstItem="rhe-Uf-oV6" firstAttribute="trailing" secondItem="eV9-EI-qvv" secondAttribute="trailing" constant="15" id="sSv-P5-MJC"/>
                             <constraint firstItem="d7L-Zs-tvJ" firstAttribute="top" secondItem="rhe-Uf-oV6" secondAttribute="top" constant="25" id="vrg-0f-nDF" userLabel="ImageViewSpaceToTop"/>
                             <constraint firstItem="gem-Nt-B52" firstAttribute="top" secondItem="d7L-Zs-tvJ" secondAttribute="bottom" constant="10" id="xE9-Qa-omK"/>
                         </constraints>
