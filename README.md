@@ -1,6 +1,6 @@
 <b>ChallengeTV</b>
 
-<bu>Overview:</bu>
+<u>Overview:</u>
 
 The ChallengeTV application will consume APIs provided by TVMAZE (https://www.tvmaze.com/api) land display scheduled TV shows to the user.
 
@@ -20,21 +20,23 @@ It will support the following features:
 	⁃	o genre
 	⁃	o duration
 
-Architecture:
+<u>Architecture:</u>
+The ChallengeTV application will utilize a Model View Controller Architecture as it's overall structure.
 
-Model Layer
+
+<b><u>Model Layer</u></b>
 
 The model layer will contain/use the following components:
 
-NetworkCommunication - this module will be implemented as a singleton and will be available to any other module requiring it - it will maintain one network operation queue for processing requests.
+<b>NetworkCommunication</b> - this module will be implemented as a singleton and will be available to any other module requiring it - it will maintain one network operation queue for processing requests.
 
-Models:
-Schedule - the schedule model will be the top level model that will contain events (aka Shows, Episodes etc)
-Event - an event will represent a tv show and contain any necessary sub-models necessary TBD.
+<b><u>Models:<u/></b>
+Schedule - the schedule model will be the top level model that will contain TVEvents (aka Shows, Episodes etc)
+TVEvent - an event will represent a tv show and will contain any necessary sub-models necessary for parsing the incoming response from the server.
 
-TVAPI - this module will be responsible for using the NetworkCommunication module to communicate with the TVMAZE api. It will receive appropriate filtering parameters (eg. country, date) and parse resulting JSON data into our Schedule model. It will operate asynchronously using a completion block to either return an error or our populated model. It will also support retrieving cast members for a show.
+<b>TVAPI</b> - this module will be responsible for using the NetworkCommunication module to communicate with the TVMAZE api. It will receive appropriate filtering parameters (eg. country, date) and parse resulting JSON data into our Schedule model. It will operate asynchronously using a completion block to either return an error or our populated model. It will also support retrieving cast members for a show.
 
-TVService  - this module will be responsible for determining the time window that schedules need to be fetched for. It will also be responsible for managing any caches. It will also allowing fetching of cast members for shows and caching if necessary.
+<b>TVService</b>  - this module will be responsible for determining the time window that schedules need to be fetched for. It will also be responsible for managing any caches. It will also allowing fetching of cast members for shows and caching if necessary.
 
 It will be responsible for notifying any observers of updates to the data in the cache… if the time window changes for instance.
 
