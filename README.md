@@ -1,6 +1,6 @@
-<br>ChallengeTV</br>
+<b>ChallengeTV</b>
 
-Overview:
+<bu>Overview:</bu>
 
 The ChallengeTV application will consume APIs provided by TVMAZE (https://www.tvmaze.com/api) land display scheduled TV shows to the user.
 
