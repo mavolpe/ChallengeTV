@@ -111,10 +111,6 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         if collectionView == self.scheduleCollectionView{
             if let showShelfCollectionViewCell = scheduleCollectionView.dequeueReusableCell(withReuseIdentifier: "ShowShelfCollectionViewCell", for: indexPath) as? ShowShelfCollectionViewCell{
 
-                //showShelfCollectionViewCell.showCollectionView.tag = indexPath.section
-                //showShelfCollectionViewCell.showCollectionView.delegate = self
-                //showShelfCollectionViewCell.showCollectionView.dataSource = self
-                //showShelfCollectionViewCell.showCollectionView.reloadData()
                 return showShelfCollectionViewCell
             }
         }

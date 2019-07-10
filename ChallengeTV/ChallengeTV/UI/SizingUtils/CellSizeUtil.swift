@@ -25,7 +25,7 @@ class CellSizeUtil {
     static func getBottomSpaceRatioForCastMember()->CGFloat{
         let ipad = UIDevice.current.userInterfaceIdiom == .pad
         
-        let spaceRatio:CGFloat = ipad ? 3.5 : 4.0
+        let spaceRatio:CGFloat = ipad ? 8.0 : 4.0
         
         return spaceRatio
     }
