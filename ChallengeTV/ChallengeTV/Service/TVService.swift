@@ -13,15 +13,67 @@ typealias ScheduleCache = [Int:ScheduleDay]
 typealias ScheduleList = [ScheduleDay]
 typealias CastMemberCache = [Int:Cast]
 
-class TVService {
+protocol TVServiceObserver{
+    func errorEncountered(error:ChallengeTVErrorProtocol?)
+    func scheduleUpdated()
+}
+
+class TVServiceObservable{
+
+    private var observerArray = [TVServiceObserver]()
+    private var observerableDispatchQueue:DispatchQueue = DispatchQueue(label: "observerableDispatchQueue")
+
+    func attachObserver(observer : TVServiceObserver){
+        observerableDispatchQueue.async { [weak self] in
+            guard let this = self else{
+                return
+            }
+            this.observerArray.append(observer)
+            // as soon as we attach - check the schedule...
+            observer.scheduleUpdated()
+        }
+    }
+
+    fileprivate func notifyError(error:ChallengeTVErrorProtocol?){
+        observerableDispatchQueue.async {[weak self] in
+            guard let this = self else{
+                return
+            }
+            for observer in this.observerArray {
+                DispatchQueue.main.async {
+                    observer.errorEncountered(error:error)
+                }
+            }
+        }
+    }
+
+    fileprivate func scheduleUpdated(){
+        observerableDispatchQueue.async {[weak self] in
+            guard let this = self else{
+                return
+            }
+            for observer in this.observerArray {
+                DispatchQueue.main.async {
+                    observer.scheduleUpdated()
+                }
+            }
+        }
+    }
+}
+
+class TVService : TVServiceObservable{
     private let cacheSizeDays = 7 // For the scope of this project we will limit the schdule to one week
     private let countryCode = "US" // for the scope of this project we will hard code for US
     private let scheduleQueue = DispatchQueue(label: "scheduleSyncQueu")
+    private let scheduleProcessingQueue = DispatchQueue(label: "scheduleProcessingQueue")
     private let castProcessingQueue = DispatchQueue(label: "castProcessingQueue")
     private let scheduleFetchGroup = DispatchGroup()
+    private let scheduleErrorQueue = DispatchQueue(label: "errorQueue")
+    private var scheduleErrorOccurred:Bool = false
     private let scheduleAPI = TVAPI()
+    private var refetchScheduled:Bool = false
     
-    private init(){
+    private override init(){
         
     }
     static let sharedInstance = TVService()
@@ -55,28 +107,67 @@ class TVService {
         }
     }
     
-    public func fetchSchedule(completion:@escaping ()->Void){
-        let cacheDays = getCurrentCacheDays()
-        
-        for (index,day) in cacheDays.enumerated(){
-            scheduleFetchGroup.enter()
-            
-            scheduleAPI.getSchedule(date: day, countryCode: countryCode) { [weak self] (schedule, error) in
-                guard let this = self else{
-                    return
-                }
-
-                if let schedule = schedule{
-                    this.scheduleQueue.sync {
-                        this.scheduleCache[index] = (day, schedule)
-                    }
-                }
-                this.scheduleFetchGroup.leave()
-            }
-            
+    private func hasError()->Bool{
+        var error = false
+        self.scheduleErrorQueue.sync { [weak self] in
+            guard let this = self else{return}
+            error = this.scheduleErrorOccurred
         }
-        scheduleFetchGroup.notify(queue: DispatchQueue.main) {
-            completion()
+        return error
+    }
+    
+    private func setError(error:Bool){
+        self.scheduleErrorQueue.sync { [weak self] in
+            guard let this = self else{return}
+            this.scheduleErrorOccurred = error
+        }
+    }
+    
+    public func fetchSchedule(){
+        scheduleProcessingQueue.async { [weak self] in
+            guard let this = self else{
+                return
+            }
+            // clear previous errors
+            this.setError(error: false)
+            let cacheDays = this.getCurrentCacheDays()
+            
+            for (index,day) in cacheDays.enumerated(){
+                guard this.hasError() == false else {
+                    break // stop processing jobs
+                }
+                this.scheduleFetchGroup.enter()
+                this.scheduleAPI.getSchedule(date: day, countryCode: this.countryCode) { (schedule, error) in
+                    
+                    if let schedule = schedule{
+                        this.scheduleQueue.sync {
+                            this.scheduleCache[index] = (day, schedule)
+                        }
+                        this.scheduleUpdated()
+                    }else if let error = error{
+                        this.setError(error: true)
+                        this.notifyError(error: error)
+                    }
+                    this.scheduleFetchGroup.leave()
+                }
+                
+            }
+            this.scheduleFetchGroup.notify(queue: DispatchQueue.main) { [weak self] in
+                guard let this = self else {return}
+                if this.hasError() == false{
+                    this.scheduleUpdated()
+                }else{
+                    // allow only one automatic retry at a time...
+                    guard this.refetchScheduled == false else{
+                        return
+                    }
+                    this.refetchScheduled = true
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 10, execute: {
+                        this.fetchSchedule()
+                        this.refetchScheduled = false
+                    })
+                }
+            }
         }
     }
     
@@ -113,5 +204,17 @@ class TVService {
             NSLog("")
         }
     }
-
+    
+//    override func attachObserver(observer: TVServiceObserver) {
+//        super.attachObserver(observer: observer)
+//        // if we have data... let's notify our observer...
+//        scheduleQueue.async { [weak self] in
+//            guard let this = self else{
+//                return
+//            }
+//            if this.scheduleCache.count > 0{
+//                this.scheduleUpdated()
+//            }
+//        }
+//    }
 }

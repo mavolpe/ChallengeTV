@@ -20,6 +20,7 @@ class HomeViewController: UIViewController{
     private var lastScrollY:CGFloat = 0.0
     private var isDecelerating = false
     private var filter:String = ""
+    private var errorShowing:Bool = false
 
     private var storedOffsets = [Int: CGFloat]()
     
@@ -29,16 +30,8 @@ class HomeViewController: UIViewController{
         
         // register our cell
         scheduleCollectionView.register(UINib(nibName: "ShowShelfCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: String(describing: ShowShelfCollectionViewCell.self))
-        
-        TVService.sharedInstance.fetchSchedule { 
-            TVService.sharedInstance.getScheduleList(completion: { [weak self] (schedule) in
-                guard let this = self else{
-                    return
-                }
-                this.schedule = schedule
-                this.scheduleCollectionView.reloadData()
-            })
-        }
+        TVService.sharedInstance.attachObserver(observer: self)
+        TVService.sharedInstance.fetchSchedule()
         
         let searchTapDismiss:UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(HomeViewController.dismissSearch(recognizer:)))
         searchTapDismiss.cancelsTouchesInView = false
@@ -80,6 +73,40 @@ class HomeViewController: UIViewController{
     // MARK: Styling
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
+    }
+    
+    // MARK: Error message presentation
+    private func showErrorMessage(message:String){
+        guard errorShowing == false else{
+            return
+        }
+        errorShowing = true
+        let alert = UIAlertController(title: NSLocalizedString("Error", comment: "Error"), message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { [weak self] action in
+            self?.errorShowing = false
+        }))
+        
+        self.present(alert, animated: true)
+    }
+}
+
+extension HomeViewController : TVServiceObserver{
+    
+    func errorEncountered(error: ChallengeTVErrorProtocol?) {
+        if let error = error{
+            showErrorMessage(message: error.localizedDescription)
+        }
+    }
+    
+    func scheduleUpdated() {
+        TVService.sharedInstance.getScheduleList(completion: { [weak self] (schedule) in
+            guard let this = self else{
+                return
+            }
+            this.schedule = schedule
+            this.scheduleCollectionView.reloadData()
+        })
     }
 }
 
