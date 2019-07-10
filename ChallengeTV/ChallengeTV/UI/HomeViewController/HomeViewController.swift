@@ -216,11 +216,6 @@ extension HomeViewController : UISearchBarDelegate, UISearchControllerDelegate, 
         performSegue(withIdentifier: "presentShowDetails", sender: event)
     }
     
-    func getFilter() -> String {
-        return filter
-    }
-    
-    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
         filter = searchText.lowercased()
