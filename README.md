@@ -77,10 +77,10 @@ That view container contains...
 	- Each of the shelf row cells will hold 1 horizontal collection View
 	- The horizontal collection view will be made up of cells that will represent tv shows
 
-<b>Error Management<b>
+<b>Error Management</b>
 To propgate errors throughout the application - we have ChallengeTVError which implements the LocalizedError protocol
 
-<b>Project Structure<b>
+<b>Project Structure</b>
 ChallengeTV - root folder...
 Contains AppDelegate and launch story board... info.plist etc...
 - Error folder contains our error management
@@ -95,11 +95,11 @@ Contains AppDelegate and launch story board... info.plist etc...
 	- SizingUtils - contains a utility class for providing sizes for cells etc..
 	- Views - contains our cell classes and XIBs (I like using XIBs for cells rather than embedding them in story boards, it makes it easier to use cells in multiple screens later on)
 
-<b> PODS <b>
+<b> PODS </b>
 
 SDWebImage is the only pod used in this project so far...
 
-<b> Future Considerations <b>
+<b> Future Considerations </b>
 
 
 It would be nice to implement this same app as MVVM - the HomeViewModel could take some of the work away from the view controller - and could be an observable... using the new Combine framework from apple, or RxSwift... would be interesting to compare.
