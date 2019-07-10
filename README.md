@@ -49,7 +49,7 @@ Persisting data in between launches etc…
 <b>Controller Layer</b>
 There will be two view controllers in this application:
 
-  <b>HomeViewController</b>
+	<b>HomeViewController</b>
 		- HomeViewController will be the main view controller for the application.
 		- It will be responsible for initiating requests to the TVService portion of the model and receiving models that will be used to populate the various views. More on this in the view section.
 		- The HomeViewController will also be responsible for controlling any filtering of the data seen in it's screen which includes showing, hiding and communicating with the search bar also seen on this screen.
