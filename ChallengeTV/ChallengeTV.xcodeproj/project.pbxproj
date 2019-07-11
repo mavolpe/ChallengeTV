@@ -18,6 +18,7 @@
 		BE447BB222D4F846009F0417 /* CastMemberCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE447BB022D4F846009F0417 /* CastMemberCellCollectionViewCell.xib */; };
 		BE88E85A22D69D950076B068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311922D0B6D700FD5CEE /* Assets.xcassets */; };
 		BE88E85B22D69D980076B068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311922D0B6D700FD5CEE /* Assets.xcassets */; };
+		BEAF015E22D75F7B00D828B2 /* ScheduleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF015D22D75F7B00D828B2 /* ScheduleList.swift */; };
 		BEDC311022D0B6D400FD5CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */; };
 		BEDC311222D0B6D400FD5CEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */; };
 		BEDC311522D0B6D400FD5CEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311322D0B6D400FD5CEE /* Main.storyboard */; };
@@ -74,6 +75,7 @@
 		BE3B3B9322D4E5EC00480810 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		BE447BAF22D4F846009F0417 /* CastMemberCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastMemberCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		BE447BB022D4F846009F0417 /* CastMemberCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastMemberCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		BEAF015D22D75F7B00D828B2 /* ScheduleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleList.swift; sourceTree = "<group>"; };
 		BEDC310C22D0B6D400FD5CEE /* ChallengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -264,6 +266,7 @@
 			isa = PBXGroup;
 			children = (
 				BEDC315122D105CE00FD5CEE /* TVService.swift */,
+				BEAF015D22D75F7B00D828B2 /* ScheduleList.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -563,6 +566,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEDC311222D0B6D400FD5CEE /* HomeViewController.swift in Sources */,
+				BEAF015E22D75F7B00D828B2 /* ScheduleList.swift in Sources */,
 				BEDC316122D16F8700FD5CEE /* ShowCollectionViewCell.swift in Sources */,
 				BEDC315E22D1352200FD5CEE /* ShowShelfSectionHeaderView.swift in Sources */,
 				BEDC314322D0C01200FD5CEE /* NetworkCommunication.swift in Sources */,

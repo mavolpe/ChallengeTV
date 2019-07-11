@@ -11,67 +11,7 @@ import UIKit
 
 typealias ScheduleDay = (date:Date,schedule:Schedule)
 typealias ScheduleCache = [Int:ScheduleDay]
-typealias ScheduleList = [ScheduleDay]
 typealias CastMemberCache = [Int:Cast]
-
-protocol TVServiceObserver{
-    func errorEncountered(error:ChallengeTVErrorProtocol?)
-    func scheduleUpdated()
-}
-
-class TVServiceObservable{
-
-    private var observerArray = [TVServiceObserver]()
-    private var observerableDispatchQueue:DispatchQueue = DispatchQueue(label: "observerableDispatchQueue")
-    
-    fileprivate func shouldNotify()->Bool{
-        return false
-    }
-
-    public func attachObserver(observer : TVServiceObserver){
-        observerableDispatchQueue.async { [weak self] in
-            guard let this = self else{
-                return
-            }
-            this.observerArray.append(observer)
-            // as soon as we attach - check the schedule...
-            DispatchQueue.global().async {
-                // do a quick check and notify this observer right away if we already have data...
-                if this.shouldNotify(){
-                    DispatchQueue.main.async {
-                        observer.scheduleUpdated()
-                    }
-                }
-            }
-        }
-    }
-
-    fileprivate func notifyError(error:ChallengeTVErrorProtocol?){
-        observerableDispatchQueue.async {[weak self] in
-            guard let this = self else{
-                return
-            }
-            for observer in this.observerArray {
-                DispatchQueue.main.async {
-                    observer.errorEncountered(error:error)
-                }
-            }
-        }
-    }
-
-    fileprivate func scheduleUpdated(){
-        observerableDispatchQueue.async {[weak self] in
-            guard let this = self else{
-                return
-            }
-            for observer in this.observerArray {
-                DispatchQueue.main.async {
-                    observer.scheduleUpdated()
-                }
-            }
-        }
-    }
-}
 
 class TVService : TVServiceObservable{
     private let cacheSizeDays = 7 // For the scope of this project we will limit the schdule to one week
@@ -234,5 +174,66 @@ class TVService : TVServiceObservable{
             hasData = this.scheduleCache.count > 0
         }
         return hasData
+    }
+}
+
+// MARK: Our Observer protocol
+protocol TVServiceObserver{
+    func errorEncountered(error:ChallengeTVErrorProtocol?)
+    func scheduleUpdated()
+}
+
+// MARK: Our observable definition
+class TVServiceObservable{
+    
+    private var observerArray = [TVServiceObserver]()
+    private var observerableDispatchQueue:DispatchQueue = DispatchQueue(label: "observerableDispatchQueue")
+    
+    fileprivate func shouldNotify()->Bool{
+        return false
+    }
+    
+    public func attachObserver(observer : TVServiceObserver){
+        observerableDispatchQueue.async { [weak self] in
+            guard let this = self else{
+                return
+            }
+            this.observerArray.append(observer)
+            // as soon as we attach - check the schedule...
+            DispatchQueue.global().async {
+                // do a quick check and notify this observer right away if we already have data...
+                if this.shouldNotify(){
+                    DispatchQueue.main.async {
+                        observer.scheduleUpdated()
+                    }
+                }
+            }
+        }
+    }
+    
+    fileprivate func notifyError(error:ChallengeTVErrorProtocol?){
+        observerableDispatchQueue.async {[weak self] in
+            guard let this = self else{
+                return
+            }
+            for observer in this.observerArray {
+                DispatchQueue.main.async {
+                    observer.errorEncountered(error:error)
+                }
+            }
+        }
+    }
+    
+    fileprivate func scheduleUpdated(){
+        observerableDispatchQueue.async {[weak self] in
+            guard let this = self else{
+                return
+            }
+            for observer in this.observerArray {
+                DispatchQueue.main.async {
+                    observer.scheduleUpdated()
+                }
+            }
+        }
     }
 }

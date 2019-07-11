@@ -347,28 +347,7 @@ extension HomeViewController{
             guard filter.isEmpty == false else{
                 return schedule
             }
-            return schedule.compactMap({
-                if let events = $0.schedule.events{
-                    let filteredEvents = events.filter({ (event) -> Bool in
-                        let containsName = event.name.lowercased().contains(filter)
-                        let containsShowName = event.showTitle.lowercased().contains(filter)
-                        var containsNetwork = false
-                        if let network = event.show?.network?.name{
-                            containsNetwork = network.lowercased().contains(filter)
-                        }
-                        
-                        return containsName || containsNetwork || containsShowName
-                    })
-                    
-                    guard filteredEvents.count > 0 else{
-                        return nil
-                    }
-                    let newScheduleDay = ScheduleDay($0.date, Schedule(scheduleDate: $0.date, events: filteredEvents))
-                    
-                    return newScheduleDay
-                }
-                return $0
-            })
+            return schedule.filter(filter: filter)
         }
     }
 }
