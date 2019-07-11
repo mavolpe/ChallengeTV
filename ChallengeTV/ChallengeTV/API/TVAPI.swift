@@ -9,7 +9,15 @@
 import UIKit
 
 class TVAPI {
-    private let baseAPIPath:String = "http://api.tvmaze.com/"
+    internal var useMockData = false{
+        didSet{
+            if useMockData{
+                baseAPIPath = "http://api.mocktvserver.com/"
+                MockServer.sharedInstance.setupMockServer()
+            }
+        }
+    }
+    private var baseAPIPath:String = "http://api.tvmaze.com/"
     
     func getSchedule(date:Date, countryCode:String, completion:@escaping ((Schedule?, ChallengeTVErrorProtocol?)->Void)){
         let dateStr = DateFormatter.tvMazeDayFormat.string(from: date)

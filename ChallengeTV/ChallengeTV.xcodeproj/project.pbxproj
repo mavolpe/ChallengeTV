@@ -19,6 +19,28 @@
 		BE88E85A22D69D950076B068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311922D0B6D700FD5CEE /* Assets.xcassets */; };
 		BE88E85B22D69D980076B068 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311922D0B6D700FD5CEE /* Assets.xcassets */; };
 		BEAF015E22D75F7B00D828B2 /* ScheduleList.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEAF015D22D75F7B00D828B2 /* ScheduleList.swift */; };
+		BEC5FA4422D768180043FE47 /* MockServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC5FA4322D768180043FE47 /* MockServer.swift */; };
+		BEC5FA4822D7686C0043FE47 /* mock_schedule_2019-07-11.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4722D7686C0043FE47 /* mock_schedule_2019-07-11.json */; };
+		BEC5FA4922D7686C0043FE47 /* mock_schedule_2019-07-11.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4722D7686C0043FE47 /* mock_schedule_2019-07-11.json */; };
+		BEC5FA4A22D7686C0043FE47 /* mock_schedule_2019-07-11.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4722D7686C0043FE47 /* mock_schedule_2019-07-11.json */; };
+		BEC5FA5122D76C650043FE47 /* mock_schedule_2019-07-14.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4B22D76C640043FE47 /* mock_schedule_2019-07-14.json */; };
+		BEC5FA5222D76C650043FE47 /* mock_schedule_2019-07-14.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4B22D76C640043FE47 /* mock_schedule_2019-07-14.json */; };
+		BEC5FA5322D76C650043FE47 /* mock_schedule_2019-07-14.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4B22D76C640043FE47 /* mock_schedule_2019-07-14.json */; };
+		BEC5FA5422D76C650043FE47 /* mock_schedule_2019-07-16.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4C22D76C640043FE47 /* mock_schedule_2019-07-16.json */; };
+		BEC5FA5522D76C650043FE47 /* mock_schedule_2019-07-16.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4C22D76C640043FE47 /* mock_schedule_2019-07-16.json */; };
+		BEC5FA5622D76C650043FE47 /* mock_schedule_2019-07-16.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4C22D76C640043FE47 /* mock_schedule_2019-07-16.json */; };
+		BEC5FA5722D76C650043FE47 /* mock_schedule_2019-07-13.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4D22D76C640043FE47 /* mock_schedule_2019-07-13.json */; };
+		BEC5FA5822D76C650043FE47 /* mock_schedule_2019-07-13.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4D22D76C640043FE47 /* mock_schedule_2019-07-13.json */; };
+		BEC5FA5922D76C650043FE47 /* mock_schedule_2019-07-13.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4D22D76C640043FE47 /* mock_schedule_2019-07-13.json */; };
+		BEC5FA5A22D76C650043FE47 /* mock_schedule_2019-07-12.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4E22D76C650043FE47 /* mock_schedule_2019-07-12.json */; };
+		BEC5FA5B22D76C650043FE47 /* mock_schedule_2019-07-12.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4E22D76C650043FE47 /* mock_schedule_2019-07-12.json */; };
+		BEC5FA5C22D76C650043FE47 /* mock_schedule_2019-07-12.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4E22D76C650043FE47 /* mock_schedule_2019-07-12.json */; };
+		BEC5FA5D22D76C650043FE47 /* mock_schedule_2019-07-15.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4F22D76C650043FE47 /* mock_schedule_2019-07-15.json */; };
+		BEC5FA5E22D76C650043FE47 /* mock_schedule_2019-07-15.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4F22D76C650043FE47 /* mock_schedule_2019-07-15.json */; };
+		BEC5FA5F22D76C650043FE47 /* mock_schedule_2019-07-15.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA4F22D76C650043FE47 /* mock_schedule_2019-07-15.json */; };
+		BEC5FA6022D76C650043FE47 /* mock_schedule_2019-07-17.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA5022D76C650043FE47 /* mock_schedule_2019-07-17.json */; };
+		BEC5FA6122D76C650043FE47 /* mock_schedule_2019-07-17.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA5022D76C650043FE47 /* mock_schedule_2019-07-17.json */; };
+		BEC5FA6222D76C650043FE47 /* mock_schedule_2019-07-17.json in Resources */ = {isa = PBXBuildFile; fileRef = BEC5FA5022D76C650043FE47 /* mock_schedule_2019-07-17.json */; };
 		BEDC311022D0B6D400FD5CEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */; };
 		BEDC311222D0B6D400FD5CEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */; };
 		BEDC311522D0B6D400FD5CEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEDC311322D0B6D400FD5CEE /* Main.storyboard */; };
@@ -76,6 +98,14 @@
 		BE447BAF22D4F846009F0417 /* CastMemberCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastMemberCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		BE447BB022D4F846009F0417 /* CastMemberCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CastMemberCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		BEAF015D22D75F7B00D828B2 /* ScheduleList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleList.swift; sourceTree = "<group>"; };
+		BEC5FA4322D768180043FE47 /* MockServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockServer.swift; sourceTree = "<group>"; };
+		BEC5FA4722D7686C0043FE47 /* mock_schedule_2019-07-11.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mock_schedule_2019-07-11.json"; sourceTree = "<group>"; };
+		BEC5FA4B22D76C640043FE47 /* mock_schedule_2019-07-14.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mock_schedule_2019-07-14.json"; sourceTree = "<group>"; };
+		BEC5FA4C22D76C640043FE47 /* mock_schedule_2019-07-16.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mock_schedule_2019-07-16.json"; sourceTree = "<group>"; };
+		BEC5FA4D22D76C640043FE47 /* mock_schedule_2019-07-13.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mock_schedule_2019-07-13.json"; sourceTree = "<group>"; };
+		BEC5FA4E22D76C650043FE47 /* mock_schedule_2019-07-12.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mock_schedule_2019-07-12.json"; sourceTree = "<group>"; };
+		BEC5FA4F22D76C650043FE47 /* mock_schedule_2019-07-15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mock_schedule_2019-07-15.json"; sourceTree = "<group>"; };
+		BEC5FA5022D76C650043FE47 /* mock_schedule_2019-07-17.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "mock_schedule_2019-07-17.json"; sourceTree = "<group>"; };
 		BEDC310C22D0B6D400FD5CEE /* ChallengeTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEDC310F22D0B6D400FD5CEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEDC311122D0B6D400FD5CEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +196,21 @@
 			path = DetailsViewController;
 			sourceTree = "<group>";
 		};
+		BEAF016022D764DB00D828B2 /* MockServer */ = {
+			isa = PBXGroup;
+			children = (
+				BEC5FA4E22D76C650043FE47 /* mock_schedule_2019-07-12.json */,
+				BEC5FA4D22D76C640043FE47 /* mock_schedule_2019-07-13.json */,
+				BEC5FA4B22D76C640043FE47 /* mock_schedule_2019-07-14.json */,
+				BEC5FA4F22D76C650043FE47 /* mock_schedule_2019-07-15.json */,
+				BEC5FA4C22D76C640043FE47 /* mock_schedule_2019-07-16.json */,
+				BEC5FA5022D76C650043FE47 /* mock_schedule_2019-07-17.json */,
+				BEC5FA4722D7686C0043FE47 /* mock_schedule_2019-07-11.json */,
+				BEC5FA4322D768180043FE47 /* MockServer.swift */,
+			);
+			path = MockServer;
+			sourceTree = "<group>";
+		};
 		BEDC310322D0B6D300FD5CEE = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +292,7 @@
 		BEDC314822D0CD3C00FD5CEE /* API */ = {
 			isa = PBXGroup;
 			children = (
+				BEAF016022D764DB00D828B2 /* MockServer */,
 				BEDC314922D0CD6100FD5CEE /* TVAPI.swift */,
 			);
 			path = API;
@@ -351,6 +397,7 @@
 				BEDC311F22D0B6D800FD5CEE /* Sources */,
 				BEDC312022D0B6D800FD5CEE /* Frameworks */,
 				BEDC312122D0B6D800FD5CEE /* Resources */,
+				7324166B12B58C1B8FE7B979 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -430,12 +477,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEC5FA5422D76C650043FE47 /* mock_schedule_2019-07-16.json in Resources */,
+				BEC5FA5D22D76C650043FE47 /* mock_schedule_2019-07-15.json in Resources */,
 				BEDC311D22D0B6D700FD5CEE /* LaunchScreen.storyboard in Resources */,
 				BEDC311A22D0B6D700FD5CEE /* Assets.xcassets in Resources */,
+				BEC5FA5722D76C650043FE47 /* mock_schedule_2019-07-13.json in Resources */,
 				BEDC316222D16F8700FD5CEE /* ShowCollectionViewCell.xib in Resources */,
 				BE447BB222D4F846009F0417 /* CastMemberCellCollectionViewCell.xib in Resources */,
+				BEC5FA5122D76C650043FE47 /* mock_schedule_2019-07-14.json in Resources */,
+				BEC5FA6022D76C650043FE47 /* mock_schedule_2019-07-17.json in Resources */,
 				BEDC315C22D12F2900FD5CEE /* ShowShelfCollectionViewCell.xib in Resources */,
+				BEC5FA4822D7686C0043FE47 /* mock_schedule_2019-07-11.json in Resources */,
 				BEDC311522D0B6D400FD5CEE /* Main.storyboard in Resources */,
+				BEC5FA5A22D76C650043FE47 /* mock_schedule_2019-07-12.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +498,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE88E85B22D69D980076B068 /* Assets.xcassets in Resources */,
+				BEC5FA5222D76C650043FE47 /* mock_schedule_2019-07-14.json in Resources */,
+				BEC5FA5B22D76C650043FE47 /* mock_schedule_2019-07-12.json in Resources */,
+				BEC5FA5522D76C650043FE47 /* mock_schedule_2019-07-16.json in Resources */,
+				BEC5FA5E22D76C650043FE47 /* mock_schedule_2019-07-15.json in Resources */,
+				BEC5FA5822D76C650043FE47 /* mock_schedule_2019-07-13.json in Resources */,
+				BEC5FA4922D7686C0043FE47 /* mock_schedule_2019-07-11.json in Resources */,
+				BEC5FA6122D76C650043FE47 /* mock_schedule_2019-07-17.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +513,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE88E85A22D69D950076B068 /* Assets.xcassets in Resources */,
+				BEC5FA5322D76C650043FE47 /* mock_schedule_2019-07-14.json in Resources */,
+				BEC5FA5C22D76C650043FE47 /* mock_schedule_2019-07-12.json in Resources */,
+				BEC5FA5622D76C650043FE47 /* mock_schedule_2019-07-16.json in Resources */,
+				BEC5FA5F22D76C650043FE47 /* mock_schedule_2019-07-15.json in Resources */,
+				BEC5FA5922D76C650043FE47 /* mock_schedule_2019-07-13.json in Resources */,
+				BEC5FA4A22D7686C0043FE47 /* mock_schedule_2019-07-11.json in Resources */,
+				BEC5FA6222D76C650043FE47 /* mock_schedule_2019-07-17.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,6 +546,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7324166B12B58C1B8FE7B979 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeTVTests/Pods-ChallengeTVTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeTVTests/Pods-ChallengeTVTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengeTVTests/Pods-ChallengeTVTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B3D16B7556415F0FC10B184D /* [CP] Check Pods Manifest.lock */ = {
@@ -581,6 +666,7 @@
 				BE0A057922D22A71006CB7F9 /* CellSizeUtil.swift in Sources */,
 				BEDC315222D105CE00FD5CEE /* TVService.swift in Sources */,
 				BE3B3B9422D4E5EC00480810 /* Image.swift in Sources */,
+				BEC5FA4422D768180043FE47 /* MockServer.swift in Sources */,
 				BEDC314522D0C90700FD5CEE /* Schedule.swift in Sources */,
 				BEDC315522D106AF00FD5CEE /* ChallengeTVError.swift in Sources */,
 				BEDC314722D0C96300FD5CEE /* TVEvent.swift in Sources */,

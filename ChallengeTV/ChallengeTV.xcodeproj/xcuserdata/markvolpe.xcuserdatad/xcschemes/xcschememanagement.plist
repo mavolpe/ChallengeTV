@@ -7,7 +7,30 @@
 		<key>ChallengeTV.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>5</integer>
+		</dict>
+		<key>ChallengeTVUITests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>BEDC310B22D0B6D400FD5CEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BEDC312222D0B6D800FD5CEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BEDC312D22D0B6D800FD5CEE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -14,6 +14,11 @@ typealias ScheduleCache = [Int:ScheduleDay]
 typealias CastMemberCache = [Int:Cast]
 
 class TVService : TVServiceObservable{
+    internal var useMockData = false{
+        didSet{
+            scheduleAPI.useMockData = useMockData
+        }
+    }
     private let cacheSizeDays = 7 // For the scope of this project we will limit the schdule to one week
     private let countryCode = "US" // for the scope of this project we will hard code for US
     private let scheduleQueue = DispatchQueue(label: "scheduleSyncQueu")
@@ -26,7 +31,7 @@ class TVService : TVServiceObservable{
     private var refetchScheduled:Bool = false
     
     private override init(){
-        
+        super.init()
     }
     static let sharedInstance = TVService()
     
@@ -135,12 +140,22 @@ class TVService : TVServiceObservable{
     }
     
     public func getCurrentCacheDays()->[Date]{
-        var cacheDays:[Date] = []
-        let day = Date.init().currentWeekMonday.midnight
-        for i in 0..<cacheSizeDays{
-            cacheDays.append(day.addDays(days: i))
+        if scheduleAPI.useMockData == false{
+            var cacheDays:[Date] = []
+            let day = Date.init().currentWeekMonday.midnight
+            for i in 0..<cacheSizeDays{
+                cacheDays.append(day.addDays(days: i))
+            }
+            return cacheDays
+        }else{
+            var cacheDays:[Date] = []
+            if let day = DateFormatter.tvMazeDayFormat.date(from: "2019-07-11")?.midnight{
+                for i in 0..<cacheSizeDays{
+                    cacheDays.append(day.addDays(days: i))
+                }
+            }
+            return cacheDays
         }
-        return cacheDays
     }
     
     public func fetchCast(showId:Int, completion:@escaping (Cast?, Error?)->Void){

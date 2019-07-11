@@ -1,0 +1,3655 @@
+[
+    {
+        "id": 1679677,
+        "url": "http://www.tvmaze.com/episodes/1679677/tmz-2019-07-11-20190711",
+        "name": "2019.07.11",
+        "season": 2019,
+        "number": 141,
+        "airdate": "2019-07-11",
+        "airtime": "01:30",
+        "airstamp": "2019-07-12T05:30:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 24857,
+            "url": "http://www.tvmaze.com/shows/24857/tmz",
+            "name": "TMZ",
+            "type": "Talk Show",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2011-11-02",
+            "officialSite": "http://www.tmz.com/when-its-on?adid=tmz_web_nav_tmz_on_tv",
+            "schedule": {
+                "time": "01:30",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 91,
+            "network": {
+                "id": 72,
+                "name": "Syndication",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 147701,
+                "imdb": "tt1095213"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/95/239275.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/95/239275.jpg"
+            },
+            "summary": "<p><b>TMZ </b>(also known simply as <i>TMZ</i> or <i>TMZTV or TMZ on TV</i>) is an American syndicated entertainment and gossip news television show that premiered on September 10, 2007. The program is generally aired on Fox, CW and MyNetworkTV affiliates (along with a few affiliates of other major networks), though a majority of the stations that carry the series are Fox affiliates. It is essentially a television version of its sister operation, TMZ.com, a news website with a heavy emphasis on gossip of celebrities' personal lives, which debuted in December 2005. The television program is produced at studio facilities that serve as the headquarters for the parent website, located at 13031 West Jefferson Boulevard in Los Angeles, California. TMZ is an insider term (\"thirty-mile zone\" or studio zone), referring to the movie studio area of downtown Hollywood. On October 23, 2013, Warner Bros. Television Distribution announced that the program's charter station group, FOX Television Stations, renewed <i>TMZ on TV</i> through the 2016–17 season.</p>",
+            "updated": 1562678812,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/24857"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1679676"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1679677"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1679677"
+            }
+        }
+    },
+    {
+        "id": 1662986,
+        "url": "http://www.tvmaze.com/episodes/1662986/swamp-thing-1x07-brilliant-disguise",
+        "name": "Brilliant Disguise",
+        "season": 1,
+        "number": 7,
+        "airdate": "2019-07-12",
+        "airtime": "09:00",
+        "airstamp": "2019-07-12T13:00:00+00:00",
+        "runtime": 60,
+        "image": {
+            "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/204/510399.jpg",
+            "original": "http://static.tvmaze.com/uploads/images/original_untouched/204/510399.jpg"
+        },
+        "summary": "<p>While Maria meets with the shadowy finance group known as the Conclave, Lucilia leads Avery out into the swamp under false pretenses.</p>",
+        "show": {
+            "id": 36568,
+            "url": "http://www.tvmaze.com/shows/36568/swamp-thing",
+            "name": "Swamp Thing",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Action",
+                "Horror"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2019-05-31",
+            "officialSite": "https://www.dcuniverse.com/videos/swamp-thing/184/",
+            "schedule": {
+                "time": "09:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 7.8
+            },
+            "weight": 100,
+            "network": null,
+            "webChannel": {
+                "id": 187,
+                "name": "DC Universe",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 361735,
+                "imdb": "tt8362852"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/200/500171.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/200/500171.jpg"
+            },
+            "summary": "<p><b>Swamp Thing</b> centers on CDC researcher Abby Arcane. When she returns to her childhood home of Houma, Louisiana, in order to investigate a deadly swamp-borne virus, she develops a surprising bond with scientist Alec Holland — only to have him tragically taken from her. But as powerful forces descend on Houma, intent on exploiting the swamp's mysterious properties for their own purposes, Abby will discover that the swamp holds mystical secrets, both horrifying and wondrous — and the potential love of her life may not be dead after all.</p>",
+            "updated": 1562391292,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/36568"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1662985"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1662986"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1662986"
+            }
+        }
+    },
+    {
+        "id": 1675621,
+        "url": "http://www.tvmaze.com/episodes/1675621/tots-1x11-stripe-out",
+        "name": "Stripe Out",
+        "season": 1,
+        "number": 11,
+        "airdate": "2019-07-12",
+        "airtime": "09:00",
+        "airstamp": "2019-07-12T13:00:00+00:00",
+        "runtime": 15,
+        "image": null,
+        "summary": "<p>Pip and Freddy try to find out what mysterious striped animal they are delivering. </p>",
+        "show": {
+            "id": 36030,
+            "url": "http://www.tvmaze.com/shows/36030/tots",
+            "name": "T.O.T.S.",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Comedy",
+                "Children"
+            ],
+            "status": "Running",
+            "runtime": 15,
+            "premiered": "2019-06-14",
+            "officialSite": "https://disneynow.go.com/shows/tots",
+            "schedule": {
+                "time": "09:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 79,
+            "network": {
+                "id": 1039,
+                "name": "Disney Junior",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": {
+                "id": 83,
+                "name": "DisneyNOW",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/200/501482.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/200/501482.jpg"
+            },
+            "summary": "<p><b>T.O.T.S. </b>is a heartfelt animated comedy about the hilarious adventures of best friends Pip and Freddy, a tenacious penguin and a kind-hearted flamingo, who are the only non-stork delivery birds in-training at Tiny Ones Transfer Service (T.O.T.S.). As new members of the esteemed team, these junior flyers must take tender care in transferring baby animals – kittens, cubs, calves, bunnies, puppies and joeys among them – from the nursery to their forever families around the globe. Together, they will learn how to nurture and care for the babies and use creative thinking and problem solving to model for young viewers that there isn't just one way to achieve a goal.</p>",
+            "updated": 1561708736,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/36030"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675620"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675621"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1675621"
+            }
+        }
+    },
+    {
+        "id": 1675684,
+        "url": "http://www.tvmaze.com/episodes/1675684/ryans-mystery-playdate-1x10-ryans-handy-playdateryans-really-fast-playdate",
+        "name": "Ryan's Handy Playdate/Ryan's Really Fast Playdate",
+        "season": 1,
+        "number": 10,
+        "airdate": "2019-07-12",
+        "airtime": "09:00",
+        "airstamp": "2019-07-12T13:00:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": "<p>Break a sweat with Ryan as he works hard to complete his challenges and meet a playdate who is tough as nails. Race along with Ryan as he tears through challenges to meet his super speedy playdate.</p>",
+        "show": {
+            "id": 41516,
+            "url": "http://www.tvmaze.com/shows/41516/ryans-mystery-playdate",
+            "name": "Ryan's Mystery Playdate",
+            "type": "Variety",
+            "language": "English",
+            "genres": [
+                "Children"
+            ],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2019-04-19",
+            "officialSite": "http://www.nickjr.com/ryans-mystery-play-date/",
+            "schedule": {
+                "time": "09:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 84,
+            "network": {
+                "id": 27,
+                "name": "Nickelodeon",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 361672,
+                "imdb": "tt9845168"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/201/504682.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/201/504682.jpg"
+            },
+            "summary": "<p><b>Ryan's Mystery Playdate</b> follows Ryan, his parents and animated friends Gus the Gummy Gator and Combo Panda as they work together to tackle a series of imaginative, physical challenges and unbox puzzles to reveal the identity of his mystery playdate.</p>",
+            "updated": 1562115013,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/41516"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1662230"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675684"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1675684"
+            }
+        }
+    },
+    {
+        "id": 1675622,
+        "url": "http://www.tvmaze.com/episodes/1675622/tots-1x12-a-splashy-delivery",
+        "name": "A Splashy Delivery",
+        "season": 1,
+        "number": 12,
+        "airdate": "2019-07-12",
+        "airtime": "09:15",
+        "airstamp": "2019-07-12T13:15:00+00:00",
+        "runtime": 15,
+        "image": null,
+        "summary": "<p>While delivering a baby octopus, Pip and Freddy accidentally unplug the crate. </p>",
+        "show": {
+            "id": 36030,
+            "url": "http://www.tvmaze.com/shows/36030/tots",
+            "name": "T.O.T.S.",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Comedy",
+                "Children"
+            ],
+            "status": "Running",
+            "runtime": 15,
+            "premiered": "2019-06-14",
+            "officialSite": "https://disneynow.go.com/shows/tots",
+            "schedule": {
+                "time": "09:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 79,
+            "network": {
+                "id": 1039,
+                "name": "Disney Junior",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": {
+                "id": 83,
+                "name": "DisneyNOW",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/200/501482.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/200/501482.jpg"
+            },
+            "summary": "<p><b>T.O.T.S. </b>is a heartfelt animated comedy about the hilarious adventures of best friends Pip and Freddy, a tenacious penguin and a kind-hearted flamingo, who are the only non-stork delivery birds in-training at Tiny Ones Transfer Service (T.O.T.S.). As new members of the esteemed team, these junior flyers must take tender care in transferring baby animals – kittens, cubs, calves, bunnies, puppies and joeys among them – from the nursery to their forever families around the globe. Together, they will learn how to nurture and care for the babies and use creative thinking and problem solving to model for young viewers that there isn't just one way to achieve a goal.</p>",
+            "updated": 1561708736,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/36030"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675620"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675621"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1675622"
+            }
+        }
+    },
+    {
+        "id": 1673067,
+        "url": "http://www.tvmaze.com/episodes/1673067/vampirina-2x21-the-boo-boys-are-back",
+        "name": "The Boo Boys Are Back",
+        "season": 2,
+        "number": 21,
+        "airdate": "2019-07-12",
+        "airtime": "09:30",
+        "airstamp": "2019-07-12T13:30:00+00:00",
+        "runtime": 15,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 31763,
+            "url": "http://www.tvmaze.com/shows/31763/vampirina",
+            "name": "Vampirina",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Family",
+                "Supernatural"
+            ],
+            "status": "Running",
+            "runtime": 15,
+            "premiered": "2017-10-01",
+            "officialSite": "http://www.disneyabcpress.com/disneyjunior/shows/vampirina/",
+            "schedule": {
+                "time": "11:00",
+                "days": [
+                    "Monday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 88,
+            "network": {
+                "id": 1039,
+                "name": "Disney Junior",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 335717,
+                "imdb": "tt7010622"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/158/395475.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/158/395475.jpg"
+            },
+            "summary": "<p><b>Vampirina</b>, inspired by Disney Publishing's popular children's book series <i>Vampirina Ballerina</i>, tells the story of a young vampire girl who faces the joys and trials of being the new kid in town when her family moves from Transylvania to Pennsylvania.</p>",
+            "updated": 1561020995,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/31763"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1660402"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1673067"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1673067"
+            }
+        }
+    },
+    {
+        "id": 1673068,
+        "url": "http://www.tvmaze.com/episodes/1673068/vampirina-2x22-pixie-problem",
+        "name": "Pixie Problem",
+        "season": 2,
+        "number": 22,
+        "airdate": "2019-07-12",
+        "airtime": "09:45",
+        "airstamp": "2019-07-12T13:45:00+00:00",
+        "runtime": 15,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 31763,
+            "url": "http://www.tvmaze.com/shows/31763/vampirina",
+            "name": "Vampirina",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Family",
+                "Supernatural"
+            ],
+            "status": "Running",
+            "runtime": 15,
+            "premiered": "2017-10-01",
+            "officialSite": "http://www.disneyabcpress.com/disneyjunior/shows/vampirina/",
+            "schedule": {
+                "time": "11:00",
+                "days": [
+                    "Monday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 88,
+            "network": {
+                "id": 1039,
+                "name": "Disney Junior",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 335717,
+                "imdb": "tt7010622"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/158/395475.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/158/395475.jpg"
+            },
+            "summary": "<p><b>Vampirina</b>, inspired by Disney Publishing's popular children's book series <i>Vampirina Ballerina</i>, tells the story of a young vampire girl who faces the joys and trials of being the new kid in town when her family moves from Transylvania to Pennsylvania.</p>",
+            "updated": 1561020995,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/31763"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1660402"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1673067"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1673068"
+            }
+        }
+    },
+    {
+        "id": 1679255,
+        "url": "http://www.tvmaze.com/episodes/1679255/the-young-and-the-restless-2019-07-12-ep-11727",
+        "name": "Ep. #11727",
+        "season": 2019,
+        "number": 137,
+        "airdate": "2019-07-12",
+        "airtime": "12:30",
+        "airstamp": "2019-07-12T16:30:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 4344,
+            "url": "http://www.tvmaze.com/shows/4344/the-young-and-the-restless",
+            "name": "The Young and the Restless",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Family",
+                "Romance"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "1973-03-26",
+            "officialSite": "http://www.cbs.com/shows/the_young_and_the_restless/",
+            "schedule": {
+                "time": "12:30",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 6.2
+            },
+            "weight": 93,
+            "network": {
+                "id": 2,
+                "name": "CBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 6318,
+                "thetvdb": 70328,
+                "imdb": "tt0069658"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/20/51462.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/20/51462.jpg"
+            },
+            "summary": "<p><b>The Young and the Restless</b> revolves around the rivalries, romances, hopes and fears of the residents of the fictional Midwestern metropolis, Genoa City. The lives and loves of a wide variety of characters mingle through the generations, dominated by the Newman, Abbott, Chancellor, Baldwin and Winters families. \u00ad When The Young and the Restless premiered in 1973, it revolutionized the daytime drama. It continues to set the standard with strong characters, socially conscious storylines, romance and sensuality.</p>",
+            "updated": 1562549259,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/4344"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1679253"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1679254"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1679255"
+            }
+        }
+    },
+    {
+        "id": 1676810,
+        "url": "http://www.tvmaze.com/episodes/1676810/days-of-our-lives-2019-07-12-ep-13635",
+        "name": "Ep. #13635",
+        "season": 2019,
+        "number": 135,
+        "airdate": "2019-07-12",
+        "airtime": "13:00",
+        "airstamp": "2019-07-12T17:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 812,
+            "url": "http://www.tvmaze.com/shows/812/days-of-our-lives",
+            "name": "Days of Our Lives",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Family",
+                "Romance"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "1965-12-09",
+            "officialSite": "http://www.nbc.com/days-of-our-lives",
+            "schedule": {
+                "time": "13:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 6.4
+            },
+            "weight": 96,
+            "network": {
+                "id": 1,
+                "name": "NBC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 3256,
+                "thetvdb": 70366,
+                "imdb": "tt0058796"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/87/218576.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/87/218576.jpg"
+            },
+            "summary": "<p><b>Days of our Lives</b> is set in the fictitious Midwestern town of Salem. The core families are the Bradys, the Hortons and the DiMeras, and the multi-layered storylines involve elements of romance, adventure, mystery, comedy and drama.</p>",
+            "updated": 1562676051,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/812"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1676808"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1676809"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1676810"
+            }
+        }
+    },
+    {
+        "id": 1676820,
+        "url": "http://www.tvmaze.com/episodes/1676820/the-bold-and-the-beautiful-2019-07-12-ep-8132",
+        "name": "Ep. #8132",
+        "season": 2019,
+        "number": 135,
+        "airdate": "2019-07-12",
+        "airtime": "13:30",
+        "airstamp": "2019-07-12T17:30:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 806,
+            "url": "http://www.tvmaze.com/shows/806/the-bold-and-the-beautiful",
+            "name": "The Bold and the Beautiful",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Family",
+                "Romance"
+            ],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "1987-03-23",
+            "officialSite": null,
+            "schedule": {
+                "time": "13:30",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 94,
+            "network": {
+                "id": 2,
+                "name": "CBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 5631,
+                "thetvdb": 79838,
+                "imdb": "tt0092325"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/186/465953.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/186/465953.jpg"
+            },
+            "summary": "<p>They created a dynasty where passion rules, they are the Forresters, the first name in Fashion. <b>The Bold and the Beautiful</b>, a world of fashion, glamor and romance. A place where power, money and success are there for the taking in a city where dreams really do come true. Follow the lives and loves of the Forresters on <i>The Bold and the Beautiful</i>...</p>",
+            "updated": 1561945585,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/806"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1676818"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1676819"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1676820"
+            }
+        }
+    },
+    {
+        "id": 1679245,
+        "url": "http://www.tvmaze.com/episodes/1679245/general-hospital-2019-07-12-ep-14343",
+        "name": "Ep. #14343",
+        "season": 2019,
+        "number": 134,
+        "airdate": "2019-07-12",
+        "airtime": "14:00",
+        "airstamp": "2019-07-12T18:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 4189,
+            "url": "http://www.tvmaze.com/shows/4189/general-hospital",
+            "name": "General Hospital",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Medical"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "1963-04-01",
+            "officialSite": "http://abc.go.com/shows/general-hospital",
+            "schedule": {
+                "time": "14:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 5.8
+            },
+            "weight": 87,
+            "network": {
+                "id": 3,
+                "name": "ABC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 3653,
+                "thetvdb": 75332,
+                "imdb": "tt0056758"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/115/287759.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/115/287759.jpg"
+            },
+            "summary": "<p><b>General Hospital</b>, which celebrated its golden anniversary on April 1, 2013, continues its tradition of passion, intrigue and adventure that takes place in the fictional town of Port Charles in upstate New York. The glamour and excitement of those who have come to find their destinies in this familiar seaport town intertwine with the lives, loves and fortunes of beloved, well-known faces. As always, love, danger and mind blowing plot twists continue to abound on General Hospital with contemporary storylines and unforgettable characters.</p>",
+            "updated": 1562791007,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/4189"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1679243"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1679244"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1679245"
+            }
+        }
+    },
+    {
+        "id": 1680357,
+        "url": "http://www.tvmaze.com/episodes/1680357/the-talk-2019-07-12-marcia-gay-harden-cat-deeley",
+        "name": "Marcia Gay Harden, Cat Deeley",
+        "season": 2019,
+        "number": 136,
+        "airdate": "2019-07-12",
+        "airtime": "14:00",
+        "airstamp": "2019-07-12T18:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": "<p>Actress Marcia Gay Harden discusses her new film \"Point Blank\"; television host Cat Deeley.</p>",
+        "show": {
+            "id": 6049,
+            "url": "http://www.tvmaze.com/shows/6049/the-talk",
+            "name": "The Talk",
+            "type": "Talk Show",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2011-09-27",
+            "officialSite": "http://www.cbs.com/shows/the_talk/",
+            "schedule": {
+                "time": "14:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 77,
+            "network": {
+                "id": 2,
+                "name": "CBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 26645,
+                "thetvdb": 245071,
+                "imdb": "tt1740718"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/41/103196.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/41/103196.jpg"
+            },
+            "summary": "<p>Inspired by a mother's group Sara Gilbert went to after she had her baby, <b>The Talk</b> is a group of moms who get together to talk family issues, current events, celebrity gossip, and personal stories. Hosted by Aisha Tyler, Julie Chen, Sara Gilbert, Sharon Osbourne and Sheryl Underwood. \"Remember every time is the right time to have The Talk\"<i>.</i></p>",
+            "updated": 1562836249,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/6049"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1680353"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1680355"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1680357"
+            }
+        }
+    },
+    {
+        "id": 1675268,
+        "url": "http://www.tvmaze.com/episodes/1675268/motorweek-38x45-toyota-supra",
+        "name": "Toyota Supra",
+        "season": 38,
+        "number": 45,
+        "airdate": "2019-07-12",
+        "airtime": "14:30",
+        "airstamp": "2019-07-12T18:30:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 8488,
+            "url": "http://www.tvmaze.com/shows/8488/motorweek",
+            "name": "MotorWeek",
+            "type": "Reality",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2008-09-05",
+            "officialSite": "http://www.motorweek.org/",
+            "schedule": {
+                "time": "14:30",
+                "days": [
+                    "Saturday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 62,
+            "network": {
+                "id": 85,
+                "name": "PBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 8000,
+                "thetvdb": 239601,
+                "imdb": "tt0244912"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/30/75454.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/30/75454.jpg"
+            },
+            "summary": "<p><b>MotorWeek</b> is an American automotive television series. The program premiered on October 15, 1981 and is hosted by automotive journalist John H. Davis, who is also the series' creator and executive producer. <i>MotorWeek</i> is produced by Maryland Public Television and is seen nationwide on Public Broadcasting Service (PBS),Discovery Network, Velocity, V-me and globally on the American Forces Network. The half-hour program is presented in a magazine-like format, with reviews, comparisons, news, and features. <i>MotorWeek's</i> original slogan was \"Television's automotive magazine\", later changed to \"Television's original automotive magazine\", although the BBC's <i>Top Gear</i> debuted in 1977. The show went into national syndication beginning September 11, 1993, originally syndicated by ITC Entertainment.</p>",
+            "updated": 1562160227,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/8488"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675267"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675268"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1675268"
+            }
+        }
+    },
+    {
+        "id": 1675972,
+        "url": "http://www.tvmaze.com/episodes/1675972/judge-judy-23x240-cute-service-dogs-in-the-house-fight-aftermath",
+        "name": "Cute Service Dogs in the House!; Fight Aftermath!",
+        "season": 23,
+        "number": 240,
+        "airdate": "2019-07-12",
+        "airtime": "16:00",
+        "airstamp": "2019-07-12T20:00:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 7364,
+            "url": "http://www.tvmaze.com/shows/7364/judge-judy",
+            "name": "Judge Judy",
+            "type": "Reality",
+            "language": "English",
+            "genres": [
+                "Legal"
+            ],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2010-09-13",
+            "officialSite": "http://www.judgejudy.com/",
+            "schedule": {
+                "time": "16:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 5.2
+            },
+            "weight": 95,
+            "network": {
+                "id": 72,
+                "name": "Syndication",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 7960,
+                "thetvdb": 71221,
+                "imdb": "tt0115227"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/27/68009.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/27/68009.jpg"
+            },
+            "summary": "<p><b>Judge Judy</b> is a courtroom series stars former family court judge Judith Sheindlin. Each episode finds Judge Judy presiding over real small-claims cases inside a televised courtroom. Judge Judy brings her trademark wit and wisdom to the widely successful half-hour series where justice is dispensed at lightning speed.</p>",
+            "updated": 1562409358,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/7364"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675970"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675971"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1675972"
+            }
+        }
+    },
+    {
+        "id": 1663094,
+        "url": "http://www.tvmaze.com/episodes/1663094/naked-news-2019-07-12-2019-07-12",
+        "name": "2019-07-12",
+        "season": 2019,
+        "number": 165,
+        "airdate": "2019-07-12",
+        "airtime": "17:00",
+        "airstamp": "2019-07-12T21:00:00+00:00",
+        "runtime": 25,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 32095,
+            "url": "http://www.tvmaze.com/shows/32095/naked-news",
+            "name": "Naked News",
+            "type": "News",
+            "language": "English",
+            "genres": [
+                "Adult"
+            ],
+            "status": "Running",
+            "runtime": 25,
+            "premiered": "1999-12-13",
+            "officialSite": null,
+            "schedule": {
+                "time": "17:00",
+                "days": [
+                    "Monday"
+                ]
+            },
+            "rating": {
+                "average": 8.2
+            },
+            "weight": 96,
+            "network": {
+                "id": 1035,
+                "name": "Playboy TV",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 266718,
+                "imdb": "tt0249044"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/128/321820.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/128/321820.jpg"
+            },
+            "summary": "<p><b>Naked News</b>, billing itself as \"the program with nothing to hide\", is a subscription website featuring a real television newscast. The show is prepared in Toronto and runs daily, with 25-minute episodes 6 days per week. The female anchors read the news fully nude or strip as they present their news segments. Naked News TV is its offshoot pay-per-view or subscription service. Naked News also aired briefly as a late night television series on Citytv Toronto.</p>",
+            "updated": 1559393082,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/32095"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1663092"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1663093"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1663094"
+            }
+        }
+    },
+    {
+        "id": 1583972,
+        "url": "http://www.tvmaze.com/episodes/1583972/pbs-newshour-2019-07-12-july-12-2019",
+        "name": "July 12, 2019",
+        "season": 2019,
+        "number": 139,
+        "airdate": "2019-07-12",
+        "airtime": "18:00",
+        "airstamp": "2019-07-12T22:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 10563,
+            "url": "http://www.tvmaze.com/shows/10563/pbs-newshour",
+            "name": "PBS NewsHour",
+            "type": "News",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "1975-10-20",
+            "officialSite": "http://www.pbs.org/newshour/",
+            "schedule": {
+                "time": "18:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 1,
+            "network": {
+                "id": 85,
+                "name": "PBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 81388,
+                "imdb": "tt0247880"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/35/89115.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/35/89115.jpg"
+            },
+            "summary": "<p><b>PBS NewsHour</b> is the long running news magazine broadcast every weeknight on PBS. The show was created by veteran newsmen Robert MacNeil &amp; Jim Lehrer, and has been on the air since 1975. In 2009, the show, previously known as The NewsHour With Jim Lehrer, became PBS NewsHour. One of the major differences between network news and the PBS NewsHour is that because the show is publicly funded, there are no commercials. This allows the NewsHour to dedicate more time to comprehensive reporting.</p>",
+            "updated": 1546007353,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/10563"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1583970"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1583971"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1583972"
+            }
+        }
+    },
+    {
+        "id": 1677324,
+        "url": "http://www.tvmaze.com/episodes/1677324/nbc-nightly-news-2019-07-12-july-12-fri",
+        "name": "July 12 Fri",
+        "season": 2019,
+        "number": 188,
+        "airdate": "2019-07-12",
+        "airtime": "18:30",
+        "airstamp": "2019-07-12T22:30:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 9539,
+            "url": "http://www.tvmaze.com/shows/9539/nbc-nightly-news",
+            "name": "NBC Nightly News",
+            "type": "News",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2013-07-20",
+            "officialSite": "http://www.nbcnews.com/nightly-news?cid=sky|ps_Google_NNNQ4",
+            "schedule": {
+                "time": "18:30",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": {
+                "id": 1,
+                "name": "NBC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 139911,
+                "imdb": "tt0231035"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/33/83406.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/33/83406.jpg"
+            },
+            "summary": "<p><b>NBC Nightly News</b> (titled as <i>NBC Nightly News with Lester Holt</i> for its weeknight broadcasts since June 22, 2015) is the flagship daily evening television news program for NBC News, the news division of the NBC television network in the United States. First aired on August 3, 1970, the program is currently the most watched network newscast in the United States, with an average of 9.3 million viewers, just a few thousand more than its nearest rival, ABC's <i>World News Tonight</i>. <i>NBC Nightly News</i> is produced from Studio 3B at NBC Studios at 30 Rockefeller Center in New York City.</p><p>Since 2015, the broadcast is anchored by Lester Holt on weeknights, Jose Diaz-Balart on Saturday and Kate Snow on Sunday. Previous weekday anchors have included David Brinkley, John Chancellor, Tom Brokaw, and most recently Brian Williams. The program is broadcast live over most NBC stations from 6:30 to 7:00 p.m. Eastern Time seven days a week; a special \"Western Edition\" of the program occasionally features updated information on news stories covered during the original telecast for Pacific Time Zone viewers. Its current theme music, \"The Mission\" (which debuted in 1985) was composed by John Williams.</p>",
+            "updated": 1562072846,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/9539"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1677322"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1677323"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1677324"
+            }
+        }
+    },
+    {
+        "id": 1679280,
+        "url": "http://www.tvmaze.com/episodes/1679280/abc-world-news-tonight-with-david-muir-2019-07-12-episode-171",
+        "name": "Episode 171",
+        "season": 2019,
+        "number": 171,
+        "airdate": "2019-07-12",
+        "airtime": "18:30",
+        "airstamp": "2019-07-12T22:30:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 9659,
+            "url": "http://www.tvmaze.com/shows/9659/abc-world-news-tonight-with-david-muir",
+            "name": "ABC World News Tonight with David Muir",
+            "type": "News",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2014-09-01",
+            "officialSite": "http://abc.go.com/shows/world-news-tonight",
+            "schedule": {
+                "time": "18:30",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 78,
+            "network": {
+                "id": 3,
+                "name": "ABC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 290734,
+                "imdb": "tt0184090"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/33/83939.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/33/83939.jpg"
+            },
+            "summary": "<p><b>ABC World News Tonight with David Muir</b> is the News division's flagship broadcast. With unparalleled reporting, World News empowers viewers each day by providing the latest information and analysis of major news events from around the country and the world. Anchored by David Muir, the broadcast draws upon an award-winning team of correspondents, producers and off-air reporters.</p>",
+            "updated": 1562562883,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/9659"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1679277"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1679278"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1679280"
+            }
+        }
+    },
+    {
+        "id": 1609389,
+        "url": "http://www.tvmaze.com/episodes/1609389/spongebob-squarepants-s12-special-spongebobs-big-birthday-blowout",
+        "name": "Spongebob's Big Birthday Blowout",
+        "season": 12,
+        "number": null,
+        "airdate": "2019-07-12",
+        "airtime": "19:00",
+        "airstamp": "2019-07-12T23:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": "<p>SpongeBob and Patrick tour the surface world, while the rest of Bikini Bottom prepares a surprise for SpongeBob!</p>",
+        "show": {
+            "id": 713,
+            "url": "http://www.tvmaze.com/shows/713/spongebob-squarepants",
+            "name": "SpongeBob SquarePants",
+            "type": "Animation",
+            "language": "English",
+            "genres": [
+                "Comedy",
+                "Children"
+            ],
+            "status": "Running",
+            "runtime": 15,
+            "premiered": "1999-05-01",
+            "officialSite": "http://www.nick.com/spongebob-squarepants/",
+            "schedule": {
+                "time": "11:00",
+                "days": [
+                    "Saturday"
+                ]
+            },
+            "rating": {
+                "average": 8.6
+            },
+            "weight": 97,
+            "network": {
+                "id": 27,
+                "name": "Nickelodeon",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 5304,
+                "thetvdb": 75886,
+                "imdb": "tt0206512"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/202/505278.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/202/505278.jpg"
+            },
+            "summary": "<p><b>SpongeBob SquarePants</b> is a chipper sea sponge and his nautical neighbors make waves in the deep-sea city of Bikini Bottom in this clever and playful kiddie cartoon aimed at preschoolers. SpongeBob's acquaintances include goofy starfish Patrick, cheerful squirrel Sandy Cheeks (who lives in an air bubble) and grouchy Squidward.</p>",
+            "updated": 1562114396,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/713"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675679"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675680"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1609389"
+            }
+        }
+    },
+    {
+        "id": 1638248,
+        "url": "http://www.tvmaze.com/episodes/1638248/disney-quizney-2x55-episode-55",
+        "name": "Episode 55",
+        "season": 2,
+        "number": 55,
+        "airdate": "2019-07-12",
+        "airtime": "19:00",
+        "airstamp": "2019-07-12T23:00:00+00:00",
+        "runtime": 10,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 41733,
+            "url": "http://www.tvmaze.com/shows/41733/disney-quizney",
+            "name": "Disney QUIZney",
+            "type": "Game Show",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 10,
+            "premiered": "2018-07-16",
+            "officialSite": "https://disneynow.go.com/games/quizney",
+            "schedule": {
+                "time": "19:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 34,
+            "network": {
+                "id": 78,
+                "name": "Disney Channel",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": {
+                "id": 83,
+                "name": "DisneyNOW",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": null,
+            "summary": "<p><b>Disney QUIZney</b> is a live, 10-minute hosted trivia game show in the DisneyNOW app. Each day, you'll have a chance to answer seven trivia questions. The top ten players who answer the seven questions correctly and the fastest will win a cash prize in digital gift card format. The game is free to play within the DisneyNOW app on mobile and tablet devices and on DisneyNOW.com.</p><p>Tune in live to QUIZney on Disney Channel and play along in the DisneyNOW app on iOS, Android and Kindle devices and on DisneyNOW.com. The game is not available on tvOS, Roku, Fire TV and Android TV devices, Samsung Tizen and Chromecast. QUIZney is a live event; you must play along at 7p EDT/4p PDT for your chance to win.</p>",
+            "updated": 1555173352,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/41733"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1638246"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1638247"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1638248"
+            }
+        }
+    },
+    {
+        "id": 1611941,
+        "url": "http://www.tvmaze.com/episodes/1611941/jeopardy-2019-07-12-returning-champion-vs-show-8035",
+        "name": "Returning Champion Vs. , show # 8035.",
+        "season": 2019,
+        "number": 139,
+        "airdate": "2019-07-12",
+        "airtime": "19:30",
+        "airstamp": "2019-07-12T23:30:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": "<p>Returning Champion; </p>",
+        "show": {
+            "id": 2193,
+            "url": "http://www.tvmaze.com/shows/2193/jeopardy",
+            "name": "Jeopardy!",
+            "type": "Game Show",
+            "language": "English",
+            "genres": [
+                "Family"
+            ],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "1984-09-10",
+            "officialSite": "https://www.jeopardy.com/",
+            "schedule": {
+                "time": "19:30",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 9
+            },
+            "weight": 93,
+            "network": {
+                "id": 72,
+                "name": "Syndication",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 7879,
+                "thetvdb": 77075,
+                "imdb": "tt0159881"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/12/30370.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/12/30370.jpg"
+            },
+            "summary": "<p><b>Jeopardy!</b> is a classic game show -- with a twist. The answers are given first, and the contestants supply the questions. Three contestants, including the previous show's champion, compete in six categories and in three rounds (with each round's \"answers\" being worth more prize money).</p><p>Contestant images from 2015 onwards are provided courtesy of Fikkle Fame.</p>",
+            "updated": 1562695419,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/2193"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1611939"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1611940"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1611941"
+            }
+        }
+    },
+    {
+        "id": 1659676,
+        "url": "http://www.tvmaze.com/episodes/1659676/battlebots-4x06-buckers-and-brawlers",
+        "name": "Buckers and Brawlers",
+        "season": 4,
+        "number": 6,
+        "airdate": "2019-07-12",
+        "airtime": "20:00",
+        "airstamp": "2019-07-13T00:00:00+00:00",
+        "runtime": 120,
+        "image": null,
+        "summary": "<p>Competition gets fierce as the teams set their sights on making it into the top 16, and when defending champ Bite Force takes on legendary flipper Bronco, top teams are pushed to the brink.</p>",
+        "show": {
+            "id": 2203,
+            "url": "http://www.tvmaze.com/shows/2203/battlebots",
+            "name": "BattleBots",
+            "type": "Game Show",
+            "language": "English",
+            "genres": [
+                "Action"
+            ],
+            "status": "Running",
+            "runtime": 120,
+            "premiered": "2015-06-21",
+            "officialSite": "https://battlebots.com/",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 8.1
+            },
+            "weight": 96,
+            "network": {
+                "id": 66,
+                "name": "Discovery Channel",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 49635,
+                "thetvdb": 294206,
+                "imdb": "tt4816364"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/12/30581.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/12/30581.jpg"
+            },
+            "summary": "<p><b>BattleBots</b> is a reimagined take on the killer robot combat sport, from Whalerock Industries and the creators of the original <i>BattleBots</i> franchise, Ed Roski and Greg Munson. The homemade robots are back for season two, where they will battle against each other in a single elimination tournament until there is one champion. The ten episode series will feature next generation robots – bigger, faster and stronger than ever before. The show will continue to emphasize the design and build elements of each robot, the bot builder backstories, their intense pursuit of the championship and the spectacle of the event. While there's only one weight class, there are a huge variety of deadly weapons. Forty-eight robots will enter, but in the end, only one will win the final trophy.</p>",
+            "updated": 1562468134,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/2203"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1659675"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1659676"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1659676"
+            }
+        }
+    },
+    {
+        "id": 1660173,
+        "url": "http://www.tvmaze.com/episodes/1660173/love-island-1x04-episode-4",
+        "name": "Episode 4",
+        "season": 1,
+        "number": 4,
+        "airdate": "2019-07-12",
+        "airtime": "20:00",
+        "airstamp": "2019-07-13T00:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 42289,
+            "url": "http://www.tvmaze.com/shows/42289/love-island",
+            "name": "Love Island",
+            "type": "Reality",
+            "language": "English",
+            "genres": [
+                "Romance"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2019-07-09",
+            "officialSite": "https://www.cbs.com/shows/love-island/",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 99,
+            "network": {
+                "id": 2,
+                "name": "CBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 364107,
+                "imdb": "tt8819906"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/198/496866.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/198/496866.jpg"
+            },
+            "summary": "<p>The U.S. version of the <b>Love Island</b> begins as a group of single \"Islanders\" come together in a stunning villa in Fiji, ready to embark on a summer of love, friendships and, ultimately, relationships. Every few days the Islanders must couple-up – those who fail to find a partner to couple up with risk being dumped from the island. Islanders are on the lookout for romance, but the road to love doesn't always run smoothly. Challenges abound with new Islander arrivals and dramatic twists as friendships and relationships form. In addition to choosing their partners wisely, Islanders must also win the hearts of viewers who have the opportunity to shape events on screen and ultimately crown one lucky couple the winner, who will then have the chance to walk away with both love and the cash prize.</p>",
+            "updated": 1562735581,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/42289"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1660171"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1660172"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1660173"
+            }
+        }
+    },
+    {
+        "id": 1666106,
+        "url": "http://www.tvmaze.com/episodes/1666106/washington-week-2019-07-12-episode-5902",
+        "name": "Episode 5902",
+        "season": 2019,
+        "number": 27,
+        "airdate": "2019-07-12",
+        "airtime": "20:00",
+        "airstamp": "2019-07-13T00:00:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 7179,
+            "url": "http://www.tvmaze.com/shows/7179/washington-week",
+            "name": "Washington Week",
+            "type": "Talk Show",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "1967-02-23",
+            "officialSite": "http://www.weta.org/tv/program/washington-week-gwen-ifill",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 78,
+            "network": {
+                "id": 85,
+                "name": "PBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 7385,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/33/83307.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/33/83307.jpg"
+            },
+            "summary": "<p>On <b>Washington Week </b>(formerly Washington Week with Gwen Ifill) guest journalists weigh in on issues of the week in this venerable roundtable, the first program ever fed by PBS (previously it had aired on WETA-TV in Washington, D.C., and other East Coast public stations). Though its format is panel discussion, there have been occasional one-on-one interviews, a notable example being host Paul Duke's 1994 White House visit with President Bill Clinton. The series won a DuPont-Columbia University Award in 1974.</p>",
+            "updated": 1562247888,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/7179"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1662945"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1666106"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1666106"
+            }
+        }
+    },
+    {
+        "id": 1666616,
+        "url": "http://www.tvmaze.com/episodes/1666616/andi-mack-3x18-something-to-talk-a-boot",
+        "name": "Something to Talk A-boot",
+        "season": 3,
+        "number": 18,
+        "airdate": "2019-07-12",
+        "airtime": "20:00",
+        "airstamp": "2019-07-13T00:00:00+00:00",
+        "runtime": 25,
+        "image": null,
+        "summary": "<p>Andi makes a big decision about her future; T.J.'s act of kindness toward Buffy lands him in trouble; Amber asks Jonah for some space.</p>",
+        "show": {
+            "id": 23006,
+            "url": "http://www.tvmaze.com/shows/23006/andi-mack",
+            "name": "Andi Mack",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Comedy",
+                "Family"
+            ],
+            "status": "Running",
+            "runtime": 25,
+            "premiered": "2017-03-10",
+            "officialSite": "https://disneynow.go.com/shows/andi-mack",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 7
+            },
+            "weight": 96,
+            "network": {
+                "id": 78,
+                "name": "Disney Channel",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": {
+                "id": 83,
+                "name": "DisneyNOW",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 324948,
+                "imdb": "tt5195114"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/133/334351.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/133/334351.jpg"
+            },
+            "summary": "<p><b>Andi Mack</b> is a contemporary, coming-of-age story about a relatable girl who's trying to determine where she fits in and the many amazing ways she can live her life. Andi has been raised to live on the safe side, but on her 13th birthday, a revelation jumpstarts her path of self-discovery. At every twist and turn, she's anchored by a loving albeit complicated family and her loyal best friends, Cyrus and Buffy. Along the way, she learns that sometimes the unexpected is what truly makes life great.</p>",
+            "updated": 1562363372,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/23006"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1666615"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1666616"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1666616"
+            }
+        }
+    },
+    {
+        "id": 1668280,
+        "url": "http://www.tvmaze.com/episodes/1668280/marvels-agents-of-shield-6x09-collision-course-part-ii",
+        "name": "Collision Course (Part II)",
+        "season": 6,
+        "number": 9,
+        "airdate": "2019-07-12",
+        "airtime": "20:00",
+        "airstamp": "2019-07-13T00:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": "<p>No time for the team to play catch-up, there's a planet to save.</p>",
+        "show": {
+            "id": 31,
+            "url": "http://www.tvmaze.com/shows/31/marvels-agents-of-shield",
+            "name": "Marvel's Agents of S.H.I.E.L.D.",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Action",
+                "Adventure",
+                "Science-Fiction"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2013-09-24",
+            "officialSite": "http://abc.go.com/shows/marvels-agents-of-shield",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 8
+            },
+            "weight": 100,
+            "network": {
+                "id": 3,
+                "name": "ABC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 32656,
+                "thetvdb": 263365,
+                "imdb": "tt2364582"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/194/485688.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/194/485688.jpg"
+            },
+            "summary": "<p>Phil Coulson heads an elite team of fellow agents with the worldwide law-enforcement organization known as S.H.I.E.L.D. (Strategic Homeland Intervention Enforcement and Logistics Division), as they investigate strange occurrences around the globe. Its members -- each of whom brings a specialty to the group -- work with Coulson to protect those who cannot protect themselves from extraordinary and inconceivable threats.</p>",
+            "updated": 1562675956,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/31"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1668279"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1668280"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1668280"
+            }
+        }
+    },
+    {
+        "id": 1677342,
+        "url": "http://www.tvmaze.com/episodes/1677342/ridiculousness-14x17-austin-mahone",
+        "name": "Austin Mahone",
+        "season": 14,
+        "number": 17,
+        "airdate": "2019-07-12",
+        "airtime": "20:00",
+        "airstamp": "2019-07-13T00:00:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": "<p>Recording artist Austin Mahone joins Rob, Steelo and Chanel to talk about grandparents who are GRANDPOSITIVE, the experience of LAKE ACHES and things that happen ONLY IN JAPAN.</p>",
+        "show": {
+            "id": 916,
+            "url": "http://www.tvmaze.com/shows/916/ridiculousness",
+            "name": "Ridiculousness",
+            "type": "Reality",
+            "language": "English",
+            "genres": [
+                "Comedy"
+            ],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2011-08-29",
+            "officialSite": "http://www.mtv.com/shows/ridiculousness",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 7.7
+            },
+            "weight": 98,
+            "network": {
+                "id": 22,
+                "name": "MTV",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 27731,
+                "thetvdb": 250793,
+                "imdb": "tt1820166"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/172/432121.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/172/432121.jpg"
+            },
+            "summary": "<p><b>Ridiculousness</b> and Rob Dyrdek return with another incredible season of hysterical and absurd internet videos. Sterling \"Stee-Lo\" Brim and Chanel \"West Coast\" join Rob and another unbelievable line up of special guests, including rapper phenom Future, R&amp;B singer/ songwriter Ne-Yo, and internet video super-team Smosh. This season's storm of new categories like \"Power Kiss\", \"Everyday Demons\", \"Human Glitches\", and \"Magnet Feet\" will leave you belly laughing for the rest of your life.</p>",
+            "updated": 1562639589,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/916"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1676162"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1677342"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1677342"
+            }
+        }
+    },
+    {
+        "id": 1679593,
+        "url": "http://www.tvmaze.com/episodes/1679593/all-in-with-chris-hayes-2019-07-12-episode-134",
+        "name": "Episode 134",
+        "season": 2019,
+        "number": 134,
+        "airdate": "2019-07-12",
+        "airtime": "20:00",
+        "airstamp": "2019-07-13T00:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 9311,
+            "url": "http://www.tvmaze.com/shows/9311/all-in-with-chris-hayes",
+            "name": "All In with Chris Hayes",
+            "type": "News",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2013-04-01",
+            "officialSite": "http://www.msnbc.com/all",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 82,
+            "network": {
+                "id": 201,
+                "name": "MSNBC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 282633,
+                "imdb": "tt2926042"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/32/81912.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/32/81912.jpg"
+            },
+            "summary": "<p>On <b>All In with Chris Hayes</b>, Chris Hayes delivers impactful stories that don't always make the front page. Drawing from his background as a reporter, Hayes goes on the road to uncover the truth by knocking on doors, digging deeper and speaking with people representing all points of view.</p>",
+            "updated": 1562653362,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/9311"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1679591"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1679592"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1679593"
+            }
+        }
+    },
+    {
+        "id": 1666109,
+        "url": "http://www.tvmaze.com/episodes/1666109/firing-line-with-margaret-hoover-2019-07-12-episode-28",
+        "name": "Episode 28",
+        "season": 2019,
+        "number": 28,
+        "airdate": "2019-07-12",
+        "airtime": "20:30",
+        "airstamp": "2019-07-13T00:30:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": "<p>Join Hoover for a public affairs talk show that delivers a civil and engaging contest of ideas.</p>",
+        "show": {
+            "id": 39679,
+            "url": "http://www.tvmaze.com/shows/39679/firing-line-with-margaret-hoover",
+            "name": "Firing Line with Margaret Hoover",
+            "type": "Talk Show",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2018-06-22",
+            "officialSite": "https://www.pbs.org/show/firing-line/",
+            "schedule": {
+                "time": "20:30",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 67,
+            "network": {
+                "id": 85,
+                "name": "PBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 353066,
+                "imdb": "tt8461250"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/174/435496.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/174/435496.jpg"
+            },
+            "summary": "<p><b>Firing Line with Margaret Hoover </b>maintains the character of the original, providing a platform that is diligent in its commitment to civility and the rigorous exchange of opinion. Interviews and debates will highlight leading lights from the left and right, complemented by archival footage from the original <i>Firing Line </i>to remind viewers of longstanding conservative and liberal arguments, where they've been disproved or reinforced over time.</p>",
+            "updated": 1562332396,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/39679"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1662949"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1666109"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1666109"
+            }
+        }
+    },
+    {
+        "id": 1677343,
+        "url": "http://www.tvmaze.com/episodes/1677343/ridiculousness-14x18-chanel-and-sterling-cxviii",
+        "name": "Chanel and Sterling CXVIII",
+        "season": 14,
+        "number": 18,
+        "airdate": "2019-07-12",
+        "airtime": "20:30",
+        "airstamp": "2019-07-13T00:30:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": "<p>Rob, Steelo and Chanel take a ride in some SELF-CRASHING CARS, light a match to some FUEL FOOLS and mock some criminals with NO GETAWAY PLAN.</p>",
+        "show": {
+            "id": 916,
+            "url": "http://www.tvmaze.com/shows/916/ridiculousness",
+            "name": "Ridiculousness",
+            "type": "Reality",
+            "language": "English",
+            "genres": [
+                "Comedy"
+            ],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2011-08-29",
+            "officialSite": "http://www.mtv.com/shows/ridiculousness",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 7.7
+            },
+            "weight": 98,
+            "network": {
+                "id": 22,
+                "name": "MTV",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 27731,
+                "thetvdb": 250793,
+                "imdb": "tt1820166"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/172/432121.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/172/432121.jpg"
+            },
+            "summary": "<p><b>Ridiculousness</b> and Rob Dyrdek return with another incredible season of hysterical and absurd internet videos. Sterling \"Stee-Lo\" Brim and Chanel \"West Coast\" join Rob and another unbelievable line up of special guests, including rapper phenom Future, R&amp;B singer/ songwriter Ne-Yo, and internet video super-team Smosh. This season's storm of new categories like \"Power Kiss\", \"Everyday Demons\", \"Human Glitches\", and \"Magnet Feet\" will leave you belly laughing for the rest of your life.</p>",
+            "updated": 1562639589,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/916"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1676162"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1677342"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1677343"
+            }
+        }
+    },
+    {
+        "id": 1647028,
+        "url": "http://www.tvmaze.com/episodes/1647028/bellator-mma-live-16x11-bellator-224-budd-vs-rubin",
+        "name": "Bellator 224: Budd vs. Rubin",
+        "season": 16,
+        "number": 11,
+        "airdate": "2019-07-12",
+        "airtime": "21:00",
+        "airstamp": "2019-07-13T01:00:00+00:00",
+        "runtime": 135,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 6810,
+            "url": "http://www.tvmaze.com/shows/6810/bellator-mma-live",
+            "name": "Bellator MMA Live",
+            "type": "Sports",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 135,
+            "premiered": "2009-04-04",
+            "officialSite": "http://www.bellator.com/",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 92,
+            "network": {
+                "id": 34,
+                "name": "Paramount Network",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 257550,
+                "imdb": "tt1836349"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/25/64485.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/25/64485.jpg"
+            },
+            "summary": "<p><b>Bellator MMA Live</b> (formerly known as Bellator Fighting Championships) is a mixed martial arts (MMA) promotion in the USA. Bellator was founded in 2008 by Chairman &amp; CEO Bjorn Rebney. Bellator features \"The Toughest Tournament in Sports\", which has a single-elimination format that awards the winner of each eight-person or four-person tournament a check for $100,000 and a guaranteed world title fight against the current Bellator world champion in the applicable weight class.</p>",
+            "updated": 1561171118,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/6810"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1647027"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1647028"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1647028"
+            }
+        }
+    },
+    {
+        "id": 1666118,
+        "url": "http://www.tvmaze.com/episodes/1666118/diners-drive-ins-and-dives-30x04-international-infusion",
+        "name": "International Infusion",
+        "season": 30,
+        "number": 4,
+        "airdate": "2019-07-12",
+        "airtime": "21:00",
+        "airstamp": "2019-07-13T01:00:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 2459,
+            "url": "http://www.tvmaze.com/shows/2459/diners-drive-ins-and-dives",
+            "name": "Diners, Drive-Ins and Dives",
+            "type": "Reality",
+            "language": "English",
+            "genres": [
+                "Food",
+                "Travel"
+            ],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2007-04-23",
+            "officialSite": "http://www.foodnetwork.com/shows/diners-drive-ins-and-dives.html",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 7.7
+            },
+            "weight": 89,
+            "network": {
+                "id": 81,
+                "name": "Food Network",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 16247,
+                "thetvdb": 82918,
+                "imdb": "tt1020913"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/13/33332.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/13/33332.jpg"
+            },
+            "summary": "<p>With roadside diners, vintage drive-ins and out-of-the-way \"dives\" enjoying a resurgence of hipness among foodies, host Guy Fieri travels across America in search of some of the best \"greasy spoon\" eateries. The restaurants that Guy visits are usually well-known among locals and other people in the region. While at each location, Fieri talks to the staff as well as the customers to get their thoughts on the food. Many episodes feature eateries that are connected by a common thread, such as burgers or comfort foods but its all here on <b>Diners, Drive-Ins and Dives</b>.</p>",
+            "updated": 1562335076,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/2459"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1666117"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1666118"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1666118"
+            }
+        }
+    },
+    {
+        "id": 1673634,
+        "url": "http://www.tvmaze.com/episodes/1673634/ghosts-of-morgan-city-1x04-pirate-island",
+        "name": "Pirate Island",
+        "season": 1,
+        "number": 4,
+        "airdate": "2019-07-12",
+        "airtime": "21:00",
+        "airstamp": "2019-07-13T01:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": "<p>A call from the Morgan City police sends the team to Louisiana's Atchafalaya Basin, where a trapper reports seeing two men vanish into thin air; a \"Naked and Afraid\" contestant reveals evidence of a dangerous pirate's spirit.</p><p></p>",
+        "show": {
+            "id": 42710,
+            "url": "http://www.tvmaze.com/shows/42710/ghosts-of-morgan-city",
+            "name": "Ghosts of Morgan City",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [
+                "Mystery",
+                "Supernatural"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2019-06-21",
+            "officialSite": "https://www.travelchannel.com/shows/ghosts-of-morgan-city",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 100,
+            "network": {
+                "id": 82,
+                "name": "Travel Channel",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 365215,
+                "imdb": null
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/202/506781.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/202/506781.jpg"
+            },
+            "summary": "<p>There's something strange happening in Morgan City, Louisiana and Police Chief James \"Bo\" Blair is ready to get to the bottom of it. With a surge in unusual emergency calls related to unexplained paranormal encounters, Chief Blair has reached out to Police Chief Mike King of Shepherdstown, West Virginia, who not too long ago was in a similar situation. Following Chief King's advice, Chief Blair decides to recruit a team of specialists including local paranormal investigator Jereme Leonard, former FBI agent Ben Hansen, and psychic medium Sarah Lemos.</p>",
+            "updated": 1562349379,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/42710"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1673633"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1673634"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1673634"
+            }
+        }
+    },
+    {
+        "id": 1674068,
+        "url": "http://www.tvmaze.com/episodes/1674068/live-pd-3x76-071219",
+        "name": "07.12.19",
+        "season": 3,
+        "number": 76,
+        "airdate": "2019-07-12",
+        "airtime": "21:00",
+        "airstamp": "2019-07-13T01:00:00+00:00",
+        "runtime": 180,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 21987,
+            "url": "http://www.tvmaze.com/shows/21987/live-pd",
+            "name": "Live PD",
+            "type": "Reality",
+            "language": "English",
+            "genres": [
+                "Crime"
+            ],
+            "status": "Running",
+            "runtime": 180,
+            "premiered": "2016-10-28",
+            "officialSite": "http://www.aetv.com/shows/live-pd",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Friday",
+                    "Saturday"
+                ]
+            },
+            "rating": {
+                "average": 6.9
+            },
+            "weight": 96,
+            "network": {
+                "id": 29,
+                "name": "A&E",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 318451,
+                "imdb": null
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/194/486826.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/194/486826.jpg"
+            },
+            "summary": "<p><b>Live PD</b> offering viewers unfettered and unfiltered live access inside a variety of the country's busiest police forces, both urban and rural, and the communities they patrol on a typical night. In-studio host, alongside analyst, guide viewers through the night, giving insight to what audiences see in real time (via a mix of dash cams, fixed rig and handheld cameras), bouncing minute-by-minute between the featured police departments and offering an inside look at each live incident.</p>",
+            "updated": 1562214718,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/21987"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1671738"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1674068"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1674068"
+            }
+        }
+    },
+    {
+        "id": 1675236,
+        "url": "http://www.tvmaze.com/episodes/1675236/secret-lives-of-the-super-rich-7x07-a-list-mansion-super-rich-rager",
+        "name": "A-list Mansion & Super Rich Rager",
+        "season": 7,
+        "number": 7,
+        "airdate": "2019-07-12",
+        "airtime": "21:00",
+        "airstamp": "2019-07-13T01:00:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 15009,
+            "url": "http://www.tvmaze.com/shows/15009/secret-lives-of-the-super-rich",
+            "name": "Secret Lives of the Super Rich",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2013-09-25",
+            "officialSite": "http://www.cnbc.com/live-tv/secret-lives-of-the-super-rich",
+            "schedule": {
+                "time": "23:00",
+                "days": [
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": {
+                "id": 93,
+                "name": "CNBC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 274245,
+                "imdb": "tt3216832"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/51/127791.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/51/127791.jpg"
+            },
+            "summary": "<p><b>Secret Lives of the Super Rich</b> opens the gates to some of the world's most-luxurious mansions, and most expensive toys of the ultra-rich.</p>",
+            "updated": 1561650200,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/15009"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1427179"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675236"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1675236"
+            }
+        }
+    },
+    {
+        "id": 1676429,
+        "url": "http://www.tvmaze.com/episodes/1676429/love-after-lockup-2x19-life-after-lockup-trials-tribulations",
+        "name": "Life After Lockup: Trials & Tribulations",
+        "season": 2,
+        "number": 19,
+        "airdate": "2019-07-12",
+        "airtime": "21:00",
+        "airstamp": "2019-07-13T01:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 34212,
+            "url": "http://www.tvmaze.com/shows/34212/love-after-lockup",
+            "name": "Love After Lockup",
+            "type": "Reality",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2018-01-12",
+            "officialSite": "http://www.wetv.com/shows/love-after-lockup",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 89,
+            "network": {
+                "id": 122,
+                "name": "We tv",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 341174,
+                "imdb": "tt7721986"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/141/354578.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/141/354578.jpg"
+            },
+            "summary": "<p>Couples finally meet their fiancé upon prison release. Once the bars are gone, will their love survive after lockup on the rocky road to the altar? Will the inmates ditch their mate as they face shocking \"firsts\", fights &amp; family drama! Is it true love or just a con?</p>",
+            "updated": 1561826601,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/34212"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1673639"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1676429"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1676429"
+            }
+        }
+    },
+    {
+        "id": 1679230,
+        "url": "http://www.tvmaze.com/episodes/1679230/the-rachel-maddow-show-2019-07-12-episode-134",
+        "name": "Episode 134",
+        "season": 2019,
+        "number": 134,
+        "airdate": "2019-07-12",
+        "airtime": "21:00",
+        "airstamp": "2019-07-13T01:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 9065,
+            "url": "http://www.tvmaze.com/shows/9065/the-rachel-maddow-show",
+            "name": "The Rachel Maddow Show",
+            "type": "News",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2008-09-08",
+            "officialSite": "http://www.msnbc.com/rachel-maddow-show",
+            "schedule": {
+                "time": "21:00",
+                "days": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 4.8
+            },
+            "weight": 92,
+            "network": {
+                "id": 201,
+                "name": "MSNBC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 181561,
+                "imdb": "tt1280627"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/32/80181.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/32/80181.jpg"
+            },
+            "summary": "<p>With honesty and rigor, Rachel Maddow uniquely connects dots to advance stories on her show <b>The Rachel Maddow Show</b>. By exposing the layers of complex issues, she reveals their significance to viewers. In her irreverent style, Maddow transcends the narrative and provides unique perspective.</p>",
+            "updated": 1562542396,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/9065"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1679228"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1679229"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1679230"
+            }
+        }
+    },
+    {
+        "id": 1675237,
+        "url": "http://www.tvmaze.com/episodes/1675237/secret-lives-of-the-super-rich-7x08-home-of-the-braveheart-supercar-blondie",
+        "name": "Home Of The Braveheart & Supercar Blondie",
+        "season": 7,
+        "number": 8,
+        "airdate": "2019-07-12",
+        "airtime": "21:30",
+        "airstamp": "2019-07-13T01:30:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 15009,
+            "url": "http://www.tvmaze.com/shows/15009/secret-lives-of-the-super-rich",
+            "name": "Secret Lives of the Super Rich",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2013-09-25",
+            "officialSite": "http://www.cnbc.com/live-tv/secret-lives-of-the-super-rich",
+            "schedule": {
+                "time": "23:00",
+                "days": [
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": {
+                "id": 93,
+                "name": "CNBC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 274245,
+                "imdb": "tt3216832"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/51/127791.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/51/127791.jpg"
+            },
+            "summary": "<p><b>Secret Lives of the Super Rich</b> opens the gates to some of the world's most-luxurious mansions, and most expensive toys of the ultra-rich.</p>",
+            "updated": 1561650200,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/15009"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1427179"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675236"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1675237"
+            }
+        }
+    },
+    {
+        "id": 1678633,
+        "url": "http://www.tvmaze.com/episodes/1678633/descendants-2019-07-12-audreys-royal-return-a-descendants-short-story",
+        "name": "Audrey's Royal Return: A Descendants Short Story",
+        "season": 2019,
+        "number": null,
+        "airdate": "2019-07-12",
+        "airtime": "21:50",
+        "airstamp": "2019-07-13T01:50:00+00:00",
+        "runtime": 10,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 28908,
+            "url": "http://www.tvmaze.com/shows/28908/descendants",
+            "name": "Descendants",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Comedy",
+                "Fantasy",
+                "Music"
+            ],
+            "status": "Running",
+            "runtime": 120,
+            "premiered": "2015-07-31",
+            "officialSite": "http://movies.disney.com/descendants",
+            "schedule": {
+                "time": "20:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 52,
+            "network": {
+                "id": 78,
+                "name": "Disney Channel",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": {
+                "id": 83,
+                "name": "DisneyNOW",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": "tt3440298"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/190/476934.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/190/476934.jpg"
+            },
+            "summary": "<p>With a knowing wink at traditional fairy tales, Disney's <b>Descendants</b> fuses castles with classrooms to create a contemporary, music-driven story about the challenges adolescent offspring face in living up to parental and peer expectations. With unexpected characterization, plot twists and turns, and dashes of wry humor, the movie is designed to appeal to kids and grownups alike as its story playfully presents the possibilities of what happened after the \"happily ever after.\" Driven by exciting music and performance, the story is set in the idyllic kingdom of Auradon.</p>",
+            "updated": 1562355447,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/28908"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1202790"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1512245"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1678633"
+            }
+        }
+    },
+    {
+        "id": 1657405,
+        "url": "http://www.tvmaze.com/episodes/1657405/jett-1x05-bennie",
+        "name": "Bennie",
+        "season": 1,
+        "number": 5,
+        "airdate": "2019-07-12",
+        "airtime": "22:00",
+        "airstamp": "2019-07-13T02:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": "<p>Bennie cleans up a mess; Evans briefs Jett on a new job for Bestic.</p>",
+        "show": {
+            "id": 36308,
+            "url": "http://www.tvmaze.com/shows/36308/jett",
+            "name": "Jett",
+            "type": "Scripted",
+            "language": "English",
+            "genres": [
+                "Drama",
+                "Action",
+                "Crime"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2019-06-14",
+            "officialSite": "https://www.cinemax.com/jett",
+            "schedule": {
+                "time": "22:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 6.4
+            },
+            "weight": 100,
+            "network": {
+                "id": 19,
+                "name": "Cinemax",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 359791,
+                "imdb": "tt8594276"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/200/502024.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/200/502024.jpg"
+            },
+            "summary": "<p><b>Jett</b> centers on Master thief Daisy \"Jett\" Kowalski, who did her stint in prison &amp; never wants to go back. However, pressured by Charlie Baudelaire, she agrees to do one last job - but insists on working with her former partner, Rufus \"Quinn\" Quinton. When the operation goes south, and Quinn is killed, Kowalski is left no option but to work for the powerful and nefarious Miljan \"The Russian\" Bestic.</p>",
+            "updated": 1562718480,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/36308"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1657404"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1657405"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1657405"
+            }
+        }
+    },
+    {
+        "id": 1665303,
+        "url": "http://www.tvmaze.com/episodes/1665303/crazy-cakes-3x02-fierce-festive-cakes",
+        "name": "Fierce, Festive Cakes",
+        "season": 3,
+        "number": 2,
+        "airdate": "2019-07-12",
+        "airtime": "22:00",
+        "airstamp": "2019-07-13T02:00:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": "<p>A baker is excited to create a massive shark cake to celebrate Discovery's Shark Week; a bride and groom are floored when their gorgeous wedding cake spins; a casino hits the jackpot.</p><p></p>",
+        "show": {
+            "id": 37723,
+            "url": "http://www.tvmaze.com/shows/37723/crazy-cakes",
+            "name": "Crazy Cakes",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [
+                "Food"
+            ],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2018-08-24",
+            "officialSite": "https://www.cookingchanneltv.com/shows/crazy-cakes",
+            "schedule": {
+                "time": "22:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 94,
+            "network": {
+                "id": 174,
+                "name": "Cooking Channel",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": null,
+                "imdb": null
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/165/412880.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/165/412880.jpg"
+            },
+            "summary": "<p><b>Crazy Cakes</b> takes viewers behind the scenes to bakeries across America who are creating the craziest cakes imaginable. From gravity-defying wedding cakes to life-size animal replicas, this series will blow your mind as we see how these bakers create and build these delicious artistic edible creations.</p>",
+            "updated": 1562349163,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/37723"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1665302"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1665303"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1665303"
+            }
+        }
+    },
+    {
+        "id": 1671366,
+        "url": "http://www.tvmaze.com/episodes/1671366/haunted-towns-2x04-wraith-revenge",
+        "name": "Wraith Revenge",
+        "season": 2,
+        "number": 4,
+        "airdate": "2019-07-12",
+        "airtime": "22:00",
+        "airstamp": "2019-07-13T02:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 30587,
+            "url": "http://www.tvmaze.com/shows/30587/haunted-towns",
+            "name": "Haunted Towns",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [
+                "Mystery",
+                "Supernatural"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2017-08-15",
+            "officialSite": "https://www.travelchannel.com/shows/haunted-towns",
+            "schedule": {
+                "time": "22:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 94,
+            "network": {
+                "id": 82,
+                "name": "Travel Channel",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 331882,
+                "imdb": null
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/202/506482.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/202/506482.jpg"
+            },
+            "summary": "<p>The Tennessee Wraith Chasers (TWC) ghost hunting team is getting their spooky on in an all-new series as they travel across the country investigating America's most haunted towns. From infamous hotbeds like Gettysburg and Salem to small towns with turbulent pasts that fueled generations of ghost stories, <b>Haunted Towns </b>explores places that played key roles in the darker chapters of American history, where battle, disaster, and injustice have condemned unsettled spirits to every street corner. Follow TWC – consisting of Chris, Doogie, Porter, and Brannon – as they interview witnesses, investigate hotspots using the latest ghost-hunting technology, and follow new leads until they can pinpoint who is haunting the town and why. But the team isn't just about collecting evidence. Their m.o. is to find truth – if any – in the legends that have shaped each town's paranormal notoriety.</p>",
+            "updated": 1561169367,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/30587"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1671365"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1671366"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1671366"
+            }
+        }
+    },
+    {
+        "id": 1672088,
+        "url": "http://www.tvmaze.com/episodes/1672088/impact-wrestling-16x28-episode-28",
+        "name": "Episode 28",
+        "season": 16,
+        "number": 28,
+        "airdate": "2019-07-12",
+        "airtime": "22:00",
+        "airstamp": "2019-07-13T02:00:00+00:00",
+        "runtime": 120,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 1349,
+            "url": "http://www.tvmaze.com/shows/1349/impact-wrestling",
+            "name": "iMPACT Wrestling",
+            "type": "Sports",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 120,
+            "premiered": "2004-06-04",
+            "officialSite": "http://poptv.com/impact",
+            "schedule": {
+                "time": "22:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 6
+            },
+            "weight": 73,
+            "network": {
+                "id": 733,
+                "name": "Pursuit Channel",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 6368,
+                "thetvdb": 264684,
+                "imdb": "tt0421463"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/68/172400.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/68/172400.jpg"
+            },
+            "summary": "<p>Originally known as <i>TNA iMPACT!</i> now known as <b>iMPACT Wrestling</b> is 2 hours of fast paced, innovative, usually high flying, sometimes brutal pro-wrestling. Featuring a mix of stars you know and love and new, up and coming talent, it'll blow away the cobwebs and leave you wanting more.</p>",
+            "updated": 1562266210,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/1349"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1672087"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1672088"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1672088"
+            }
+        }
+    },
+    {
+        "id": 1675238,
+        "url": "http://www.tvmaze.com/episodes/1675238/secret-lives-of-the-super-rich-7x09-fastest-car-in-the-world-billionaires-ice-cream",
+        "name": "Fastest Car In The World & Billionaire's Ice Cream",
+        "season": 7,
+        "number": 9,
+        "airdate": "2019-07-12",
+        "airtime": "22:00",
+        "airstamp": "2019-07-13T02:00:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 15009,
+            "url": "http://www.tvmaze.com/shows/15009/secret-lives-of-the-super-rich",
+            "name": "Secret Lives of the Super Rich",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2013-09-25",
+            "officialSite": "http://www.cnbc.com/live-tv/secret-lives-of-the-super-rich",
+            "schedule": {
+                "time": "23:00",
+                "days": [
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": {
+                "id": 93,
+                "name": "CNBC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 274245,
+                "imdb": "tt3216832"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/51/127791.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/51/127791.jpg"
+            },
+            "summary": "<p><b>Secret Lives of the Super Rich</b> opens the gates to some of the world's most-luxurious mansions, and most expensive toys of the ultra-rich.</p>",
+            "updated": 1561650200,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/15009"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1427179"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675236"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1675238"
+            }
+        }
+    },
+    {
+        "id": 1676560,
+        "url": "http://www.tvmaze.com/episodes/1676560/savage-builds-1x05-nitro-explode-aganza",
+        "name": "Nitro Explode-aganza",
+        "season": 1,
+        "number": 5,
+        "airdate": "2019-07-12",
+        "airtime": "22:00",
+        "airstamp": "2019-07-13T02:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": "<p>Adam Savage and his team determine the danger of nitroglycerine.</p>",
+        "show": {
+            "id": 41927,
+            "url": "http://www.tvmaze.com/shows/41927/savage-builds",
+            "name": "Savage Builds",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [
+                "DIY"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2019-06-14",
+            "officialSite": "https://www.discovery.com/tv-shows/savage-builds/",
+            "schedule": {
+                "time": "22:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 7.9
+            },
+            "weight": 99,
+            "network": {
+                "id": 66,
+                "name": "Discovery Channel",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 363058,
+                "imdb": "tt10233836"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/202/506748.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/202/506748.jpg"
+            },
+            "summary": "<p>Putting his insatiable curiosity and nearly unparalleled inventiveness to the test, Adam Savage will take on the biggest and baddest builds of his career. Each episode of <b>Savage Builds</b> will focus on one project as Adam collaborates with notable experts in their fields, friends, colleagues, and some of his favorite people on the planet. Nothing is guaranteed of course when venturing into the unknown, but whether a build is a success or failure, the results are sure to thrill.</p>",
+            "updated": 1562503933,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/41927"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1673695"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1676560"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1676560"
+            }
+        }
+    },
+    {
+        "id": 1679366,
+        "url": "http://www.tvmaze.com/episodes/1679366/bridezillas-12x10-secretzilla-bratzilla",
+        "name": "SecretZilla & BratZilla",
+        "season": 12,
+        "number": 10,
+        "airdate": "2019-07-12",
+        "airtime": "22:00",
+        "airstamp": "2019-07-13T02:00:00+00:00",
+        "runtime": 60,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 12932,
+            "url": "http://www.tvmaze.com/shows/12932/bridezillas",
+            "name": "Bridezillas",
+            "type": "Reality",
+            "language": "English",
+            "genres": [
+                "Comedy"
+            ],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2004-06-01",
+            "officialSite": "http://www.wetv.com/shows/bridezillas",
+            "schedule": {
+                "time": "22:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 68,
+            "network": {
+                "id": 122,
+                "name": "We tv",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 79417,
+                "imdb": null
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/188/472183.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/188/472183.jpg"
+            },
+            "summary": "<p><b>Bridezillas</b> celebrates the craziest, most over-the-top brides wreaking wedding day hell with epic meltdowns, family feuds &amp; social media wars! As they take the plunge to the altar, they vow no one will get in the way of their ‘perfect' day!</p>",
+            "updated": 1562594889,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/12932"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1679365"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1679366"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1679366"
+            }
+        }
+    },
+    {
+        "id": 1675239,
+        "url": "http://www.tvmaze.com/episodes/1675239/secret-lives-of-the-super-rich-7x10-billion-dollar-listing-the-28-million-cake",
+        "name": "Billion Dollar Listing & The $28 Million Cake",
+        "season": 7,
+        "number": 10,
+        "airdate": "2019-07-12",
+        "airtime": "22:30",
+        "airstamp": "2019-07-13T02:30:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": null,
+        "show": {
+            "id": 15009,
+            "url": "http://www.tvmaze.com/shows/15009/secret-lives-of-the-super-rich",
+            "name": "Secret Lives of the Super Rich",
+            "type": "Documentary",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2013-09-25",
+            "officialSite": "http://www.cnbc.com/live-tv/secret-lives-of-the-super-rich",
+            "schedule": {
+                "time": "23:00",
+                "days": [
+                    "Thursday"
+                ]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": {
+                "id": 93,
+                "name": "CNBC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 274245,
+                "imdb": "tt3216832"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/51/127791.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/51/127791.jpg"
+            },
+            "summary": "<p><b>Secret Lives of the Super Rich</b> opens the gates to some of the world's most-luxurious mansions, and most expensive toys of the ultra-rich.</p>",
+            "updated": 1561650200,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/15009"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1427179"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1675236"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1675239"
+            }
+        }
+    },
+    {
+        "id": 1659124,
+        "url": "http://www.tvmaze.com/episodes/1659124/los-espookys-1x05-el-laboratorio-alienigena-the-alien-lab",
+        "name": "El laboratorio alienigena (The Alien Lab)",
+        "season": 1,
+        "number": 5,
+        "airdate": "2019-07-12",
+        "airtime": "23:00",
+        "airstamp": "2019-07-13T03:00:00+00:00",
+        "runtime": 30,
+        "image": null,
+        "summary": "<p>Los Espookys take on a new gig with a high-maintenance researcher who tasks them with creating alien lab subjects for her government presentation. Úrsula and Tati get a threatening visit from Hierbalite CEO Mark Stevens. Tico tries to reassure Bianca while Renaldo, Úrsula and Andrés have differing opinions on her latest screenplay.</p>",
+        "show": {
+            "id": 40899,
+            "url": "http://www.tvmaze.com/shows/40899/los-espookys",
+            "name": "Los Espookys",
+            "type": "Scripted",
+            "language": "Spanish",
+            "genres": [
+                "Comedy",
+                "Horror"
+            ],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2019-06-14",
+            "officialSite": "https://www.hbo.com/los-espookys",
+            "schedule": {
+                "time": "23:00",
+                "days": [
+                    "Friday"
+                ]
+            },
+            "rating": {
+                "average": 6.3
+            },
+            "weight": 99,
+            "network": {
+                "id": 8,
+                "name": "HBO",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 362797,
+                "imdb": "tt7721046"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/201/504892.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/201/504892.jpg"
+            },
+            "summary": "<p>Set in a strange, dreamy version of modern-day Mexico City, <b>Los Espookys</b> follows a group of friends who turn their love of horror into a peculiar business.</p>",
+            "updated": 1562533532,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/40899"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1659123"
+                },
+                "nextepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1659124"
+                }
+            }
+        },
+        "_links": {
+            "self": {
+                "href": "http://api.tvmaze.com/episodes/1659124"
+            }
+        }
+    }
+]

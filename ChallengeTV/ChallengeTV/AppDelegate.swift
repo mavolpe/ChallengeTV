@@ -17,6 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // if we are running a test... use mock data...
+        if UserDefaults.standard.bool(forKey: "isTest") == true{
+            // We are running in test mode - use mock data so we have a predictable data set...
+            TVService.sharedInstance.useMockData = true
+        }
         return true
     }
 

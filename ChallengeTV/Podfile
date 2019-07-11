@@ -8,17 +8,20 @@ target 'ChallengeTV' do
   # Pods for ChallengeTV
   # Image Processing
   pod 'SDWebImage', '~> 5.0'
+  pod 'OHHTTPStubs/Swift'
 
 
   target 'ChallengeTVTests' do
     inherit! :search_paths
     # Pods for testing
+      pod 'OHHTTPStubs/Swift'
   end
 
   target 'ChallengeTVUITests' do
     inherit! :search_paths
     # Pods for testing
     pod 'SDWebImage', '~> 5.0'
+    pod 'OHHTTPStubs/Swift'
   end
 
 end
