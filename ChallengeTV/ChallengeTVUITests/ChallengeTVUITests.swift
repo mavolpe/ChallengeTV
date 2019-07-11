@@ -34,10 +34,17 @@ class ChallengeTVUITests: XCTestCase {
     
 
     func testDetailsOpenClose(){
+        
         let app = XCUIApplication()
-        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .collectionView).element.children(matching: .cell).element(boundBy: 0).collectionViews.cells.otherElements.containing(.staticText, identifier:"The Young and the Restless").element.tap()
-        XCUIDevice.shared.orientation = .faceUp
-        XCUIDevice.shared.orientation = .portrait
-        app.buttons["close button"].tap()
+        let cellsQuery = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .collectionView).element.children(matching: .cell).element(boundBy: 0).collectionViews.cells
+        
+            cellsQuery.otherElements.containing(.staticText, identifier:"Days of Our Lives").element.tap()
+            
+            let closeButtonButton = app.buttons["close button"]
+            closeButtonButton.tap()
+            cellsQuery.otherElements.containing(.staticText, identifier:"The Young and the Restless").element.tap()
+            closeButtonButton.tap()
+            cellsQuery.otherElements.containing(.staticText, identifier:"The Bold and the Beautiful").element.tap()
+
     }
 }

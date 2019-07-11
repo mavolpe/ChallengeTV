@@ -103,17 +103,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV9-EI-qvv">
-                                <rect key="frame" x="718" y="35" width="35" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="Osf-3W-dlS"/>
-                                    <constraint firstAttribute="width" constant="35" id="PIC-nK-0sa"/>
-                                </constraints>
-                                <state key="normal" image="close_button"/>
-                                <connections>
-                                    <segue destination="8Sv-Tn-TvY" kind="unwind" unwindAction="unwindToHomeViewWithSender:" id="aLB-55-DEM"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d7L-Zs-tvJ">
                                 <rect key="frame" x="284" y="45" width="200" height="280.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -214,6 +203,17 @@
                                     <outlet property="delegate" destination="lQR-Jl-Lox" id="iLK-me-jEh"/>
                                 </connections>
                             </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eV9-EI-qvv">
+                                <rect key="frame" x="718" y="35" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Osf-3W-dlS"/>
+                                    <constraint firstAttribute="width" constant="35" id="PIC-nK-0sa"/>
+                                </constraints>
+                                <state key="normal" image="close_button"/>
+                                <connections>
+                                    <segue destination="8Sv-Tn-TvY" kind="unwind" unwindAction="unwindToHomeViewWithSender:" id="aLB-55-DEM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.070588235294117646" green="0.078431372549019607" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
