@@ -31,5 +31,18 @@ class MockServer: NSObject {
                 )
             }
         }
+        
+        let urlString = "http://api.mocktvserver.com/shows/36568/cast"
+        stub(condition: isAbsoluteURLString(urlString)) { _ in
+            guard let path = OHPathForFile("cast.json", type(of: self)) else {
+                preconditionFailure("Could not find expected file in test bundle")
+            }
+            
+            return OHHTTPStubsResponse(
+                fileAtPath: path,
+                statusCode: 200,
+                headers: [ "Content-Type": "application/json" ]
+            )
+        }
     }
 }

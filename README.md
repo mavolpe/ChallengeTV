@@ -88,6 +88,8 @@ Contains AppDelegate and launch story board... info.plist etc...
 - NetworkCommunication - contains our low level network management calls
 - Model - contains our actual data model structs/classes
 - API - contains our TVAPI class which provides access to the TVMAZE api in this case...
+  - MockServer - contains everything needed to run the local mock server which provides
+	  consistent predictable data to support UNIT and UI testing.
 - Service - contains our TVService classes
 - UI contains anything related to the UI
   - DetailViewController
@@ -104,6 +106,7 @@ pod 'OHHTTPStubs/Swift' is used to facilitate testing
 I am using CocoaPods on this project
 
 <b> Manual Tests </b>
+
 - The following tests should be performed on various iPad and iOS devices.
 - launch app
 - click on details
@@ -122,6 +125,29 @@ I am using CocoaPods on this project
 	6) Ensure that we can see the summary - NOTE - we truncate to 4 lines a feature would have to be added to allow full details to be shown when the details are tapped IF they are truncated.
 	7) Ensure that the cast is visible
 	NOTE: In all cases above it is possible some shows may be missing data that was not returned by the API. Cast is a good example, not all shows have cast data with TVMAZE's api.
+
+<b>Automated Tests</b>
+
+	Overview: Automated testing is supported by a MockServer that is configured to have 7 end points which serve up consistent predictable data.
+
+	The TVAPI has a flag (useMockData) that can be set to true to use the mock end point.
+
+	The TVService also has a flag (also useMockData) that flips the flag on the TVAPI when set.
+
+	The UI tests set an application parameter that is passed to the app to let it know it should be running with mock data.
+
+	For existing and future unit tests the mock data can be turned on or off as needed by simply setting the flag on the TVService instance.
+
+	Automated UI tests...
+
+	There are two automated UI tests...
+
+		1) func testRowDataAndDetailsDataIntegrity() - this test ensures that each row has the correct data - the test itself was tested by introducing a bug intentionally (and previously unintentionally :) - into the HomeViewController -
+		collectionViewCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.section) - was passed the row instead of the section - the row is actually the section in our case, not the row. NOTE: Cast testing is limited to one show - swamp thing.
+
+		2) func testFiltering() - this test filters for swamp - ensures that another known show that should not be there is not there, then launches details for swamp, ensure the correct show is opened, closes details, then enters Nbc into the filter ensures there are no CBS shows in the list and ensures Nbc shows ARE in the list.
+
+
 
 
 <b> Future Considerations </b>

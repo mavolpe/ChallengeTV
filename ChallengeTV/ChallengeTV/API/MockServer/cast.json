@@ -1,0 +1,354 @@
+[
+    {
+        "person": {
+            "id": 10308,
+            "url": "http://www.tvmaze.com/people/10308/jeryl-prescott-sales",
+            "name": "Jeryl Prescott Sales",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": null,
+            "deathday": null,
+            "gender": "Female",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/2/5818.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/2/5818.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/people/10308"
+                }
+            }
+        },
+        "character": {
+            "id": 630110,
+            "url": "http://www.tvmaze.com/characters/630110/swamp-thing-madame-xanadu",
+            "name": "Madame Xanadu",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/200/500001.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/200/500001.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/characters/630110"
+                }
+            }
+        },
+        "self": false,
+        "voice": false
+    },
+    {
+        "person": {
+            "id": 16976,
+            "url": "http://www.tvmaze.com/people/16976/will-patton",
+            "name": "Will Patton",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1954-06-14",
+            "deathday": null,
+            "gender": "Male",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/174/435007.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/174/435007.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/people/16976"
+                }
+            }
+        },
+        "character": {
+            "id": 570134,
+            "url": "http://www.tvmaze.com/characters/570134/swamp-thing-avery-sunderland",
+            "name": "Avery Sunderland",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/200/500000.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/200/500000.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/characters/570134"
+                }
+            }
+        },
+        "self": false,
+        "voice": false
+    },
+    {
+        "person": {
+            "id": 23866,
+            "url": "http://www.tvmaze.com/people/23866/crystal-reed",
+            "name": "Crystal Reed",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1985-02-06",
+            "deathday": null,
+            "gender": "Female",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/150/375078.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/150/375078.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/people/23866"
+                }
+            }
+        },
+        "character": {
+            "id": 555703,
+            "url": "http://www.tvmaze.com/characters/555703/swamp-thing-abby-arcane",
+            "name": "Abby Arcane",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/199/499999.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/199/499999.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/characters/555703"
+                }
+            }
+        },
+        "self": false,
+        "voice": false
+    },
+    {
+        "person": {
+            "id": 25934,
+            "url": "http://www.tvmaze.com/people/25934/henderson-wade",
+            "name": "Henderson Wade",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": "Male",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/45/114176.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/45/114176.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/people/25934"
+                }
+            }
+        },
+        "character": {
+            "id": 570574,
+            "url": "http://www.tvmaze.com/characters/570574/swamp-thing-matt-cable",
+            "name": "Matt Cable",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/200/500009.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/200/500009.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/characters/570574"
+                }
+            }
+        },
+        "self": false,
+        "voice": false
+    },
+    {
+        "person": {
+            "id": 38827,
+            "url": "http://www.tvmaze.com/people/38827/andy-bean",
+            "name": "Andy Bean",
+            "country": null,
+            "birthday": null,
+            "deathday": null,
+            "gender": null,
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/3/8894.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/3/8894.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/people/38827"
+                }
+            }
+        },
+        "character": {
+            "id": 570435,
+            "url": "http://www.tvmaze.com/characters/570435/swamp-thing-alec-holland",
+            "name": "Alec Holland",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/200/500007.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/200/500007.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/characters/570435"
+                }
+            }
+        },
+        "self": false,
+        "voice": false
+    },
+    {
+        "person": {
+            "id": 207615,
+            "url": "http://www.tvmaze.com/people/207615/maria-sten",
+            "name": "Maria Sten",
+            "country": {
+                "name": "Denmark",
+                "code": "DK",
+                "timezone": "Europe/Copenhagen"
+            },
+            "birthday": null,
+            "deathday": null,
+            "gender": "Female",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/154/386750.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/154/386750.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/people/207615"
+                }
+            }
+        },
+        "character": {
+            "id": 555897,
+            "url": "http://www.tvmaze.com/characters/555897/swamp-thing-liz-tremayne",
+            "name": "Liz Tremayne",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/200/500005.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/200/500005.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/characters/555897"
+                }
+            }
+        },
+        "self": false,
+        "voice": false
+    },
+    {
+        "person": {
+            "id": 6637,
+            "url": "http://www.tvmaze.com/people/6637/derek-mears",
+            "name": "Derek Mears",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1972-04-29",
+            "deathday": null,
+            "gender": "Male",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/1/3120.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/1/3120.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/people/6637"
+                }
+            }
+        },
+        "character": {
+            "id": 568099,
+            "url": "http://www.tvmaze.com/characters/568099/swamp-thing-swamp-thing",
+            "name": "Swamp Thing",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/200/500003.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/200/500003.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/characters/568099"
+                }
+            }
+        },
+        "self": false,
+        "voice": false
+    },
+    {
+        "person": {
+            "id": 38689,
+            "url": "http://www.tvmaze.com/people/38689/jennifer-beals",
+            "name": "Jennifer Beals",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1963-12-19",
+            "deathday": null,
+            "gender": "Female",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/12/31540.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/12/31540.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/people/38689"
+                }
+            }
+        },
+        "character": {
+            "id": 561310,
+            "url": "http://www.tvmaze.com/characters/561310/swamp-thing-sheriff-lucilia-cable",
+            "name": "Sheriff Lucilia Cable",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/200/500008.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/200/500008.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/characters/561310"
+                }
+            }
+        },
+        "self": false,
+        "voice": false
+    },
+    {
+        "person": {
+            "id": 6855,
+            "url": "http://www.tvmaze.com/people/6855/virginia-madsen",
+            "name": "Virginia Madsen",
+            "country": {
+                "name": "United States",
+                "code": "US",
+                "timezone": "America/New_York"
+            },
+            "birthday": "1961-09-11",
+            "deathday": null,
+            "gender": "Female",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/15/39897.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/15/39897.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/people/6855"
+                }
+            }
+        },
+        "character": {
+            "id": 569276,
+            "url": "http://www.tvmaze.com/characters/569276/swamp-thing-maria-sunderland",
+            "name": "Maria Sunderland",
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/200/500002.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/200/500002.jpg"
+            },
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/characters/569276"
+                }
+            }
+        },
+        "self": false,
+        "voice": false
+    }
+]

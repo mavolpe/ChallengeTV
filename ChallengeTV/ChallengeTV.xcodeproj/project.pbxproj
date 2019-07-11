@@ -11,6 +11,7 @@
 		8B7281AECDF8D7A65E5041B4 /* Pods_ChallengeTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED946CC7D24D258713588347 /* Pods_ChallengeTV.framework */; };
 		BE0A057922D22A71006CB7F9 /* CellSizeUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A057822D22A71006CB7F9 /* CellSizeUtil.swift */; };
 		BE0A057B22D38436006CB7F9 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0A057A22D38436006CB7F9 /* DetailViewController.swift */; };
+		BE2A621E22D7B51600532A40 /* cast.json in Resources */ = {isa = PBXBuildFile; fileRef = BE2A621D22D7B51600532A40 /* cast.json */; };
 		BE3B3B9022D4B98600480810 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B3B8F22D4B98500480810 /* StringExtensions.swift */; };
 		BE3B3B9222D4E4F800480810 /* Cast.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B3B9122D4E4F700480810 /* Cast.swift */; };
 		BE3B3B9422D4E5EC00480810 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B3B9322D4E5EC00480810 /* Image.swift */; };
@@ -92,6 +93,7 @@
 		A53F3B3BF25C2011995DAEF8 /* Pods-ChallengeTVUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeTVUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeTVUITests/Pods-ChallengeTVUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE0A057822D22A71006CB7F9 /* CellSizeUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellSizeUtil.swift; sourceTree = "<group>"; };
 		BE0A057A22D38436006CB7F9 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BE2A621D22D7B51600532A40 /* cast.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cast.json; sourceTree = "<group>"; };
 		BE3B3B8F22D4B98500480810 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		BE3B3B9122D4E4F700480810 /* Cast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cast.swift; sourceTree = "<group>"; };
 		BE3B3B9322D4E5EC00480810 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
@@ -199,6 +201,7 @@
 		BEAF016022D764DB00D828B2 /* MockServer */ = {
 			isa = PBXGroup;
 			children = (
+				BE2A621D22D7B51600532A40 /* cast.json */,
 				BEC5FA4E22D76C650043FE47 /* mock_schedule_2019-07-12.json */,
 				BEC5FA4D22D76C640043FE47 /* mock_schedule_2019-07-13.json */,
 				BEC5FA4B22D76C640043FE47 /* mock_schedule_2019-07-14.json */,
@@ -483,6 +486,7 @@
 				BEDC311A22D0B6D700FD5CEE /* Assets.xcassets in Resources */,
 				BEC5FA5722D76C650043FE47 /* mock_schedule_2019-07-13.json in Resources */,
 				BEDC316222D16F8700FD5CEE /* ShowCollectionViewCell.xib in Resources */,
+				BE2A621E22D7B51600532A40 /* cast.json in Resources */,
 				BE447BB222D4F846009F0417 /* CastMemberCellCollectionViewCell.xib in Resources */,
 				BEC5FA5122D76C650043FE47 /* mock_schedule_2019-07-14.json in Resources */,
 				BEC5FA6022D76C650043FE47 /* mock_schedule_2019-07-17.json in Resources */,
