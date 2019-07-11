@@ -30,6 +30,7 @@ class ChallengeTVUITests: XCTestCase {
         
         // ensure were in portrait
         XCUIDevice.shared.orientation = .portrait
+        XCUIDevice.shared.orientation = .faceUp
         let collectionViewsQuery = app.collectionViews
         // tap the first row's label
         let thuJul11StaticText = collectionViewsQuery.staticTexts["Thu Jul 11"]
@@ -104,13 +105,12 @@ class ChallengeTVUITests: XCTestCase {
         
         // close this screen
         app.buttons["close button"].tap()
-        
-        
     }
     
     func testFiltering(){
         // ensure were in portrait
         XCUIDevice.shared.orientation = .portrait
+        XCUIDevice.shared.orientation = .faceUp
         let collectionViewsQuery = app.collectionViews
 
         // find our cell in row one...

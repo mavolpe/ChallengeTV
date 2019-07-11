@@ -127,7 +127,7 @@ I am using CocoaPods on this project
 - open details - ensure that we see:
   1) the season and episode information "S3:E10"
 	2) Ensure that we see the episode titled
-	3) Ensure that we see the show titled
+	3) Ensure that we see the show title (followed by the network name for convenience)
 	4) Ensure that we see genres
 	5) Ensure that we see the premiered dates
 	6) Ensure that we can see the summary - NOTE - we truncate to 4 lines a feature would have to be added to allow full details to be shown when the details are tapped IF they are truncated.
@@ -135,7 +135,10 @@ I am using CocoaPods on this project
 	NOTE: In all cases above it is possible some shows may be missing data that was not returned by the API. Cast is a good example, not all shows have cast data with TVMAZE's api.
 - Test that schedule turns over if we switch the date... this was tested manually by setting the refresh timer to 300 seconds, then manually setting the date on the device... a real test on a Sunday night has not been performed yet.
 
+NOTE: The application has been tested on real iPhone (both version 6) - the rest of the testing was done on simulators for various iPads and iPhones.
+
 <b>Automated Tests</b>
+	NOTE: For the unit tests to succeed on the simulator the device must be using the software keyboard or the hit tests won't work.
 
 	Overview: Automated testing is supported by a MockServer that is configured to have 7 end points which serve up consistent predictable data.
 
