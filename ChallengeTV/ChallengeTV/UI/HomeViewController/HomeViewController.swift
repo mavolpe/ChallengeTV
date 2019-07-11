@@ -77,7 +77,7 @@ class HomeViewController: UIViewController{
     
     // MARK: Error message presentation
     private func showErrorMessage(message:String){
-        guard errorShowing == false else{
+        guard errorShowing == false && self.view.window != nil else{
             return
         }
         errorShowing = true
@@ -225,7 +225,9 @@ extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSou
         
         guard let collectionViewCell = cell as? ShowShelfCollectionViewCell else { return }
         
-        collectionViewCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.row)
+        // we pass the section not the row - because we divide days by sections...
+        collectionViewCell.setCollectionViewDataSourceDelegate(dataSourceDelegate: self, forRow: indexPath.section)
+        
         collectionViewCell.collectionViewOffset = storedOffsets[indexPath.section] ?? 0
     }
     

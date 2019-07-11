@@ -97,7 +97,32 @@ Contains AppDelegate and launch story board... info.plist etc...
 
 <b> PODS </b>
 
-SDWebImage is the only pod used in this project so far...
+pod 'SDWebImage', '~> 5.0' is used for loading and caching images...
+pod 'OHHTTPStubs/Swift' is used to facilitate testing
+
+<b> Dependancy Management </b>
+I am using CocoaPods on this project
+
+<b> Manual Tests </b>
+- The following tests should be performed on various iPad and iOS devices.
+- launch app
+- click on details
+- close details
+- observe date on shelf row - click details and ensure that date of asset matches (NOTE: the tvmaze API was observed to produce an air date of one day back for the first show in the list - the actual starttime date is correct)
+- Enter the name of a show into the filter bar - the list should reflect any network or show containing the characters you type - for example, if you type CBS, you should only see shows that are on the CBS network - unless the title for a show also contains the characters CBS.
+- open the details page for a show that has cast (eg. Days of our lives) verify that you can see the cast
+- go back to the home screen - rotate from portrait to landscape - the UI should maintain it's integrity and look good in either orientation
+- open the details screen, rotate the device from portrait to landscape - the UI should adjust where the poster is located to suit landscape or portrait
+- open details - ensure that we see:
+  1) the season and episode information "S3:E10"
+	2) Ensure that we see the episode titled
+	3) Ensure that we see the show titled
+	4) Ensure that we see genres
+	5) Ensure that we see the premiered dates
+	6) Ensure that we can see the summary - NOTE - we truncate to 4 lines a feature would have to be added to allow full details to be shown when the details are tapped IF they are truncated.
+	7) Ensure that the cast is visible
+	NOTE: In all cases above it is possible some shows may be missing data that was not returned by the API. Cast is a good example, not all shows have cast data with TVMAZE's api.
+
 
 <b> Future Considerations </b>
 
