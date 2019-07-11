@@ -140,7 +140,9 @@ NOTE: The application has been tested on real iPhone (both version 6) - the rest
 <b>Automated Tests</b>
 	NOTE: For the unit tests to succeed on the simulator the device must be using the software keyboard or the hit tests won't work.
 
-	Overview: Automated testing is supported by a MockServer that is configured to have 7 end points which serve up consistent predictable data.
+	Overview:
+
+	Automated testing is supported by a MockServer that is configured to have 7 end points which serve up consistent predictable data.
 
 	The TVAPI has a flag (useMockData) that can be set to true to use the mock end point.
 
