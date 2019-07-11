@@ -81,7 +81,7 @@ struct Country: Decodable{
 
 
 
-// MARK: some helpers 
+// MARK: some helpers
 extension TVEvent{
     
     // this will only be available if we have a runtime
@@ -104,6 +104,13 @@ extension TVEvent{
                 return airingTime
             }
             return ""
+        }
+    }
+    
+    public var airingDay:String{
+        get{
+            let airingString = DateFormatter.tvMazeDayFormat.string(from: startDate)
+            return airingString
         }
     }
     
@@ -174,13 +181,11 @@ extension TVEvent{
     
     public var airingInfo:String{
         get{
-
+            
             var airing = ""
             if airingString.isEmpty == false{
                 airing = airingString
-                if let airdate = airdate{
-                    airing = airing + " " + airdate
-                }
+                airing = airing + " " + airingDay
             }
             
             return airing

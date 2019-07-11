@@ -119,7 +119,7 @@ I am using CocoaPods on this project
 - launch app
 - click on details
 - close details
-- observe date on shelf row - click details and ensure that date of asset matches (NOTE: the tvmaze API was observed to produce an air date of one day back for the first show in the list - the actual starttime date is correct)
+- observe date on shelf row - click details and ensure that date of asset matches (NOTE: the tvmaze API was observed to produce an air date of one day back for the first show in the list - the actual starttime date is correct UPDATE: This was corrected by using the start date provided - the air date is UTC - so for us it looks one day off...)
 - Enter the name of a show into the filter bar - the list should reflect any network or show containing the characters you type - for example, if you type CBS, you should only see shows that are on the CBS network - unless the title for a show also contains the characters CBS.
 - open the details page for a show that has cast (eg. Days of our lives) verify that you can see the cast
 - go back to the home screen - rotate from portrait to landscape - the UI should maintain it's integrity and look good in either orientation
