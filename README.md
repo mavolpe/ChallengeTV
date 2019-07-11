@@ -105,6 +105,14 @@ pod 'OHHTTPStubs/Swift' is used to facilitate testing
 <b> Dependancy Management </b>
 I am using CocoaPods on this project
 
+<b> General Usage </b>
+- The application will display 7 rows of data which will always be the current week starting from Monday...
+- The top bar contains a search filters
+- To show or hide the search filter scroll up or down
+- To fiter shows in the home screen type - it will filter character by character by both show name and network name... not episode name...
+- To view more detail about the show tap the show cells
+- To view details about the cast, scroll through the cast at the bottom of the details page, if you don't see any, then there were none for that show.
+
 <b> Manual Tests </b>
 
 - The following tests should be performed on various iPad and iOS devices.
@@ -125,6 +133,7 @@ I am using CocoaPods on this project
 	6) Ensure that we can see the summary - NOTE - we truncate to 4 lines a feature would have to be added to allow full details to be shown when the details are tapped IF they are truncated.
 	7) Ensure that the cast is visible
 	NOTE: In all cases above it is possible some shows may be missing data that was not returned by the API. Cast is a good example, not all shows have cast data with TVMAZE's api.
+- Test that schedule turns over if we switch the date... this was tested manually by setting the refresh timer to 300 seconds, then manually setting the date on the device... a real test on a Sunday night has not been performed yet.
 
 <b>Automated Tests</b>
 
@@ -148,7 +157,13 @@ I am using CocoaPods on this project
 		2) func testFiltering() - this test filters for swamp - ensures that another known show that should not be there is not there, then launches details for swamp, ensure the correct show is opened, closes details, then enters Nbc into the filter ensures there are no CBS shows in the list and ensures Nbc shows ARE in the list.
 
 
+	Automated Unit tests
 
+		1) func testTVServiceObservableAndFiltering() - this tests that an observer subscribed to the TVService will indeed receive a notification that a schedule is available. It also tests our filtering extension on ScheduleList. (These tests could be broken down but in the interest of time I left them combined)
+
+		2) testServiceCastFetch - tests the cast fetch on the TVService and API - it also ensures that we get Will Patton who is a known cast member for the show we are fetching for.
+
+		3) testNetworkCommunication - tests our network NetworkCommunication class to ensure it can receive parsable JSON data. Again, this is combining JSON deserialization with straight network communication and could be refactored into smaller more meaningful chunks.
 
 <b> Future Considerations </b>
 

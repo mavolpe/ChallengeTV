@@ -19,11 +19,6 @@ class ChallengeTVTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {
@@ -32,33 +27,31 @@ class ChallengeTVTests: XCTestCase {
     }
     
     func testNetworkCommunication(){
-        let url = "http://api.tvmaze.com/schedule?country=US&date=2014-12-01"
+        MockServer.sharedInstance.setupMockServer()
+        let url = "http://api.mocktvserver.com/schedule?country=US&date=2019-07-11"
         
-        let testGroup = DispatchGroup()
-        testGroup.enter()
-        var passed = false
+        let expectation = XCTestExpectation(description: "test network communication")
         NetworkCommunication.sharedInstance.getRequest(urlString: url, customHeaders: [:], options: NetworkCommunication.NetworkRequestOptions.defaultSetting) { (data, netError) in
             if let jsonData = data{
                 do{
                     let json = try JSONSerialization.jsonObject(with: jsonData, options: [])
                     NSLog("#### JSON == \(json)")
-                    passed = true
+                    expectation.fulfill()
                 }
                 catch {
                     NSLog("#### json error: \(error.localizedDescription)")
                 }
                 
             }
-            testGroup.leave()
         }
-        testGroup.wait()
-        XCTAssert(passed)
+
+        wait(for: [expectation], timeout: 10)
     }
     
     func testScheduleApi(){
+        let expectation = XCTestExpectation(description: "schedule API tests")
         let tvAPI = TVAPI()
-        let testGroup = DispatchGroup()
-        testGroup.enter()
+        tvAPI.useMockData = true
         var passed = false
         let startDate = Date.init().midnight
         tvAPI.getSchedule(date: startDate, countryCode: "US") { (schedule, error) in
@@ -72,96 +65,43 @@ class ChallengeTVTests: XCTestCase {
                     for event in events{
                         if event.startDate < startDate{
                             passed = false
-                            break
                         }
                     }
-                }
-            }
-            testGroup.leave()
-        }
-        testGroup.wait()
-        XCTAssert(passed)
-    }
-    
-    func testCastAPI(){
-        let showId = 689
-        
-        let tvAPI = TVAPI()
-        let testGroup = DispatchGroup()
-        testGroup.enter()
-        var passed = false
-        tvAPI.getCast(showId:showId) { (cast, error) in
-            if let cast = cast{
-                if let castMembers = cast.castMembers{
-                    if castMembers.count > 0{
-                        passed = true
+                    if passed{
+                        expectation.fulfill()
                     }
                 }
             }
-            testGroup.leave()
         }
-        testGroup.wait()
-        XCTAssert(passed)
+        wait(for: [expectation], timeout: 10)
+        
     }
     
     func testServiceCastFetch(){
-        let showId = 689
+        TVService.sharedInstance.useMockData = true
+        let showId = 36568
         
+        let expectation = XCTestExpectation(description: "Get cast fetch")
         let tvService = TVService.sharedInstance
-        let testGroup = DispatchGroup()
-        testGroup.enter()
-        var passed = false
         tvService.fetchCast(showId: showId) { (cast, error) in
             if let cast = cast{
                 if let castMembers = cast.castMembers{
-                    if castMembers.count > 0{
-                        passed = true
-                    }
+                    
+                    XCTAssert(castMembers.count > 0)
+                    XCTAssert(castMembers.filter({ (castMember) -> Bool in
+                        return castMember.personName == "Will Patton"
+                    }).count > 0)
+                    expectation.fulfill()
                 }
-            }
-            testGroup.leave()
-        }
-        testGroup.wait()
-        for i in 10000...10100{
-            testGroup.enter()
-            passed = false
-            tvService.fetchCast(showId: i) { (cast, error) in
-                if let cast = cast{
-                    if let castMembers = cast.castMembers{
-                        if castMembers.count > 0{
-                            passed = true
-                        }
-                        for castMember in castMembers{
-                            NSLog("#### \(castMember.person?.name ?? "UNKNOWN")")
-                        }
-                    }
-                }
-                testGroup.leave()
-            }
-            testGroup.enter()
-            passed = false
-            tvService.fetchCast(showId: i) { (cast, error) in
-                if let cast = cast{
-                    if let castMembers = cast.castMembers{
-                        if castMembers.count > 0{
-                            passed = true
-                        }
-                        for castMember in castMembers{
-                            NSLog("#### \(castMember.person?.name ?? "UNKNOWN")")
-                        }
-                    }
-                }
-                testGroup.leave()
             }
         }
-        testGroup.wait()
-        XCTAssert(passed)
+        wait(for: [expectation], timeout: 10.0)
     }
     
     static var serviceResponded = false
 
-    func testTVService() {
-        let expectation = XCTestExpectation(description: "Download apple.com home page")
+    func testTVServiceObservableAndFiltering() {
+        let expectation = XCTestExpectation(description: "Receive update that a schedule is available")
         class MyTVServiceObserver : TVServiceObserver{
             var expectation:XCTestExpectation? = nil
             static let sharedInstance = MyTVServiceObserver()
@@ -173,13 +113,29 @@ class ChallengeTVTests: XCTestCase {
                 ChallengeTVTests.serviceResponded = true
                 TVService.sharedInstance.getScheduleList { [weak self] (schedule) in
                     XCTAssert(schedule.count>0)
-                    self?.expectation?.fulfill()
+                    let result = schedule.filter(filter: "swamp")
+                    var testResult = false
+                    if result.count > 0{
+                        for day in result{
+                            if let events = day.schedule.events{
+                                for event in events{
+                                    NSLog("#### showTitle \(event.showTitle)")
+                                    testResult = event.showTitle.contains("Swamp")
+                                }
+                            }
+                        }
+                    }
+                    // only accept a pass if all the tests contain the show swamp... otherwise let the test timeout and fail...
+                    if testResult{
+                        self?.expectation?.fulfill()
+                    }
                 }
                 
             }
         }
         ChallengeTVTests.serviceResponded = false
         MyTVServiceObserver.sharedInstance.expectation = expectation
+        TVService.sharedInstance.useMockData = true
         TVService.sharedInstance.attachObserver(observer: MyTVServiceObserver.sharedInstance)
         
         TVService.sharedInstance.fetchSchedule()
