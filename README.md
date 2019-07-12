@@ -120,6 +120,7 @@ I am using CocoaPods on this project
 - click on details
 - close details
 - observe date on shelf row - click details and ensure that date of asset matches (NOTE: the tvmaze API was observed to produce an air date of one day back for the first show in the list - the actual starttime date is correct UPDATE: This was corrected by using the start date provided - the air date is UTC - so for us it looks one day off...)
+- observe that the times on the shows are in order - NOTE: the time format on the cells is 24hr time - (considering switching to AM/PM which takes up a bit more space) - the shows are not sorted after fetching from the server since the documentation for the API states - "Episodes are returned in the order in which they are aired, and full information about the episode and the corresponding show is included." 
 - Enter the name of a show into the filter bar - the list should reflect any network or show containing the characters you type - for example, if you type CBS, you should only see shows that are on the CBS network - unless the title for a show also contains the characters CBS.
 - open the details page for a show that has cast (eg. Days of our lives) verify that you can see the cast
 - go back to the home screen - rotate from portrait to landscape - the UI should maintain it's integrity and look good in either orientation
